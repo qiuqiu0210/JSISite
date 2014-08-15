@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 加载数据库属性配置文件 -->
+    <context:property-placeholder location="classpath:db.properties" />
+
+    <!-- 数据库连接池proxool配置 -->
+    <bean id="dataSource"   class="org.logicalcobwebs.proxool.ProxoolDataSource">
+        <property name="driver" value="${db.driverClassName}"/>
+        <property name="driverUrl" value="${db.url}"/>
+        <property name="user" value="${db.username}"/>
+        <property name="password" value="${db.password}"/>
+        <property name="alias" value="proxool_db"/>
+        <property name="maximumActiveTime" value="90000"/>
+        <property name="prototypeCount" value="5"/>
+        <property name="maximumConnectionCount" value="100"/>
+        <property name="minimumConnectionCount" value="5"/>
+        <property name="simultaneousBuildThrottle" value="20"/>
+        <property name="houseKeepingTestSql" value="select CURRENT_DATE"/>
+    </bean>
+
+    <!-- 实体bean采用注解进行映射 annotation  -->
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="configLocation" value="classpath:hibernate.cfg.xml" />
+        <property name="mappingLocations">
+            <list>
+                <value>classpath*:cn/edu/buaa/jsi/hbm/*.hbm.xml</value>
+            </list>
+        </property>
+    </bean>
+
+    <!-- 会话模板 -->
+    <bean id="hibernateTemplate" class="org.springframework.orm.hibernate4.HibernateTemplate">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+
+    <!-- 事务管理器 -->
+    <bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+
+    <!-- 拦截器 -->
+    <bean id="transInterceptor" class="org.springframework.transaction.interceptor.TransactionInterceptor">
+        <property name="transactionManager">
+            <ref bean="transactionManager" />
+        </property>
+        <property name="transactionAttributes">
+            <props >
+                <prop key="save*">PROPAGATION_REQUIRED</prop>
+                <prop key="update*">PROPAGATION_REQUIRED</prop>
+                <prop key="del*">PROPAGATION_REQUIRED</prop>
+                <prop key="remove*">PROPAGATION_REQUIRED</prop>
+                <prop key="load*">PROPAGATION_REQUIRED</prop>
+                <prop key="find*">PROPAGATION_REQUIRED,readOnly</prop>
+                <prop key="query*">PROPAGATION_REQUIRED,readOnly</prop>
+                <prop key="get*">PROPAGATION_REQUIRED,readOnly</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!--事务代理 -->
+    <bean class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
+        <property name="proxyTargetClass">
+            <value>true</value>
+        </property>
+        <property name="beanNames">
+            <!-- 凡是通过数据源进行数据库操作的类，加入下面的列表就可以实现自动事务管理 -->
+            <list>
+                <value>UserService</value>
+            </list>
+        </property>
+        <property name="interceptorNames">
+            <!-- 拦截器列表 -->
+            <list>
+                <value>transInterceptor</value>
+            </list>
+        </property>
+    </bean>
+</beans>

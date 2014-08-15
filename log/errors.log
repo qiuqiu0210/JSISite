@@ -1,0 +1,18 @@
+[2014-08-15 19:25:17,131]-ERROR (SchemaUpdate.java:236)|HHH000388: Unsuccessful: create table jsi_db.tb_user (id int not null, username varchar, loginid varchar, password varchar, primary key (id))
+[2014-08-15 19:25:17,132]-ERROR (SchemaUpdate.java:237)|You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '
+        loginid varchar,
+        password varchar,
+        primary key (id)
+   ' at line 3
+[2014-08-15 19:28:11,594]-ERROR (SchemaUpdate.java:236)|HHH000388: Unsuccessful: create table jsi_db.tb_user (id int not null, username varchar, loginid varchar, password varchar, primary key (id))
+[2014-08-15 19:28:11,596]-ERROR (SchemaUpdate.java:237)|You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '
+        loginid varchar,
+        password varchar,
+        primary key (id)
+   ' at line 3
+[2014-08-15 19:32:52,123]-ERROR (SchemaUpdate.java:236)|HHH000388: Unsuccessful: create table jsi_db.tb_user (id int not null, username varchar, loginid varchar, password varchar, primary key (id))
+[2014-08-15 19:32:52,124]-ERROR (SchemaUpdate.java:237)|You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '
+        loginid varchar,
+        password varchar,
+        primary key (id)
+   ' at line 3

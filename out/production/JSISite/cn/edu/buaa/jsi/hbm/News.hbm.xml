@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="cn.edu.buaa.jsi.entities">
+
+    <class name="News" table="tb_news" catalog="jsi_db">
+        <id name="newsId" column="news_id"/>
+        <property name="newsTime" column="news_time"/>
+        <property name="newsAuthor" column="news_author"/>
+        <property name="newsTitle" column="news_title"/>
+        <property name="newsPhoto" column="news_photo"/>
+        <property name="newsContent" column="news_content"/>
+    </class>
+</hibernate-mapping>
