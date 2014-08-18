@@ -1,17 +1,21 @@
 package cn.edu.buaa.jsi.entities;
 
+import java.sql.Timestamp;
+
 /**
- * @ClassName: User
- * @Description: User实体
- * @author songliu
- * @date 2014-08-15
- *
+ * Created by Home on 2014/8/17.
  */
 public class User {
     private int userId;
     private String userName;
-    private String userPsw;
-    private String userAuth;
+    private String userSex;
+    private String userEmail;
+    private String userQq;
+    private String userPhone;
+    private String userQuestion;
+    private String userAnswer;
+    private Timestamp userCreatedate;
+    private Timestamp userLastdate;
 
     public int getUserId() {
         return userId;
@@ -29,20 +33,68 @@ public class User {
         this.userName = userName;
     }
 
-    public String getUserPsw() {
-        return userPsw;
+    public String getUserSex() {
+        return userSex;
     }
 
-    public void setUserPsw(String userPsw) {
-        this.userPsw = userPsw;
+    public void setUserSex(String userSex) {
+        this.userSex = userSex;
     }
 
-    public String getUserAuth() {
-        return userAuth;
+    public String getUserEmail() {
+        return userEmail;
     }
 
-    public void setUserAuth(String userAuth) {
-        this.userAuth = userAuth;
+    public void setUserEmail(String userEmail) {
+        this.userEmail = userEmail;
+    }
+
+    public String getUserQq() {
+        return userQq;
+    }
+
+    public void setUserQq(String userQq) {
+        this.userQq = userQq;
+    }
+
+    public String getUserPhone() {
+        return userPhone;
+    }
+
+    public void setUserPhone(String userPhone) {
+        this.userPhone = userPhone;
+    }
+
+    public String getUserQuestion() {
+        return userQuestion;
+    }
+
+    public void setUserQuestion(String userQuestion) {
+        this.userQuestion = userQuestion;
+    }
+
+    public String getUserAnswer() {
+        return userAnswer;
+    }
+
+    public void setUserAnswer(String userAnswer) {
+        this.userAnswer = userAnswer;
+    }
+
+    public Timestamp getUserCreatedate() {
+        return userCreatedate;
+    }
+
+    public void setUserCreatedate(Timestamp userCreatedate) {
+        this.userCreatedate = userCreatedate;
+    }
+
+    public Timestamp getUserLastdate() {
+        return userLastdate;
+    }
+
+    public void setUserLastdate(Timestamp userLastdate) {
+        this.userLastdate = userLastdate;
     }
 
     @Override
@@ -53,9 +105,16 @@ public class User {
         User user = (User) o;
 
         if (userId != user.userId) return false;
-        if (userAuth != null ? !userAuth.equals(user.userAuth) : user.userAuth != null) return false;
+        if (userAnswer != null ? !userAnswer.equals(user.userAnswer) : user.userAnswer != null) return false;
+        if (userCreatedate != null ? !userCreatedate.equals(user.userCreatedate) : user.userCreatedate != null)
+            return false;
+        if (userEmail != null ? !userEmail.equals(user.userEmail) : user.userEmail != null) return false;
+        if (userLastdate != null ? !userLastdate.equals(user.userLastdate) : user.userLastdate != null) return false;
         if (userName != null ? !userName.equals(user.userName) : user.userName != null) return false;
-        if (userPsw != null ? !userPsw.equals(user.userPsw) : user.userPsw != null) return false;
+        if (userPhone != null ? !userPhone.equals(user.userPhone) : user.userPhone != null) return false;
+        if (userQq != null ? !userQq.equals(user.userQq) : user.userQq != null) return false;
+        if (userQuestion != null ? !userQuestion.equals(user.userQuestion) : user.userQuestion != null) return false;
+        if (userSex != null ? !userSex.equals(user.userSex) : user.userSex != null) return false;
 
         return true;
     }
@@ -64,8 +123,14 @@ public class User {
     public int hashCode() {
         int result = userId;
         result = 31 * result + (userName != null ? userName.hashCode() : 0);
-        result = 31 * result + (userPsw != null ? userPsw.hashCode() : 0);
-        result = 31 * result + (userAuth != null ? userAuth.hashCode() : 0);
+        result = 31 * result + (userSex != null ? userSex.hashCode() : 0);
+        result = 31 * result + (userEmail != null ? userEmail.hashCode() : 0);
+        result = 31 * result + (userQq != null ? userQq.hashCode() : 0);
+        result = 31 * result + (userPhone != null ? userPhone.hashCode() : 0);
+        result = 31 * result + (userQuestion != null ? userQuestion.hashCode() : 0);
+        result = 31 * result + (userAnswer != null ? userAnswer.hashCode() : 0);
+        result = 31 * result + (userCreatedate != null ? userCreatedate.hashCode() : 0);
+        result = 31 * result + (userLastdate != null ? userLastdate.hashCode() : 0);
         return result;
     }
 }

@@ -9,7 +9,6 @@
     <schema name="" catalog="information_schema"/>
     <schema name="" catalog="jsi_db"/>
     <schema name="" catalog="mysql"/>
-    <schema name="" catalog="struts"/>
     <schema name="" catalog="test"/>
     <table name="CHARACTER_SETS" schema="" catalog="information_schema" type="SYSTEM TABLE">
       <column name="CHARACTER_SET_NAME" sqlType="VARCHAR" precision="32" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
@@ -382,6 +381,49 @@
       <column name="CHARACTER_SET_CLIENT" sqlType="VARCHAR" precision="32" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
       <column name="COLLATION_CONNECTION" sqlType="VARCHAR" precision="32" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
     </table>
+    <table name="tb_account" schema="" catalog="jsi_db" type="TABLE">
+      <column name="account_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="account_name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="account_password" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="group_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="account_id"/>
+      <foreign-key name="tb_account_ibfk_1" columns="account_id" ref-table="tb_user" ref-schema="" ref-catalog="jsi_db" ref-columns="user_id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="tb_account_ibfk_2" columns="group_id" ref-table="tb_group" ref-schema="" ref-catalog="jsi_db" ref-columns="group_id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="tb_article_ibfk_1" table="tb_article" schema="" catalog="jsi_db" columns="art_poster"/>
+      <index name="account_name" unique="true" columns="account_name"/>
+    </table>
+    <table name="tb_article" schema="" catalog="jsi_db" type="TABLE">
+      <column name="art_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="art_title" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="art_content" sqlType="MEDIUMTEXT" precision="16777215" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="art_dist" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="art_hot" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="art_url" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="art_image" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="art_imagesrc" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="art_count" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="art_status" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="art_createdate" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="art_lastdate" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="art_author" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="art_poster" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="art_catalog" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="art_id"/>
+      <foreign-key name="tb_article_ibfk_2" columns="art_catalog" ref-table="tb_catalog" ref-schema="" ref-catalog="jsi_db" ref-columns="cat_id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="tb_article_ibfk_1" columns="art_poster" ref-table="tb_account" ref-schema="" ref-catalog="jsi_db" ref-columns="account_id" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="tb_catalog" schema="" catalog="jsi_db" type="TABLE">
+      <column name="cat_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="cat_title" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="cat_id"/>
+      <exported-key name="tb_article_ibfk_2" table="tb_article" schema="" catalog="jsi_db" columns="art_catalog"/>
+    </table>
+    <table name="tb_group" schema="" catalog="jsi_db" type="TABLE">
+      <column name="group_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="group_disc" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="group_id"/>
+      <exported-key name="tb_account_ibfk_2" table="tb_account" schema="" catalog="jsi_db" columns="group_id"/>
+    </table>
     <table name="tb_news" schema="" catalog="jsi_db" type="TABLE">
       <column name="news_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="news_time" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
@@ -392,16 +434,23 @@
       <primary-key name="PRIMARY" columns="news_id"/>
     </table>
     <table name="tb_note" schema="" catalog="jsi_db" type="TABLE">
-      <column name="note_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="note_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="note_content" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="note_id"/>
     </table>
     <table name="tb_user" schema="" catalog="jsi_db" type="TABLE">
       <column name="user_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="user_name" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <column name="user_psw" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <column name="user_auth" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="user_sex" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="user_email" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="user_qq" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="user_phone" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="user_question" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="user_answer" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="user_createdate" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="user_lastdate" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
       <primary-key name="PRIMARY" columns="user_id"/>
+      <exported-key name="tb_account_ibfk_1" table="tb_account" schema="" catalog="jsi_db" columns="account_id"/>
     </table>
     <table name="columns_priv" schema="" catalog="mysql" type="TABLE">
       <column name="Host" sqlType="CHAR" precision="60" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
@@ -688,23 +737,6 @@
       <column name="max_connections" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
       <column name="max_user_connections" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
       <primary-key name="PRIMARY" columns="Host,User"/>
-    </table>
-    <table name="t_products" schema="" catalog="struts" type="TABLE">
-      <column name="product_id" sqlType="VARCHAR" precision="4" scale="0" nullable="false" jdbcType="12"/>
-      <column name="product_name" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
-      <column name="price" sqlType="FLOAT" precision="12" scale="0" nullable="false" jdbcType="7"/>
-      <primary-key name="PRIMARY" columns="product_id"/>
-    </table>
-    <table name="profiles" schema="" catalog="test" type="TABLE">
-      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="nodeName" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <column name="activeUser" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="runJob" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="pendJob" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="runCore" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="pendCore" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="userlist" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1"/>
-      <primary-key name="PRIMARY" columns="id"/>
     </table>
   </data-source>
 </component>

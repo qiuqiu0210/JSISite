@@ -28,7 +28,7 @@
         <property name="configLocation" value="classpath:hibernate.cfg.xml" />
         <property name="mappingLocations">
             <list>
-                <value>classpath*:cn/edu/buaa/jsi/hbm/*.hbm.xml</value>
+                <value>classpath*:cn/edu/buaa/jsi/hibernate/hbm/*.hbm.xml</value>
             </list>
         </property>
     </bean>

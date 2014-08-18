@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="cn.edu.buaa.jsi.entities.Catalog" table="tb_catalog" schema="" catalog="jsi_db">
+        <id name="catId" column="cat_id"/>
+        <property name="catTitle" column="cat_title"/>
+    </class>
+</hibernate-mapping>

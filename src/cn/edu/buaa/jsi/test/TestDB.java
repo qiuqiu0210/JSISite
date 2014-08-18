@@ -2,7 +2,7 @@ package cn.edu.buaa.jsi.test;
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-import cn.edu.buaa.jsi.dao.impl.UserDaoImpl;
+import cn.edu.buaa.jsi.hibernate.dao.impl.UserDaoImpl;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

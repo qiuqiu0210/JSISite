@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="cn.edu.buaa.jsi.entities.Article" table="tb_article" schema="" catalog="jsi_db">
+        <id name="artId" column="art_id"/>
+        <property name="artTitle" column="art_title"/>
+        <property name="artContent" column="art_content"/>
+        <property name="artDist" column="art_dist"/>
+        <property name="artHot" column="art_hot"/>
+        <property name="artUrl" column="art_url"/>
+        <property name="artImage" column="art_image"/>
+        <property name="artImagesrc" column="art_imagesrc"/>
+        <property name="artCount" column="art_count"/>
+        <property name="artStatus" column="art_status"/>
+        <property name="artCreatedate" column="art_createdate"/>
+        <property name="artLastdate" column="art_lastdate"/>
+        <property name="artAuthor" column="art_author"/>
+        <many-to-one name="catalog" class="cn.edu.buaa.jsi.entities.Catalog">
+            <column name="art_catalog"/>
+        </many-to-one>
+        <many-to-one name="account" class="cn.edu.buaa.jsi.entities.Account">
+            <column name="art_poster" not-null="true"/>
+        </many-to-one>
+    </class>
+</hibernate-mapping>

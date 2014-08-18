@@ -4,7 +4,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- DAO数据访问对象 -->
-    <bean name="userDao" class="cn.edu.buaa.jsi.dao.impl.UserDaoImpl">
+    <bean name="userDao" class="cn.edu.buaa.jsi.hibernate.dao.impl.UserDaoImpl">
+        <property name="hibernateTemplate" ref="hibernateTemplate" />
+    </bean>
+    <bean name="accountDao" class="cn.edu.buaa.jsi.hibernate.dao.impl.AccountDaoImpl">
         <property name="hibernateTemplate" ref="hibernateTemplate" />
     </bean>
 </beans>

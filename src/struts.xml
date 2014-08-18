@@ -7,20 +7,40 @@
 <struts>
 
     <package name="struts2" namespace="/" extends="struts-default">
-        <action name="sum" class="cn.edu.buaa.jsi.action.FirstAction">
+        <action name="sum" class="cn.edu.buaa.jsi.web.action.FirstAction">
             <result name="positive">/positive.jsp</result>
             <result name="negative">/negative.jsp</result>
         </action>
     </package>
-    <package name="test1" namespace="/" extends="struts-default">
-        <action name="Login" class="loginAction">
-            <result name="submit">/ret.jsp</result>
-            <result name="cancel">/ret.jsp</result>
-            <result name="input">/success.jsp</result>
-            <!--<result name="cancel" type="redirect">sum.do</result>-->
+    <package name="userLogin" namespace="/" extends="struts-default">
+        <interceptors>
+            <interceptor name="loginInterceptor" class="loginInterceptor"/>
+            <interceptor-stack name="loginDefaultStack">
+                <interceptor-ref name="loginInterceptor"/>
+                <interceptor-ref name="defaultStack"/>
+            </interceptor-stack>
+        </interceptors>
+
+        <default-interceptor-ref name="loginDefaultStack"/>
+
+        <global-results>
+            <result>Login.action</result>
+        </global-results>
+
+        <action name="index" class="indexAction">
+            <result name="index">/index.jsp</result>
+            <result name="login">/index.jsp</result>
         </action>
-        <!--<action name="Login2" class="cn.edu.buaa.jsi.action.LoginAction" method="cancel">-->
-            <!--<result name="cancel">/ret.jsp</result>-->
-        <!--</action>-->
+
+        <action name="Login" class="loginAction" method="login">
+            <result name="login" type="redirect">${goingToURL}</result>
+            <result name="input">/login.jsp</result>
+            <!--<interceptor-ref name="loginInterceptor"/>-->
+        </action>
+
+        <action name="Logout" class="loginAction" method="logout">
+            <result name="login">/login.jsp</result>
+            <result name="input">/failure.jsp</result>
+        </action>
     </package>
 </struts>

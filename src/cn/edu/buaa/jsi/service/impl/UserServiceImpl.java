@@ -1,12 +1,9 @@
 package cn.edu.buaa.jsi.service.impl;
 
-import cn.edu.buaa.jsi.entities.User;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-import cn.edu.buaa.jsi.dao.UserDao;
+import cn.edu.buaa.jsi.hibernate.dao.UserDao;
 import cn.edu.buaa.jsi.service.UserService;
-
-import java.util.List;
 
 /**
  * @ClassName: UserServiceImpl
@@ -38,14 +35,14 @@ public class UserServiceImpl implements UserService {
      */
     @Override
     public boolean validateUser(String username, String password) {
-        String[] propertyNames = {"userName","userPsw"};
-        String[] values = {username,password};
-        List<User> userList = this.userDao.getUserByProperties(propertyNames, values);
-        if(userList.size() == 1) {
-            log.info("success");
-            return true;
-        } else {
+//        String[] propertyNames = {"userName","userPsw"};
+//        String[] values = {username,password};
+//        List<User> userList = this.userDao.getUserByProperties(propertyNames, values);
+//        if(userList.size() == 1) {
+//            log.info("success");
+//            return true;
+//        } else {
             return false;
-        }
+//        }
     }
 }

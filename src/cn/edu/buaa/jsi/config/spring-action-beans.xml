@@ -3,8 +3,13 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <!-- index -->
+    <bean name="indexAction" class="cn.edu.buaa.jsi.web.action.IndexAction" scope="prototype"/>
     <!-- login -->
-    <bean name="loginAction" class="cn.edu.buaa.jsi.action.LoginAction" scope="prototype" >
-        <property name="userService" ref="userService" />
+    <bean name="loginAction" class="cn.edu.buaa.jsi.web.action.LoginAction" scope="prototype" >
+        <property name="accountService" ref="accountService" />
+    </bean>
+    <bean name="loginInterceptor" class="cn.edu.buaa.jsi.web.interceptor.LoginInterceptor" scope="prototype">
+        <property name="accountService" ref="accountService" />
     </bean>
 </beans>

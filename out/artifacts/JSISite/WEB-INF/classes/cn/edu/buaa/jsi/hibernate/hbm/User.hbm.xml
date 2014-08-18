@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="cn.edu.buaa.jsi.entities.User" table="tb_user" schema="" catalog="jsi_db">
+        <id name="userId" column="user_id"/>
+        <property name="userName" column="user_name"/>
+        <property name="userSex" column="user_sex"/>
+        <property name="userEmail" column="user_email"/>
+        <property name="userQq" column="user_qq"/>
+        <property name="userPhone" column="user_phone"/>
+        <property name="userQuestion" column="user_question"/>
+        <property name="userAnswer" column="user_answer"/>
+        <property name="userCreatedate" column="user_createdate"/>
+        <property name="userLastdate" column="user_lastdate"/>
+    </class>
+</hibernate-mapping>
