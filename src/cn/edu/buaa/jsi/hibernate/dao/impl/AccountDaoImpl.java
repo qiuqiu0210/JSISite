@@ -47,9 +47,8 @@ public class AccountDaoImpl extends BaseDaoImpl implements AccountDao {
 
     @Override
     public boolean isExist(String name) {
-        Account account = null;
-        account = (Account)this.findByProperty("accountName", name, Account.class);
-        if (account != null){
+        List list = this.findByProperty("accountName", name, Account.class);
+        if (!list.isEmpty()){
             return true;
         }
         return false;

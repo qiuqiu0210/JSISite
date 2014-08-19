@@ -5,7 +5,9 @@
 <hibernate-mapping>
 
     <class name="cn.edu.buaa.jsi.entities.Article" table="tb_article" schema="" catalog="jsi_db">
-        <id name="artId" column="art_id"/>
+        <id name="artId" column="art_id">
+            <generator class="native"/>
+        </id>
         <property name="artTitle" column="art_title"/>
         <property name="artContent" column="art_content"/>
         <property name="artDist" column="art_dist"/>

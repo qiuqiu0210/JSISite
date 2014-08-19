@@ -69,8 +69,9 @@
         </property>
         <property name="beanNames">
             <!-- 凡是通过数据源进行数据库操作的类，加入下面的列表就可以实现自动事务管理 -->
+            <!-- 以下类均为注入hibernateTemplate的DAO实现类，已在spring-dao-beans.xml中配置 -->
             <list>
-                <value>UserService</value>
+                <value>*Dao</value>
             </list>
         </property>
         <property name="interceptorNames">

@@ -28,7 +28,7 @@
         </global-results>
 
         <action name="index" class="indexAction">
-            <result name="index">/index.jsp</result>
+            <result name="success">/index.jsp</result>
             <result name="login">/index.jsp</result>
         </action>
 

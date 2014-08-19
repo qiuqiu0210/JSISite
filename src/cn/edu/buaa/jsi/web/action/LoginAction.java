@@ -24,21 +24,21 @@ public class LoginAction extends BaseAction {
     private HttpServletResponse response;
     private Map session;
 
-//    public String getUsername() {
-//        return username;
-//    }
-//
-//    public void setUsername(String username) {
-//        this.username = username;
-//    }
-//
-//    public String getPassword() {
-//        return password;
-//    }
-//
-//    public void setPassword(String password) {
-//        this.password = password;
-//    }
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     public boolean isRemember() {
         return remember;
@@ -83,8 +83,8 @@ public class LoginAction extends BaseAction {
      * @return
      */
     public String login(){
-        username = request.getParameter("username");
-        password = request.getParameter("password");
+//        username = request.getParameter("username");
+//        password = request.getParameter("password");
         if (CommonUtils.isBlank(username) && CommonUtils.isBlank(password)){
             return INPUT;
         }

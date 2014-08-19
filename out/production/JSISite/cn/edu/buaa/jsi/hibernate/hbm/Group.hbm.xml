@@ -5,7 +5,9 @@
 <hibernate-mapping>
 
     <class name="cn.edu.buaa.jsi.entities.Group" table="tb_group" schema="" catalog="jsi_db">
-        <id name="groupId" column="group_id"/>
+        <id name="groupId" column="group_id">
+            <generator class="native"/>
+        </id>
         <property name="groupDisc" column="group_disc"/>
     </class>
 </hibernate-mapping>

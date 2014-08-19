@@ -6,15 +6,12 @@
 
     <class name="cn.edu.buaa.jsi.entities.Account" table="tb_account" schema="" catalog="jsi_db">
         <id name="accountId" column="account_id">
-            <generator class="foreign">
-                <param name="property">user</param>
-            </generator>
+            <generator class="native"/>
         </id>
         <property name="accountName" column="account_name"/>
         <property name="accountPassword" column="account_password"/>
         <many-to-one name="group" class="cn.edu.buaa.jsi.entities.Group">
             <column name="group_id"/>
         </many-to-one>
-        <one-to-one name="user" class="cn.edu.buaa.jsi.entities.User"/>
     </class>
 </hibernate-mapping>

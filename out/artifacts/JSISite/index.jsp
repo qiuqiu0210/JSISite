@@ -60,7 +60,7 @@
         <nav id="mainmenu" class="mainmenu">
             <ul>
                 <li class="active">
-                    <a href="index">首页</a>
+                    <a href="index.action">首页</a>
                 </li>
                 <li>
                     <a href="features.html">实验室简介</a>
@@ -292,7 +292,7 @@
                         <li><strong>Unlimited</strong> projects</li>
                         <li><strong>2GB</strong> storage</li>
                     </ul>
-                    <a href="index" class="btn">Order Now</a>
+                    <a href="index.action" class="btn">Order Now</a>
                 </div>
                 <!-- End Pricing Plan -->
                 <div class="pricing-plan">
@@ -303,7 +303,7 @@
                         <li><strong>Unlimited</strong> projects</li>
                         <li><strong>20GB</strong> storage</li>
                     </ul>
-                    <a href="index" class="btn">Order Now</a>
+                    <a href="index.action" class="btn">Order Now</a>
                 </div>
                 <!-- Promoted Pricing Plan -->
                 <div class="pricing-plan pricing-plan-promote">
@@ -314,7 +314,7 @@
                         <li><strong>Unlimited</strong> projects</li>
                         <li><strong>100GB</strong> storage</li>
                     </ul>
-                    <a href="index" class="btn">Order Now</a>
+                    <a href="index.action" class="btn">Order Now</a>
                 </div>
                 <div class="pricing-plan">
                     <!-- Pricing Plan Ribbon -->
@@ -328,7 +328,7 @@
                         <li><strong>Unlimited</strong> projects</li>
                         <li><strong>100GB</strong> storage</li>
                     </ul>
-                    <a href="index" class="btn">Order Now</a>
+                    <a href="index.action" class="btn">Order Now</a>
                 </div>
             </div>
             <!-- End Pricing Plans Wrapper -->

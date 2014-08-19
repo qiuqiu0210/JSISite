@@ -5,7 +5,12 @@
 <hibernate-mapping>
 
     <class name="cn.edu.buaa.jsi.entities.User" table="tb_user" schema="" catalog="jsi_db">
-        <id name="userId" column="user_id"/>
+        <id name="id" column="id">
+            <generator class="native"/>
+        </id>
+        <many-to-one name="account" class="cn.edu.buaa.jsi.entities.Account">
+            <column name="user_id" not-null="true"/>
+        </many-to-one>
         <property name="userName" column="user_name"/>
         <property name="userSex" column="user_sex"/>
         <property name="userEmail" column="user_email"/>

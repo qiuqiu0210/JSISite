@@ -82,7 +82,7 @@ public class LoginInterceptor extends AbstractInterceptor{
         }
         String actionName = invocation.getProxy().getActionName();
         if (!CommonUtils.isBlank(actionName)) {
-            url = url + "/" + actionName + ".do";
+            url = url + "/" + actionName + ".action";
         }
         session.put(CommonConstants.GOING_TO_URL_KEY, url);
     }

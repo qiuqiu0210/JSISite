@@ -5,7 +5,9 @@
 <hibernate-mapping>
 
     <class name="cn.edu.buaa.jsi.entities.Catalog" table="tb_catalog" schema="" catalog="jsi_db">
-        <id name="catId" column="cat_id"/>
+        <id name="catId" column="cat_id">
+            <generator class="native"/>
+        </id>
         <property name="catTitle" column="cat_title"/>
     </class>
 </hibernate-mapping>

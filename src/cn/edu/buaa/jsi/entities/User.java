@@ -6,6 +6,7 @@ import java.sql.Timestamp;
  * Created by Home on 2014/8/17.
  */
 public class User {
+    private int id;
     private int userId;
     private String userName;
     private String userSex;
@@ -16,6 +17,15 @@ public class User {
     private String userAnswer;
     private Timestamp userCreatedate;
     private Timestamp userLastdate;
+    private Account account;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public int getUserId() {
         return userId;
@@ -133,4 +143,13 @@ public class User {
         result = 31 * result + (userLastdate != null ? userLastdate.hashCode() : 0);
         return result;
     }
+
+    public Account getAccount() {
+        return account;
+    }
+
+    public void setAccount(Account account) {
+        this.account = account;
+    }
+
 }

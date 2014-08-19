@@ -59,7 +59,7 @@
         <nav id="mainmenu" class="mainmenu">
             <ul>
                 <li class="active">
-                    <a href="index">首页</a>
+                    <a href="index.action">首页</a>
                 </li>
                 <li>
                     <a href="features.html">实验室简介</a>

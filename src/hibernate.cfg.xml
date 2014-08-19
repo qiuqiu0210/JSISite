@@ -8,7 +8,9 @@
         <!-- Database connection settings -->
         <property name="hibernate.connection.autoReconnect">true</property>
         <property name="hibernate.connection.autoReconnectForPools">true</property>
-        <property name="hibernate.connection.is-connection-validation-required">true</property>
+        <property name="hibernate.connection.autocommit">true </property>
+        <property name="hibernate.connection.release_mode">auto</property>
+        <!--<property name="hibernate.connection.is-connection-validation-required">true</property>-->
         <!-- SQL dialect -->
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <!-- Echo all executed SQL to stdout -->

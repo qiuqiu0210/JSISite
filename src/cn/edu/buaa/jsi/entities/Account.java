@@ -7,7 +7,6 @@ public class Account {
     private int accountId;
     private String accountName;
     private String accountPassword;
-    private User user;
     private Group group;
 
     public int getAccountId() {
@@ -55,14 +54,6 @@ public class Account {
         result = 31 * result + (accountName != null ? accountName.hashCode() : 0);
         result = 31 * result + (accountPassword != null ? accountPassword.hashCode() : 0);
         return result;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
     }
 
     public Group getGroup() {

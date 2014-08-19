@@ -5,6 +5,6 @@ package cn.edu.buaa.jsi.web.action;
  */
 public class IndexAction extends BaseAction {
     public String execute() throws Exception {
-        return "index";
+        return SUCCESS;
     }
 }

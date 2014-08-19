@@ -22,6 +22,10 @@ public class Article {
     private Catalog catalog;
     private Account account;
 
+    public void setArtCount(Integer artCount) {
+        this.artCount = artCount;
+    }
+
     public int getArtId() {
         return artId;
     }

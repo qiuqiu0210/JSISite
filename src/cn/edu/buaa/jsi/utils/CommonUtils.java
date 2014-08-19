@@ -13,4 +13,5 @@ public class CommonUtils extends StringUtils{
         return (objs == null) || (objs.length <= 0);
     }
     //一些常用工具
+
 }

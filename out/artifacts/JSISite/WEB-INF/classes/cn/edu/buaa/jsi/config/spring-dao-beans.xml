@@ -10,4 +10,7 @@
     <bean name="accountDao" class="cn.edu.buaa.jsi.hibernate.dao.impl.AccountDaoImpl">
         <property name="hibernateTemplate" ref="hibernateTemplate" />
     </bean>
+    <bean name="groupDao" class="cn.edu.buaa.jsi.hibernate.dao.impl.GroupDaoImpl">
+        <property name="hibernateTemplate" ref="hibernateTemplate" />
+    </bean>
 </beans>
