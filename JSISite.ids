@@ -248,8 +248,8 @@
       <column name="art_catalog" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
       <column name="art_poster" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="art_id"/>
-      <foreign-key name="FK_76cv2hmbjg8c5426125msvgfg" columns="art_catalog" ref-table="tb_catalog" ref-schema="" ref-catalog="jsi_db" ref-columns="cat_id" update-rule="3" delete-rule="3" deferrability="2"/>
       <foreign-key name="FK_bp4tbc6v99vdbqpv21lwkssbq" columns="art_poster" ref-table="tb_account" ref-schema="" ref-catalog="jsi_db" ref-columns="account_id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FK_76cv2hmbjg8c5426125msvgfg" columns="art_catalog" ref-table="tb_catalog" ref-schema="" ref-catalog="jsi_db" ref-columns="cat_id" update-rule="3" delete-rule="3" deferrability="2"/>
     </table>
     <table name="tb_catalog" schema="" catalog="jsi_db" type="TABLE">
       <column name="cat_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
@@ -262,6 +262,11 @@
       <column name="group_disc" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="group_id"/>
       <exported-key name="FK_83oegw8quvj6nsu2r2gml7kim" table="tb_account" schema="" catalog="jsi_db" columns="group_id"/>
+    </table>
+    <table name="tb_image" schema="" catalog="jsi_db" type="TABLE">
+      <column name="image_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="image" sqlType="BLOB" length="65535" precision="0" nullable="true" jdbcType="-4"/>
+      <primary-key name="PRIMARY" columns="image_id"/>
     </table>
     <table name="tb_user" schema="" catalog="jsi_db" type="TABLE">
       <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>

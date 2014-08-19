@@ -1,8 +1,10 @@
 package cn.edu.buaa.jsi.web.action;
 
+import cn.edu.buaa.jsi.entities.Account;
 import cn.edu.buaa.jsi.service.AccountService;
 import cn.edu.buaa.jsi.utils.CommonConstants;
 import cn.edu.buaa.jsi.utils.CommonUtils;
+import cn.edu.buaa.jsi.utils.CookieUtils;
 
 import javax.servlet.http.*;
 import java.util.Map;
@@ -17,12 +19,78 @@ import java.util.Map;
 public class LoginAction extends BaseAction {
     private String username;
     private String password;
-    private boolean remember = false;
+    private String remember;
     private String goingToURL;
     private AccountService accountService;
+    private Account account;
     private HttpServletRequest request;
     private HttpServletResponse response;
     private Map session;
+
+    /**
+     * @Title: login
+     * @Description: 用户登录
+     * @param
+     * @return
+     */
+    public String login(){
+        //只要有一个参数为null就跳转
+        if (username==null || password == null){
+            return INPUT;
+        }
+        if (loginSuccess()) {
+            if ("on".equals(getRemember())) {
+                String str = username + "==" + password;
+                int maxAge = 60 * 60 * 24 * 14;
+                CookieUtils.setLoginCookie(response, maxAge, str);
+            }
+            session.put(CommonConstants.SESSION_KEY_USER_NAME, username);
+            String url = (String) session.get(CommonConstants.GOING_TO_URL_KEY);
+            if (!CommonUtils.isBlank(url)){
+                setGoingToURL(url);
+                session.remove(CommonConstants.GOING_TO_URL_KEY);
+            }
+            else {
+                setGoingToURL("login.jsp");
+            }
+            return LOGIN;
+        }
+        else {
+            addActionMessage("username or password is not correct");
+            return INPUT;
+        }
+    }
+
+    public String logout(){
+        if (session != null){
+            session.remove("SESSION_KEY_USER_NAME");
+        }
+        CookieUtils.removeLoginCookie(request, response);
+        return LOGIN;
+    }
+
+    public boolean loginSuccess(){
+        if(username != null && password != null && !"".equals(username) && !"".equals(password)) {
+            account = accountService.validateAccount(username, password);
+            if(account != null) {
+                return true;
+            } else {
+                return false;
+            }
+        } else {
+            return false;
+        }
+    }
+
+    @Override
+    public void validate() {
+        if ("".equals(username)) {
+            this.addFieldError("username", "username required");
+        }
+        if ("".equals(password)) {
+            this.addFieldError("password", "password required");
+        }
+    }
 
     public String getUsername() {
         return username;
@@ -40,11 +108,11 @@ public class LoginAction extends BaseAction {
         this.password = password;
     }
 
-    public boolean isRemember() {
+    public String getRemember() {
         return remember;
     }
 
-    public void setRemember(boolean remember) {
+    public void setRemember(String remember) {
         this.remember = remember;
     }
 
@@ -75,72 +143,4 @@ public class LoginAction extends BaseAction {
     public void setServletResponse(HttpServletResponse response) {
         this.response = response;
     }
-
-    /**
-     * @Title: login
-     * @Description: 用户登录
-     * @param
-     * @return
-     */
-    public String login(){
-//        username = request.getParameter("username");
-//        password = request.getParameter("password");
-        if (CommonUtils.isBlank(username) && CommonUtils.isBlank(password)){
-            return INPUT;
-        }
-        if (loginSuccess()) {
-            if (isRemember()) {
-                String str = username + "==" + password;
-                Cookie cookie = new Cookie(CommonConstants.COOKIE_KEY_REMEMBER_LOGIN, str);
-                cookie.setMaxAge(60 * 60 * 24 * 14);
-                response.addCookie(cookie);
-            }
-            session.put(CommonConstants.SESSION_KEY_USER_NAME, username);
-            String url = (String) session.get(CommonConstants.GOING_TO_URL_KEY);
-            if (!CommonUtils.isBlank(url)){
-                setGoingToURL(url);
-                session.remove(CommonConstants.GOING_TO_URL_KEY);
-            }
-            else {
-                setGoingToURL("login.jsp");
-            }
-            return LOGIN;
-        }
-        else {
-            addActionMessage("username or password is not correct");
-            return INPUT;
-        }
-    }
-
-    public String logout(){
-        if (session != null){
-            session.remove("SESSION_KEY_USER_NAME");
-        }
-//        if (!session.containsKey("SESSION_KEY_USER_NAME")){
-//            return SUCCESS;
-//        }
-        Cookie[] cookies = request.getCookies();
-        for (Cookie cookie: cookies){
-            if(CommonConstants.COOKIE_KEY_REMEMBER_LOGIN.equals(cookie.getName())){
-                cookie.setValue("");
-                cookie.setMaxAge(1);
-                response.addCookie(cookie);
-                return LOGIN;
-            }
-        }
-        return LOGIN;
-    }
-
-    public boolean loginSuccess(){
-        if(username != null && password != null && !"".equals(username) && !"".equals(password)) {
-            if(accountService.validateAccount(username, password)) {
-                return true;
-            } else {
-                return false;
-            }
-        } else {
-            return false;
-        }
-    }
-
 }

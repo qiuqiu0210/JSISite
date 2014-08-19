@@ -1,8 +1,10 @@
 package cn.edu.buaa.jsi.web.interceptor;
 
+import cn.edu.buaa.jsi.entities.Account;
 import cn.edu.buaa.jsi.service.AccountService;
 import cn.edu.buaa.jsi.utils.CommonConstants;
 import cn.edu.buaa.jsi.utils.CommonUtils;
+import cn.edu.buaa.jsi.utils.CookieUtils;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionInvocation;
 import com.opensymphony.xwork2.interceptor.AbstractInterceptor;
@@ -37,35 +39,15 @@ public class LoginInterceptor extends AbstractInterceptor{
         if (session != null && session.get(CommonConstants.SESSION_KEY_USER_NAME) != null) {
             return invocation.invoke();
         }
-        Cookie[] cookies = request.getCookies();
-        if (cookies != null) {
-            for (Cookie cookie: cookies) {
-                if (CommonConstants.COOKIE_KEY_REMEMBER_LOGIN.equals(cookie.getName())){
-                    String value = cookie.getValue();
-                    if (!CommonUtils.isBlank(value)){
-                        String[] split = value.split("==");
-                        String username = split[0];
-                        String password = split[1];
-                        if (accountService.validateAccount(username,password)){
-                            session.put(CommonConstants.SESSION_KEY_USER_NAME,username);
-                        }
-                        else {
-                            setGoingToURL(session, invocation);
-                            if ("Login".equals(actionName)){
-                                return invocation.invoke();
-                            }
-                            return "login";
-                        }
-                    }
-                    else {
-                        setGoingToURL(session, invocation);
-                        if ("Login".equals(actionName)){
-                            return invocation.invoke();
-                        }
-                        return "login";
-                    }
-                    return invocation.invoke();
-                }
+        String value = CookieUtils.getLoginCookie(request);
+        if (value != null){
+            String[] split = value.split("==");
+            String username = split[0];
+            String password = split[1];
+            Account account = accountService.validateAccount(username,password);
+            if (account != null){
+                session.put(CommonConstants.SESSION_KEY_USER_NAME,username);
+                return invocation.invoke();
             }
         }
         setGoingToURL(session, invocation);

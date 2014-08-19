@@ -2,35 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ecf19df-7722-4732-86fa-c13c19c51d62" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/DateUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/GroupDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/GroupDaoImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/HibernateUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/CookieUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/hbm/Image.hbm.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Image.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/ImageDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/ImageDaoImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/ImageService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/impl/ImageServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/RegisterAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/pictureAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/test2.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/uploadpic.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JSISite.ids" afterPath="$PROJECT_DIR$/JSISite.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/hbm/Account.hbm.xml" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/hbm/Account.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Account.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Account.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/AccountDao.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/AccountDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/AccountDaoImpl.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/AccountDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/hbm/Article.hbm.xml" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/hbm/Article.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Article.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Article.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/BaseAction.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/BaseAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/hbm/Catalog.hbm.xml" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/hbm/Catalog.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/CommonUtils.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/CommonUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/hbm/Group.hbm.xml" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/hbm/Group.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/IndexAction.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/IndexAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/test/InitialDatebase.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/test/InitialDatebase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/AccountService.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/AccountService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/impl/AccountServiceImpl.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/impl/AccountServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/GroupDao.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/GroupDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/GroupDaoImpl.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/GroupDaoImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JSISite.iml" afterPath="$PROJECT_DIR$/JSISite.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JSISite.ipr" afterPath="$PROJECT_DIR$/JSISite.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JSISite.iws" afterPath="$PROJECT_DIR$/JSISite.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/LoginAction.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/LoginAction.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/interceptor/LoginInterceptor.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/interceptor/LoginInterceptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/hbm/User.hbm.xml" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/hbm/User.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/User.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/errors.log" afterPath="$PROJECT_DIR$/log/errors.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/src/hibernate.cfg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.html" afterPath="$PROJECT_DIR$/web/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/login.jsp" afterPath="$PROJECT_DIR$/web/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/register.jsp" afterPath="$PROJECT_DIR$/web/register.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/config/spring-action-beans.xml" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/config/spring-action-beans.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/config/spring-dao-beans.xml" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/config/spring-dao-beans.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/config/spring-hibernate.xml" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/config/spring-hibernate.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/config/spring-service-beans.xml" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/config/spring-service-beans.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/struts.xml" afterPath="$PROJECT_DIR$/src/struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+      <change type="MOVED" beforePath="D:\Projects\JSISite\src\cn\edu\buaa\jsi\test\InitialDatebase.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/InitialDatebase.java" />
     </list>
     <ignored path="JSISite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,7 +55,7 @@
   </component>
   <component name="DebuggerManager">
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/test/InitialDatebase.java" line="22" class="cn.edu.buaa.jsi.test.InitialDatebase" package="cn.edu.buaa.jsi.test">
+      <breakpoint url="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/InitialDatebase.java" line="30" class="cn.edu.buaa.jsi.utils.InitialDatebase" package="cn.edu.buaa.jsi.utils">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -67,7 +70,52 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/LoginAction.java" line="87" class="cn.edu.buaa.jsi.web.action.LoginAction" package="cn.edu.buaa.jsi.web.action">
+      <breakpoint url="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/GroupDaoImpl.java" line="22" class="cn.edu.buaa.jsi.hibernate.dao.impl.GroupDaoImpl" package="cn.edu.buaa.jsi.hibernate.dao.impl">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/LoginAction.java" line="41" class="cn.edu.buaa.jsi.web.action.LoginAction" package="cn.edu.buaa.jsi.web.action">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/BaseDaoImpl.java" line="235" class="cn.edu.buaa.jsi.hibernate.dao.impl.BaseDaoImpl" package="cn.edu.buaa.jsi.hibernate.dao.impl">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/pictureAction.java" line="17" class="cn.edu.buaa.jsi.web.action.pictureAction" package="cn.edu.buaa.jsi.web.action">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -148,38 +196,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="InitialDatebase.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/test/InitialDatebase.java">
+      <file leaf-file-name="ImageDaoImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/ImageDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="40" selection-start="1289" selection-end="1293" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="704">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexAction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/IndexAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="23" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0" vertical-offset="154" max-vertical-offset="352">
-              <folding />
+            <state line="21" column="58" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0" vertical-offset="273" max-vertical-offset="968">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="struts.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/struts.xml">
+          <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="52" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
+            <state line="54" column="45" selection-start="2215" selection-end="2218" vertical-scroll-proportion="-4.576923" vertical-offset="1069" max-vertical-offset="1562">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommonUtils.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/CommonUtils.java">
+      <file leaf-file-name="test2.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/test2.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="506">
+            <state line="13" column="10" selection-start="280" selection-end="280" vertical-scroll-proportion="-4.387097" vertical-offset="150" max-vertical-offset="484">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/ImageService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="17" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="440">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageServiceImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/impl/ImageServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="34" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0" vertical-offset="319" max-vertical-offset="704">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -187,17 +253,39 @@
       <file leaf-file-name="LoginAction.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/LoginAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="43" selection-start="2299" selection-end="2340" vertical-scroll-proportion="0.4520548" vertical-offset="1100" max-vertical-offset="2662">
-              <folding />
+            <state line="41" column="0" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.33236152" vertical-offset="634" max-vertical-offset="2662">
+              <folding>
+                <element signature="e#3095#3096#0" expanded="true" />
+                <element signature="e#3135#3136#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseAction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/BaseAction.java">
+      <file leaf-file-name="ImageDao.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/ImageDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="65" selection-start="1220" selection-end="1220" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2222">
-              <folding />
+            <state line="12" column="17" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="440">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pictureAction.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/pictureAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="0" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0" vertical-offset="253" max-vertical-offset="1122">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#748#749#0" expanded="true" />
+                <element signature="e#776#777#0" expanded="true" />
+                <element signature="e#819#820#0" expanded="true" />
+                <element signature="e#853#854#0" expanded="true" />
+                <element signature="e#912#913#0" expanded="true" />
+                <element signature="e#958#959#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -216,33 +304,11 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/AccountService.java" />
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/CipherUtil.java" />
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/SecurityUtils.java" />
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/test/CipherTest.java" />
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/dao/AccountDao.java" />
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/impl/AccountServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/config/spring-service-beans.xml" />
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/dao/impl/AccountDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/dao/impl/UserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/dao/impl/BaseDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/dao/BaseDao.java" />
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/dao/ArticleDao.java" />
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/dao/impl/ArticleDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/action/LoginAction.java" />
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/test/TestDB.java" />
-        <option value="$PROJECT_DIR$/web/failure.jsp" />
         <option value="$PROJECT_DIR$/web/success.jsp" />
         <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/CommonConstants.java" />
-        <option value="$PROJECT_DIR$/web/register.jsp" />
         <option value="$PROJECT_DIR$/src/struts.properties" />
-        <option value="$PROJECT_DIR$/web/index.html" />
         <option value="$PROJECT_DIR$/web/page-login.html" />
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/config/spring-action-beans.xml" />
         <option value="$PROJECT_DIR$/web/main.html" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/web/login.jsp" />
         <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Account.java" />
         <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/User.java" />
         <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/hbm/User.hbm.xml" />
@@ -250,23 +316,45 @@
         <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/hbm/Catalog.hbm.xml" />
         <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/hbm/Article.hbm.xml" />
         <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/hbm/Account.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/config/spring-dao-beans.xml" />
         <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/HibernateUtils.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/test/InitialDatebase.java" />
         <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/config/spring-hibernate.xml" />
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/BaseDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/GroupDao.java" />
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/GroupDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/AccountDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/CommonUtils.java" />
         <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/DateUtils.java" />
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/interceptor/LoginInterceptor.java" />
         <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/IndexAction.java" />
-        <option value="$PROJECT_DIR$/src/struts.xml" />
         <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/BaseAction.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/GroupDao.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/CookieUtils.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/AccountService.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/interceptor/LoginInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/RegisterAction.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/AccountDao.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/AccountDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/impl/AccountServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/InitialDatebase.java" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/credits.html" />
+        <option value="$PROJECT_DIR$/web/features.html" />
+        <option value="$PROJECT_DIR$/web/index.html" />
+        <option value="$PROJECT_DIR$/web/register.jsp" />
+        <option value="$PROJECT_DIR$/web/login.jsp" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/config/spring-dao-beans.xml" />
         <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/LoginAction.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/BaseDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/GroupDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/config/spring-service-beans.xml" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/config/spring-action-beans.xml" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/hbm/Image.hbm.xml" />
+        <option value="$PROJECT_DIR$/web/uploadpic.jsp" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/ImageDao.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/ImageDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/impl/ImageServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/ImageService.java" />
+        <option value="$PROJECT_DIR$/web/test2.jsp" />
+        <option value="$PROJECT_DIR$/src/struts.xml" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/pictureAction.java" />
       </list>
     </option>
   </component>
@@ -490,6 +578,36 @@
               <option name="myItemId" value="jsi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSISite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSISite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -636,7 +754,7 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
-    <property name="SearchEverywhereHistory" value="" />
+    <property name="SearchEverywhereHistory" value="&#10;b" />
     <property name="FullScreen" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/log4j-1.2.17.jar!/" />
     <property name="dynamic.classpath" value="false" />
@@ -652,16 +770,16 @@
       <recent name="E:\home\Administrator\Documents\IdeaProjects\JSISite\web\WEB-INF" />
       <recent name="E:\home\Administrator\Documents\IdeaProjects\JSISite\web" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Projects\JSISite\src\cn\edu\buaa\jsi\hibernate\hbm" />
-      <recent name="E:\IdeaProjects\JSISite\web" />
-      <recent name="E:\IdeaProjects\JSISite\web\WEB-INF" />
-      <recent name="E:\IdeaProjects\JSISite\web\test" />
-      <recent name="E:\IdeaProjects\JSISite\src\cn\edu\buaa\jsi\web\interceptor" />
-    </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="cn.edu.buaa.jsi.entities" />
       <recent name="cn.edu.buaa.jsi.beans" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\JSISite\src\cn\edu\buaa\jsi\hibernate\hbm" />
+      <recent name="D:\Projects\JSISite\src\cn\edu\buaa\jsi\hibernate" />
+      <recent name="E:\IdeaProjects\JSISite\web" />
+      <recent name="E:\IdeaProjects\JSISite\web\WEB-INF" />
+      <recent name="E:\IdeaProjects\JSISite\web\test" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat">
@@ -918,7 +1036,7 @@
     </configuration>
     <configuration default="false" name="InitialDatebase" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="cn.edu.buaa.jsi.test.InitialDatebase" />
+      <option name="MAIN_CLASS_NAME" value="cn.edu.buaa.jsi.utils.InitialDatebase" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -958,7 +1076,7 @@
     </configuration>
     <configuration default="false" name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.52" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
       <option name="BROWSER_ID" value="Chrome" />
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="JSISite">
           <settings>
@@ -1060,12 +1178,12 @@
       <workItem from="1408110092127" duration="1523000" />
       <workItem from="1408164905479" duration="50723000" />
       <workItem from="1408345917453" duration="17397000" />
-      <workItem from="1408409766290" duration="228000" />
+      <workItem from="1408409766290" duration="28905000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147203000" />
+    <option name="totallyTimeSpent" value="175880000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1073,34 +1191,34 @@
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25576207" sideWeight="0.25373134" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23489426" sideWeight="0.25510204" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3420622" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2560423" sideWeight="0.74626863" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289689" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23489426" sideWeight="0.74489796" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32569557" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22422259" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3584288" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32569557" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22476447" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32569557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1127,307 +1245,360 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/config/spring-action-beans.xml">
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/ArticleDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="17" selection-start="247" selection-end="247" vertical-scroll-proportion="-0.21212122" vertical-offset="319" max-vertical-offset="1496">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/test/CipherTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="127" selection-end="127" vertical-scroll-proportion="0.3432836" vertical-offset="16" max-vertical-offset="418">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/CipherUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="106" selection-end="106" vertical-scroll-proportion="-0.7641509" vertical-offset="478" max-vertical-offset="1694">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Article.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="117" selection-end="117" vertical-scroll-proportion="-5.8515816" vertical-offset="2559" max-vertical-offset="2970">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/db.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="20" selection-start="1561" selection-end="1561" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1232">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/hbm/Catalog.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="39" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/hbm/Article.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="39" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="770">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/hbm/Account.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="39" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0" vertical-offset="9" max-vertical-offset="484">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="19" selection-start="4314" selection-end="4314" vertical-scroll-proportion="0.33142856" vertical-offset="2128" max-vertical-offset="2486">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/hbm/User.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="30" selection-start="495" selection-end="495" vertical-scroll-proportion="0.6666667" vertical-offset="0" max-vertical-offset="638">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/config/spring-beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="34" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Group.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="89" selection-end="89" vertical-scroll-proportion="0.25943395" vertical-offset="0" max-vertical-offset="946">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spring-orm-4.0.6.RELEASE.jar!/org/springframework/orm/hibernate4/HibernateTransactionManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="16" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.353562" vertical-offset="262" max-vertical-offset="2464" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spring-tx-4.0.6.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionProxyFactoryBean.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="16" selection-start="743" selection-end="743" vertical-scroll-proportion="0.353562" vertical-offset="152" max-vertical-offset="616" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spring-aop-4.0.6.RELEASE.jar!/org/springframework/aop/framework/ProxyConfig.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="16" selection-start="502" selection-end="502" vertical-scroll-proportion="0.35459185" vertical-offset="191" max-vertical-offset="968" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spring-aop-4.0.6.RELEASE.jar!/org/springframework/aop/framework/autoproxy/BeanNameAutoProxyCreator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="16" selection-start="426" selection-end="426" vertical-scroll-proportion="0.3560831" vertical-offset="100" max-vertical-offset="462" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/hbm/Group.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="39" selection-start="385" selection-end="385" vertical-scroll-proportion="0.416" vertical-offset="20" max-vertical-offset="396">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spring-tx-4.0.6.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="16" selection-start="1832" selection-end="1832" vertical-scroll-proportion="-4.48" vertical-offset="482" max-vertical-offset="2640" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/hibernate-core-4.3.6.Final.jar!/org/hibernate/internal/SessionFactoryImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="33" selection-start="5139" selection-end="5139" vertical-scroll-proportion="-4.52" vertical-offset="1185" max-vertical-offset="6512" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spring-core-4.0.6.RELEASE.jar!/org/springframework/util/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="23" selection-start="615" selection-end="615" vertical-scroll-proportion="-3.6" vertical-offset="262" max-vertical-offset="1430" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spring-tx-4.0.6.RELEASE.jar!/org/springframework/transaction/support/TransactionSynchronizationUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="28" selection-start="611" selection-end="611" vertical-scroll-proportion="-3.6" vertical-offset="196" max-vertical-offset="880" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spring-tx-4.0.6.RELEASE.jar!/org/springframework/transaction/support/TransactionSynchronizationManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="36" selection-start="1810" selection-end="1810" vertical-scroll-proportion="-3.6" vertical-offset="570" max-vertical-offset="1430" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spring-orm-4.0.6.RELEASE.jar!/org/springframework/orm/hibernate4/SpringSessionContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="33" selection-start="581" selection-end="581" vertical-scroll-proportion="-5.2" vertical-offset="112" max-vertical-offset="396" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spring-orm-4.0.6.RELEASE.jar!/org/springframework/orm/hibernate4/HibernateTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="21" selection-start="2468" selection-end="2468" vertical-scroll-proportion="-3.6" vertical-offset="1186" max-vertical-offset="4378" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spring-aop-4.0.6.RELEASE.jar!/org/springframework/aop/framework/autoproxy/AbstractAutoProxyCreator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="16" selection-start="2246" selection-end="2246" vertical-scroll-proportion="0.3560831" vertical-offset="694" max-vertical-offset="2156" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/config/spring-service-beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/HibernateUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="35" selection-start="1412" selection-end="1428" vertical-scroll-proportion="0.45303866" vertical-offset="870" max-vertical-offset="2244">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#670#671#0" expanded="true" />
-            <element signature="e#707#708#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spring-orm-4.0.6.RELEASE.jar!/org/springframework/orm/hibernate4/support/HibernateDaoSupport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="22" selection-start="194" selection-end="194" vertical-scroll-proportion="0.12680115" vertical-offset="66" max-vertical-offset="638" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spring-orm-4.0.6.RELEASE.jar!/org/springframework/orm/hibernate4/support/OpenSessionInViewFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="366" selection-end="366" vertical-scroll-proportion="0.2611276" vertical-offset="66" max-vertical-offset="748">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="301" selection-end="301" vertical-scroll-proportion="-0.04249292" vertical-offset="257" max-vertical-offset="1628">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/config/spring-hibernate.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="36" selection-start="3429" selection-end="3429" vertical-scroll-proportion="0.3314917" vertical-offset="1442" max-vertical-offset="1958">
-          <folding>
-            <element signature="e#721#744#0" expanded="true" />
-            <element signature="e#788#799#0" expanded="true" />
-            <element signature="e#838#854#0" expanded="true" />
-            <element signature="e#897#913#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/config/spring-dao-beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="73" selection-start="722" selection-end="722" vertical-scroll-proportion="0.6353591" vertical-offset="34" max-vertical-offset="462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="65" selection-start="1800" selection-end="1800" vertical-scroll-proportion="0.58666664" vertical-offset="880" max-vertical-offset="1716">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/BaseDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="236" column="12" selection-start="6907" selection-end="6907" vertical-scroll-proportion="6.1381216" vertical-offset="2552" max-vertical-offset="9460">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/GroupDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="45" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spring-aop-4.0.6.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="32" selection-start="4716" selection-end="4716" vertical-scroll-proportion="-4.8" vertical-offset="1596" max-vertical-offset="3784" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="49" selection-start="938" selection-end="938" vertical-scroll-proportion="0.53066665" vertical-offset="153" max-vertical-offset="594">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/AccountDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="1236" selection-end="1242" vertical-scroll-proportion="2.464" vertical-offset="0" max-vertical-offset="1386">
+        <state line="11" column="13" selection-start="243" selection-end="243" vertical-scroll-proportion="-2.552408" vertical-offset="1055" max-vertical-offset="1408">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/AccountDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="17" selection-start="660" selection-end="660" vertical-scroll-proportion="0.62666667" vertical-offset="161" max-vertical-offset="594">
+        <state line="16" column="56" selection-start="509" selection-end="509" vertical-scroll-proportion="0.7053824" vertical-offset="37" max-vertical-offset="638">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/InitialDatebase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="27" selection-start="1144" selection-end="1144" vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="814">
+          <folding>
+            <element signature="e#847#854#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/GroupDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="19" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0" vertical-offset="33" max-vertical-offset="396">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/impl/LoginServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="13" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="264">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/less/lesshat.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="541" column="892" selection-start="23188" selection-end="23188" vertical-scroll-proportion="0.33333334" vertical-offset="11775" max-vertical-offset="48510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jquery-1.9.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="12264" selection-start="76486" selection-end="76486" vertical-scroll-proportion="0.106796116" vertical-offset="0" max-vertical-offset="412">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/modernizr-2.6.2-respond-1.1.0.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="4838" selection-start="5495" selection-end="5495" vertical-scroll-proportion="0.053398058" vertical-offset="0" max-vertical-offset="412">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/credits.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="228" column="43" selection-start="10348" selection-end="10348" vertical-scroll-proportion="0.35958004" vertical-offset="4879" max-vertical-offset="5390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/features.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="33" selection-start="744" selection-end="744" vertical-scroll-proportion="0.41389728" vertical-offset="171" max-vertical-offset="9636">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#1;n#table#0;n#div#1;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#2;n#table#0;n#div#1;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#3;n#table#0;n#div#1;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#4;n#table#0;n#div#1;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/page-portfolio-2-columns-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="20" selection-start="731" selection-end="795" vertical-scroll-proportion="0.35958004" vertical-offset="171" max-vertical-offset="6886">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="483" column="51" selection-start="22522" selection-end="22522" vertical-scroll-proportion="29.76133" vertical-offset="775" max-vertical-offset="10912">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="136" column="75" selection-start="5436" selection-end="5436" vertical-scroll-proportion="0.73413897" vertical-offset="2749" max-vertical-offset="4928">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="144" column="48" selection-start="5302" selection-end="5302" vertical-scroll-proportion="-1.691358" vertical-offset="3031" max-vertical-offset="9438">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Image.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="14" selection-start="166" selection-end="166" vertical-scroll-proportion="-0.25333333" vertical-offset="293" max-vertical-offset="990">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/hibernate-core-4.3.6.Final.jar!/org/hibernate/internal/SessionImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="586" column="38" selection-start="35108" selection-end="35121" vertical-scroll-proportion="0.14516129" vertical-offset="12825" max-vertical-offset="13420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/RegisterAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="9" selection-start="641" selection-end="641" vertical-scroll-proportion="0.0" vertical-offset="227" max-vertical-offset="2112">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1818#1819#0" expanded="true" />
+            <element signature="e#1849#1850#0" expanded="true" />
+            <element signature="e#1897#1898#0" expanded="true" />
+            <element signature="e#1937#1938#0" expanded="true" />
+            <element signature="e#1972#1973#0" expanded="true" />
+            <element signature="e#2003#2004#0" expanded="true" />
+            <element signature="e#2051#2052#0" expanded="true" />
+            <element signature="e#2091#2092#0" expanded="true" />
+            <element signature="e#2128#2129#0" expanded="true" />
+            <element signature="e#2161#2162#0" expanded="true" />
+            <element signature="e#2213#2214#0" expanded="true" />
+            <element signature="e#2257#2258#0" expanded="true" />
+            <element signature="e#2306#2307#0" expanded="true" />
+            <element signature="e#2343#2344#0" expanded="true" />
+            <element signature="e#2411#2412#0" expanded="true" />
+            <element signature="e#2463#2464#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/hibernate-core-4.3.6.Final.jar!/org/hibernate/LobHelper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="17" selection-start="160" selection-end="160" vertical-scroll-proportion="0.34055728" vertical-offset="0" max-vertical-offset="506">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/GroupDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.528" vertical-offset="198" max-vertical-offset="770">
+        <state line="16" column="9" selection-start="467" selection-end="467" vertical-scroll-proportion="0.5862069" vertical-offset="148" max-vertical-offset="1012">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/DateUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/BaseAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="37" selection-start="316" selection-end="330" vertical-scroll-proportion="0.21818182" vertical-offset="268" max-vertical-offset="6710">
+        <state line="32" column="4" selection-start="1306" selection-end="1411" vertical-scroll-proportion="0.0" vertical-offset="434" max-vertical-offset="2222">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_05/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="148" column="13" selection-start="6572" selection-end="6572" vertical-scroll-proportion="0.33252427" vertical-offset="2393" max-vertical-offset="48620">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/config/spring-action-beans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="55" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.0" vertical-offset="147" max-vertical-offset="572">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/impl/AccountServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="815" selection-end="815" vertical-scroll-proportion="0.0" vertical-offset="301" max-vertical-offset="1320">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/AccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="19" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="37" max-vertical-offset="462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/config/spring-service-beans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="45" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/config/spring-dao-beans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="76" selection-start="890" selection-end="890" vertical-scroll-proportion="0.0" vertical-offset="132" max-vertical-offset="528">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/config/spring-hibernate.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1958">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/hibernate-core-4.3.6.Final.jar!/org/hibernate/Session.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="25" selection-start="2136" selection-end="2136" vertical-scroll-proportion="0.35913312" vertical-offset="1336" max-vertical-offset="4752">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/hbm/Group.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="12" selection-start="358" selection-end="385" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/hbm/Image.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="60" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="192" column="17" selection-start="7761" selection-end="7761" vertical-scroll-proportion="11.726974" vertical-offset="659" max-vertical-offset="4620">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/AccountDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="25" selection-start="1684" selection-end="1684" vertical-scroll-proportion="0.3317647" vertical-offset="1157" max-vertical-offset="1694">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="13" selection-start="301" selection-end="301" vertical-scroll-proportion="-0.44470587" vertical-offset="431" max-vertical-offset="1628">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/BaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="18" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0" vertical-offset="434" max-vertical-offset="4906">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/xwork-core.jar!/com/opensymphony/xwork2/DefaultActionInvocation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="31" selection-start="4076" selection-end="4076" vertical-scroll-proportion="0.36065573" vertical-offset="1584" max-vertical-offset="1980">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/uploadpic.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="6" selection-start="271" selection-end="271" vertical-scroll-proportion="-0.16129032" vertical-offset="193" max-vertical-offset="594">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/struts2-core.jar!/org/apache/struts2/dispatcher/StreamResult.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="16" selection-start="1285" selection-end="1285" vertical-scroll-proportion="0.36065573" vertical-offset="594" max-vertical-offset="1298">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spring-tx-4.0.6.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="31" selection-start="2725" selection-end="2725" vertical-scroll-proportion="-4.4" vertical-offset="792" max-vertical-offset="2640">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spring-tx-4.0.6.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="28" selection-start="809" selection-end="809" vertical-scroll-proportion="-4.04" vertical-offset="163" max-vertical-offset="506">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spring-aop-4.0.6.RELEASE.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="31" selection-start="1587" selection-end="1587" vertical-scroll-proportion="-4.04" vertical-offset="581" max-vertical-offset="1100">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spring-aop-4.0.6.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="32" selection-start="4716" selection-end="4716" vertical-scroll-proportion="0.33114755" vertical-offset="1615" max-vertical-offset="3784">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spring-core-4.0.6.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="28" selection-start="1725" selection-end="1725" vertical-scroll-proportion="0.36065573" vertical-offset="638" max-vertical-offset="1320">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/ImageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="17" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="440">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4981#4987#0" expanded="true" />
-            <element signature="e#5595#5601#0" expanded="true" />
-            <element signature="e#6267#6275#0" expanded="true" />
-            <element signature="e#6870#6876#0" expanded="true" />
-            <element signature="e#7531#7537#0" expanded="true" />
-            <element signature="e#8138#8146#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/impl/ImageServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
+        <state line="21" column="34" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0" vertical-offset="319" max-vertical-offset="704">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/IndexAction.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/ImageDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="23" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="352">
-          <folding />
+        <state line="12" column="17" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="440">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/ImageDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="58" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0" vertical-offset="273" max-vertical-offset="968">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1436,43 +1607,47 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="52" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
+        <state line="54" column="45" selection-start="2215" selection-end="2218" vertical-scroll-proportion="-4.576923" vertical-offset="1069" max-vertical-offset="1562">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/interceptor/LoginInterceptor.java">
+    <entry file="file://$PROJECT_DIR$/web/test2.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="68" selection-start="2082" selection-end="2082" vertical-scroll-proportion="1.2808219" vertical-offset="0" max-vertical-offset="1738">
+        <state line="13" column="10" selection-start="280" selection-end="280" vertical-scroll-proportion="-4.387097" vertical-offset="150" max-vertical-offset="484">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/test/InitialDatebase.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/BaseDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="40" selection-start="1289" selection-end="1293" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="704">
+        <state line="238" column="0" selection-start="6959" selection-end="6959" vertical-scroll-proportion="0.33333334" vertical-offset="4708" max-vertical-offset="9460">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/CommonUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/pictureAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0" vertical-offset="99" max-vertical-offset="506">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/BaseAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="65" selection-start="1220" selection-end="1220" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2222">
-          <folding />
+        <state line="17" column="0" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0" vertical-offset="253" max-vertical-offset="1122">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#748#749#0" expanded="true" />
+            <element signature="e#776#777#0" expanded="true" />
+            <element signature="e#819#820#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
+            <element signature="e#912#913#0" expanded="true" />
+            <element signature="e#958#959#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/LoginAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="43" selection-start="2299" selection-end="2340" vertical-scroll-proportion="0.4520548" vertical-offset="1100" max-vertical-offset="2662">
-          <folding />
+        <state line="41" column="0" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.33236152" vertical-offset="634" max-vertical-offset="2662">
+          <folding>
+            <element signature="e#3095#3096#0" expanded="true" />
+            <element signature="e#3135#3136#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -31,8 +31,22 @@ public class AccountDaoImpl extends BaseDaoImpl implements AccountDao {
     }
 
     @Override
-    public boolean saveORupdateAccount(Account account) {
+    public boolean saveOrUpdateAccount(Account account) {
         return this.saveOrUpdate(account);
+    }
+
+    @Override
+    public boolean saveAccount(Account account) {
+        if (isExist(account.getAccountName())){
+            System.out.println("Account is already exist");
+            return false;
+        }
+        return this.save(account);
+    }
+
+    @Override
+    public boolean updateAccount(Account account) {
+        return this.update(account);
     }
 
     @Override

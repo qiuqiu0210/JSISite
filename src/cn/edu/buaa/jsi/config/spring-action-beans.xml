@@ -12,4 +12,10 @@
     <bean name="loginInterceptor" class="cn.edu.buaa.jsi.web.interceptor.LoginInterceptor" scope="prototype">
         <property name="accountService" ref="accountService" />
     </bean>
+    <bean name="registerAction" class="cn.edu.buaa.jsi.web.action.RegisterAction" scope="prototype">
+        <property name="accountService" ref="accountService" />
+    </bean>
+    <bean name="pictureAction" class="cn.edu.buaa.jsi.web.action.pictureAction" scope="prototype">
+        <property name="imageService" ref="imageService" />
+    </bean>
 </beans>

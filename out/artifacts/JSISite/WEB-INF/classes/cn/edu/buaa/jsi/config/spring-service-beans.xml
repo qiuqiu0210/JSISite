@@ -10,4 +10,7 @@
     <bean name="accountService" class="cn.edu.buaa.jsi.service.impl.AccountServiceImpl">
         <property name="accountDao" ref="accountDao"/>
     </bean>
+    <bean name="imageService" class="cn.edu.buaa.jsi.service.impl.ImageServiceImpl">
+        <property name="imageDao" ref="imageDao"/>
+    </bean>
 </beans>

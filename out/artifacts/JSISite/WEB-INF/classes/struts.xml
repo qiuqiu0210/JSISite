@@ -28,7 +28,7 @@
         </global-results>
 
         <action name="index" class="indexAction">
-            <result name="index">/index.jsp</result>
+            <result name="success">/index.jsp</result>
             <result name="login">/index.jsp</result>
         </action>
 
@@ -41,6 +41,26 @@
         <action name="Logout" class="loginAction" method="logout">
             <result name="login">/login.jsp</result>
             <result name="input">/failure.jsp</result>
+        </action>
+    </package>
+    <package name="userRegister" namespace="/" extends="struts-default">
+        <action name="register" class="registerAction">
+            <result name="success">/register.jsp</result>
+            <result type="chain" name="login">Login</result>
+            <result name="input">/register.jsp</result>
+        </action>
+    </package>
+    <package name="pictureUpload" namespace="/" extends="struts-default">
+        <action name="picture" class="pictureAction">
+            <result name="success">/test2.jsp</result>
+            <result name="input">/failure.jsp</result>
+        </action>
+        <action name="view" class="pictureAction" method="viewImage">
+            <result type="stream">
+                <param name="contentType">image/jpeg</param>
+                <param name="inputName">inputStream</param>
+            </result>
+
         </action>
     </package>
 </struts>

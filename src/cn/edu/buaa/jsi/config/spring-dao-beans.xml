@@ -13,4 +13,7 @@
     <bean name="groupDao" class="cn.edu.buaa.jsi.hibernate.dao.impl.GroupDaoImpl">
         <property name="hibernateTemplate" ref="hibernateTemplate" />
     </bean>
+    <bean name="imageDao" class="cn.edu.buaa.jsi.hibernate.dao.impl.ImageDaoImpl">
+        <property name="hibernateTemplate" ref="hibernateTemplate" />
+    </bean>
 </beans>

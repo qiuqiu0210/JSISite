@@ -15,13 +15,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>中德联合软件技术研究所</title>
+    <title>中德联合软件技术研究所——登录</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/icomoon-social.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+    <%--<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>--%>
 
     <link rel="stylesheet" href="css/leaflet.css" />
     <!--[if lte IE 8]>
@@ -51,7 +51,7 @@
                 <s:else>
                 <ul>
                     <li><a href="Login.action">登录</a></li>
-                    <li><a href="page-register.html">注册</a></li>
+                    <li><a href="register.action">注册</a></li>
                 </ul>
                 </s:else>
             </div>
@@ -111,11 +111,12 @@
                             欢迎您：
                             <s:property value="#username"/>
                             <ul>
-                                <a href="Logout.do">退出</a>
+                                <a href="Logout.action">退出</a>
                             </ul>
                         </div>
                     </s:if>
                     <s:else>
+                        <s:actionerror/>
                         <form action="Login">
                             <div class="form-group">
                                 <label for="username"><i class="icon-user"></i> <b>Username or Email</b></label>
@@ -133,6 +134,7 @@
                                 <button type="submit" class="btn pull-right">Login</button>
                                 <div class="clearfix"></div>
                             </div>
+                            <s:fielderror key="error" cssStyle="color: red"/>
                         </form>
                     </s:else>
                 </div>
@@ -145,7 +147,7 @@
                 </div>
                 <div class="clearfix"></div>
                 <div class="not-member">
-                    <p>Not a member? <a href="page-register.html">Register here</a></p>
+                    <p>Not a member? <a href="register.action">Register here</a></p>
                 </div>
             </div>
         </div>
@@ -203,10 +205,10 @@
 </div>
 
 <!-- Javascripts -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<%--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>--%>
 <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="js/bootstrap.min.js"></script>
-<script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+<%--<script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>--%>
 <script src="js/jquery.fitvids.js"></script>
 <script src="js/jquery.sequence-min.js"></script>
 <script src="js/jquery.bxslider.js"></script>

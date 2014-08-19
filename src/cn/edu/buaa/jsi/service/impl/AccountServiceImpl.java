@@ -4,6 +4,7 @@ import cn.edu.buaa.jsi.hibernate.dao.AccountDao;
 import cn.edu.buaa.jsi.entities.Account;
 import cn.edu.buaa.jsi.service.AccountService;
 import cn.edu.buaa.jsi.utils.CipherUtil;
+import cn.edu.buaa.jsi.utils.CommonUtils;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
@@ -28,7 +29,7 @@ public class AccountServiceImpl implements AccountService {
 
     @Override
     public boolean addAccount(Account account) {
-        return false;
+        return this.accountDao.saveAccount(account);
     }
 
     @Override
@@ -42,16 +43,24 @@ public class AccountServiceImpl implements AccountService {
     }
 
     @Override
-    public boolean validateAccount(String username, String password) {
+    public Account validateAccount(String username, String password) {
+        if (CommonUtils.isBlank(username) || CommonUtils.isBlank(password)) {
+            return null;
+        }
         String[] propertyNames = {"accountName", "accountPassword"};
         password = CipherUtil.generatePassword(password);
         String[] values = {username, password};
         List<Account> accountList = this.accountDao.findAccountByProperties(propertyNames, values);
         if (accountList.size() == 1) {
             log.info("account success!!!!");
-            return true;
+            return accountList.get(0);
         } else {
-            return false;
+            return null;
         }
+    }
+
+    @Override
+    public boolean hasAccount(String username) {
+        return this.accountDao.isExist(username);
     }
 }
