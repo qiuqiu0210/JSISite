@@ -63,4 +63,7 @@
 
         </action>
     </package>
+    <package name="showNews" namespace="/" extends="struts-default">
+
+    </package>
 </struts>

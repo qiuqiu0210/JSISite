@@ -41,10 +41,8 @@
       </profile>
     </annotationProcessing>
   </component>
-  <component name="CopyrightManager" default="">
-    <module2copyright />
-  </component>
-  <component name="DataSourceManagerImpl" format="xml" hash="2558997090">
+  <component name="CopyrightManager" default="" />
+  <component name="DataSourceManagerImpl" format="xml" hash="4151674265">
     <data-source source="LOCAL" name="MySQL - jsi_db@localhost" uuid="0f2a1bb0-aaab-4408-8a80-6c6f75927697">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
@@ -213,7 +211,7 @@
       <module fileurl="file://$PROJECT_DIR$/JSISite.iml" filepath="$PROJECT_DIR$/JSISite.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="VcsDirectoryMappings">
@@ -314,6 +312,7 @@
         <root url="jar://$PROJECT_DIR$/lib/freemarker.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/javassist.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/struts2-spring-plugin-2.3.16.3.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/struts2-json-plugin-2.3.16.3.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES />
