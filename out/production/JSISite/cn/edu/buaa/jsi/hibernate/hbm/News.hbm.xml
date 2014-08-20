@@ -5,7 +5,9 @@
 <hibernate-mapping>
 
     <class name="cn.edu.buaa.jsi.entities.News" table="tb_news" schema="" catalog="jsi_db">
-        <id name="newsId" column="news_id"/>
+        <id name="newsId" column="news_id">
+            <generator class="native"/>
+        </id>
         <property name="newsTime" column="news_time"/>
         <property name="newsAuthor" column="news_author"/>
         <property name="newsTitle" column="news_title"/>

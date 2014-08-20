@@ -72,5 +72,29 @@
     </package>
     <package name="showNews2" namespace="/" extends="struts-default">
         <action name="news2" class="newsAction"/>
+        <action name="addNews" class="newsAction" method="addNews">
+            <interceptor-ref name="defaultStack">
+                <param name="fileUpload.allowedTypes">image/png,image/gif,image/jpeg,image/jpg</param>
+                <param name="fileUpload.maximumSize">1024000</param>
+            </interceptor-ref>
+            <result name="success">/admin/manage_new.jsp</result>
+            <result name="input">/admin/add_resolvent.jsp</result>
+        </action>
+        <action name="delNews" class="newsAction" method="delNews">
+            <result name="success">/admin/manage_new.jsp</result>
+            <result name="input"></result>
+        </action>
+        <action name="modifyNews" class="newsAction" method="modifyNews">
+            <result name="success">/admin/modify_new.jsp</result>
+            <result name="input"></result>
+        </action>
+        <action name="download" class="newsAction" method="download">
+            <result name="success" type="stream">
+                <param name="contentType">application/octet-stream;charset=ISO8859-1</param>
+                <param name="inputName">inputStream</param>
+                <param name="contentDisposition">attachment;filename=%{filename}</param>
+                <param name="bufferSize">8192</param>
+            </result>
+        </action>
     </package>
 </struts>

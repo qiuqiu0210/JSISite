@@ -9,4 +9,8 @@ import java.util.List;
  */
 public interface NewsService {
     public List<News> findAllNews();
+    public News findNewsById(int id);
+    public boolean addNews(News news);
+    public boolean delNewsById(int id);
+    public boolean modifyNews(News news);
 }

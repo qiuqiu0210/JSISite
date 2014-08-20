@@ -8,6 +8,9 @@ import java.util.List;
  * Created by Home on 2014/8/19.
  */
 public interface NewsDao {
-    public boolean saveNews(News news);
+    public News findNewsById(int id);
     public List<News> findAllNews();
+    public boolean saveNews(News news);
+    public boolean updateNews(News news);
+    public boolean delNewsById(int id);
 }

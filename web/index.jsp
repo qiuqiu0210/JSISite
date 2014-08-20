@@ -167,30 +167,20 @@
 <div class="section">
     <div class="container">
         <div class="row">
-            <div class="col-md-4 col-sm-6">
-                <div class="service-wrapper">
-                    <img src="${newsList[0].newsPhoto}" alt="Service 1">
-                    <h3>${newsList[0].newsTitle}</h3>
-                    <p>${newsList[0].newsContent}</p>
-                    <a href="#" class="btn">Read more</a>
+            <s:iterator id="news" value="#session.newsList" status="st">
+                <s:set name="count" value="#st.count-1"/>
+                <s:if test="#count<3">
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-wrapper">
+                        <%--<h1>${count}</h1>--%>
+                        <img src="${news.newsPhoto}" alt="Service 1">
+                        <h3>${news.newsTitle}</h3>
+                        <p>${news.newsContent}</p>
+                        <a href="#" class="btn">Read more</a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="service-wrapper">
-                    <img src="${newsList[1].newsPhoto}" alt="Service 2">
-                    <h3>${newsList[1].newsTitle}</h3>
-                    <p>${newsList[1].newsContent}</p>
-                    <a href="#" class="btn">Read more</a>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="service-wrapper">
-                    <img src="img/service-icon/box.png" alt="Service 3">
-                    <h3>Vivamus mattis</h3>
-                    <p>Phasellus posuere et nisl ac commodo. Nulla facilisi. Sed tincidunt bibendum cursus. Aenean vulputate aliquam risus rutrum scelerisque</p>
-                    <a href="#" class="btn">Read more</a>
-                </div>
-            </div>
+                </s:if>
+            </s:iterator>
         </div>
     </div>
 </div>
