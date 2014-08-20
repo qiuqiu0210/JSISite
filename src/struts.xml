@@ -60,10 +60,17 @@
                 <param name="contentType">image/jpeg</param>
                 <param name="inputName">inputStream</param>
             </result>
-
         </action>
     </package>
-    <package name="showNews" namespace="/" extends="struts-default">
-
+    <package name="showNews" namespace="/" extends="json-default">
+        <action name="news" class="newsAction">
+            <result name="success" type="json"/>
+        </action>
+        <action name="newsList" class="newsAction">
+            <result name="success" type="json"/>
+        </action>
+    </package>
+    <package name="showNews2" namespace="/" extends="struts-default">
+        <action name="news2" class="newsAction"/>
     </package>
 </struts>

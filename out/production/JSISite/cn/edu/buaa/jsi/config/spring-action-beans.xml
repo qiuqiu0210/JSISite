@@ -18,4 +18,7 @@
     <bean name="pictureAction" class="cn.edu.buaa.jsi.web.action.pictureAction" scope="prototype">
         <property name="imageService" ref="imageService" />
     </bean>
+    <bean name="newsAction" class="cn.edu.buaa.jsi.web.action.NewsAction" scope="prototype">
+        <property name="newsService" ref="newsService" />
+    </bean>
 </beans>

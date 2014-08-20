@@ -16,6 +16,7 @@
             <file>file://$MODULE_DIR$/src/struts.xml</file>
             <file>jar://$MODULE_DIR$/lib/struts2-core.jar!/struts-default.xml</file>
             <file>jar://$MODULE_DIR$/lib/struts2-spring-plugin-2.3.16.3.jar!/struts-plugin.xml</file>
+            <file>jar://$MODULE_DIR$/lib/struts2-json-plugin-2.3.16.3.jar!/struts-plugin.xml</file>
           </fileset>
           <propertiesKeys disabled="false" />
         </configuration>
@@ -60,6 +61,7 @@
     <orderEntry type="library" name="proxool-0.9.1" level="project" />
     <orderEntry type="library" name="log4j-2.0.1" level="project" />
     <orderEntry type="library" name="mysql-connector-java.5.1.22-bin" level="project" />
+    <orderEntry type="library" name="json-lib-2.4-jdk15" level="project" />
   </component>
 </module>
 

@@ -160,24 +160,26 @@
     </div>
 </div>
 <!-- Press Coverage -->
-
+<s:action name="news2" namespace="/" />
+<%--<s:set name="NEWS" value="${newsList[0]}"/>--%>
+<%--<s:property value="#NEWS.newsTitle"/>--%>
 <!-- Services -->
 <div class="section">
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-sm-6">
                 <div class="service-wrapper">
-                    <img src="img/service-icon/diamond.png" alt="Service 1">
-                    <h3>Aliquam in adipiscing</h3>
-                    <p>Praesent rhoncus mauris ac sollicitudin vehicula. Nam fringilla turpis turpis, at posuere turpis aliquet sit amet condimentum</p>
+                    <img src="${newsList[0].newsPhoto}" alt="Service 1">
+                    <h3>${newsList[0].newsTitle}</h3>
+                    <p>${newsList[0].newsContent}</p>
                     <a href="#" class="btn">Read more</a>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6">
                 <div class="service-wrapper">
-                    <img src="img/service-icon/ruler.png" alt="Service 2">
-                    <h3>Curabitur mollis</h3>
-                    <p>Suspendisse eget libero mi. Fusce ligula orci, vulputate nec elit ultrices, ornare faucibus orci. Aenean lectus sapien, vehicula</p>
+                    <img src="${newsList[1].newsPhoto}" alt="Service 2">
+                    <h3>${newsList[1].newsTitle}</h3>
+                    <p>${newsList[1].newsContent}</p>
                     <a href="#" class="btn">Read more</a>
                 </div>
             </div>

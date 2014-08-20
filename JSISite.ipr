@@ -17,6 +17,7 @@
             <element id="library" level="project" name="proxool-0.9.1" />
             <element id="library" level="project" name="log4j-2.0.1" />
             <element id="library" level="project" name="mysql-connector-java.5.1.22-bin" />
+            <element id="library" level="project" name="json-lib-2.4-jdk15" />
           </element>
         </element>
       </root>
@@ -243,6 +244,13 @@
         <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jsp.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="json-lib-2.4-jdk15">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/lib/json-lib-2.4-jdk15.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES />

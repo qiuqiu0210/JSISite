@@ -13,4 +13,7 @@
     <bean name="imageService" class="cn.edu.buaa.jsi.service.impl.ImageServiceImpl">
         <property name="imageDao" ref="imageDao"/>
     </bean>
+    <bean name="newsService" class="cn.edu.buaa.jsi.service.impl.NewsServiceImpl">
+        <property name="newsDao" ref="newsDao"/>
+    </bean>
 </beans>
