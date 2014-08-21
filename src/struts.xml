@@ -27,10 +27,7 @@
             <result>Login.action</result>
         </global-results>
 
-        <action name="index" class="indexAction">
-            <result name="success">/index.jsp</result>
-            <result name="login">/index.jsp</result>
-        </action>
+
 
         <action name="Login" class="loginAction" method="login">
             <result name="login" type="redirect">${goingToURL}</result>
@@ -120,6 +117,10 @@
                 <param name="contentDisposition">attachment;filename=%{fileName}</param>
                 <param name="bufferSize">8192</param>
             </result>
+        </action>
+        <action name="index" class="indexAction">
+            <result name="success">/index.jsp</result>
+            <result name="login">/index.jsp</result>
         </action>
     </package>
 </struts>

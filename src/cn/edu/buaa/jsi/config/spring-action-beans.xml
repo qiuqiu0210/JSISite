@@ -4,7 +4,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- index -->
-    <bean name="indexAction" class="cn.edu.buaa.jsi.web.action.IndexAction" scope="prototype"/>
+    <bean name="indexAction" class="cn.edu.buaa.jsi.web.action.IndexAction" scope="prototype" >
+        <property name="newsService" ref="newsService" />
+    </bean>
     <!-- login -->
     <bean name="loginAction" class="cn.edu.buaa.jsi.web.action.LoginAction" scope="prototype" >
         <property name="accountService" ref="accountService" />

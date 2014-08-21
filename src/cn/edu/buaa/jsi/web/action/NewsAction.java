@@ -3,6 +3,7 @@ package cn.edu.buaa.jsi.web.action;
 import cn.edu.buaa.jsi.entities.News;
 import cn.edu.buaa.jsi.service.NewsService;
 import cn.edu.buaa.jsi.utils.JsonUtils;
+import cn.edu.buaa.jsi.utils.StringUtils;
 import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.ActionContext;
 import org.apache.commons.io.FileUtils;
@@ -39,8 +40,11 @@ public class NewsAction extends BaseAction {
             String path = ServletActionContext.getServletContext().getRealPath("/upload");
             String[] fname = uploadFileName.split("\\.");
             String suffix = fname[fname.length-1];
-            String filename = path + File.separator + UUID.randomUUID().toString()+"."+suffix;
-            File saveFile = new File(filename);
+            String filename = UUID.randomUUID().toString()+"."+suffix;
+            String pathname = path + File.separator + filename;
+            news.setNewsPhoto("upload/" + filename);
+            File saveFile = new File(pathname);
+
             if (this.newsService.addNewsAndPhoto(news, upload, saveFile)){
 //                this.addActionMessage("添加成功!!");
                 ActionContext.getContext().put("message", "文章及配图添加成功！");
@@ -93,6 +97,9 @@ public class NewsAction extends BaseAction {
         //test2
 //        newsList = newsList.subList(0,3);//主页只显示三条新闻
         if (!newsList.isEmpty()) {
+            for (News news1: newsList) {
+                news1.setNewsContent(StringUtils.stringToHtml(news1.getNewsContent()));//对字符串中的空格与回车进行替换
+            }
             Map session = ActionContext.getContext().getSession();
             session.remove("newsList");
             session.put("newsList", newsList);

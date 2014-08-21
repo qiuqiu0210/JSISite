@@ -21,7 +21,7 @@
         <td bgcolor="#FFFFFF">发布时间</td>
         <td bgcolor="#FFFFFF">发布人</td>
         <td bgcolor="#FFFFFF">摘自</td>
-        <td width="30%" bgcolor="#FFFFFF">删除</td>
+        <td width="30%" bgcolor="#FFFFFF">修改/删除</td>
     </tr>
     <s:set name="list" value="#session.newsList"/>
     <s:if test="#list==null">

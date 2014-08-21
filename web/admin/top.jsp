@@ -10,18 +10,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link href="../css/style.css" rel="stylesheet" type="text/css">
 <s:set name="username" value="#session.SESSION_KEY_USER_NAME"/>
-<table width="776" height="310"  border="0" cellpadding="0" cellspacing="0">
+<table width="776" height="145"  border="0" cellpadding="0" cellspacing="0">
     <tr>
-        <td valign="top" background="../images/admin_top1.gif">
+        <td valign="top" background="../images/admin_top.jpg">
             <table width="100%" height="100%" border="0" align="center" cellpadding="0" cellspacing="0" >
                 <tr>
-                    <td height="28" colspan="4" align="center"></td>
+                    <td height="110" colspan="4" align="center"></td>
                 </tr>
                 <tr>
                     <td width="426" height="25" align="center">&nbsp;</td>
-                    <td width="142" align="center" >当前管理员<s:property value="#username"/> </td>
-                    <td width="102" align="center"><a href="../index.jsp" target="_parent">返回首页</a></td>
-                    <td width="97" align="center"><a href="exit.jsp" target="_parent">安全退出</a></td>
+                    <td width="142" align="center" style="color: #ffffff">当前管理员<s:property value="#username"/> </td>
+                    <td width="102" align="center"><a href="../index.action" target="_parent">返回首页</a></td>
+                    <td width="97" align="center"><a href="../Logout.action" target="_parent">安全退出</a></td>
                     <td width="9"></td>
                 </tr>
                 <tr>

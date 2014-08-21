@@ -25,68 +25,54 @@ public class StringUtils {
      * @return 截取后的字符串
      * @throws Exception
      */
-    private static String splitChinese(final String chinese_code, final String str, final int sum) throws Exception
-    {
+    public static String splitChinese(final String chinese_code, final String str, final int sum) throws Exception {
         int charset = 3;//默认使用UTF-8编码
         if (UNICODE.equals(chinese_code)) {//Unicode字符集编码
             charset = 2;
         }
         int index = sum - 1; //下标比总数少一个
-        if (null == str || "".equals(str))
-        {
+        if (null == str || "".equals(str)){
             return str;
         }
-        if (index <= 0)
-        {
+        if (index <= 0){
             return str;
         }
 
         byte[] bt = null;
-        try
-        {
-            if (charset == 2)
-            {
+        try{
+            if (charset == 2){
                 bt = str.getBytes();
             }
-            else
-            {
+            else{
                 bt = str.getBytes(UTF8);
             }
         }
-        catch (final UnsupportedEncodingException e)
-        {
+        catch (final UnsupportedEncodingException e){
             e.getMessage();
         }
-        if (null == bt)
-        {
+        if (null == bt){
             return str;
         }
-        if (index > bt.length - 1)
-        {
+        if (index > bt.length - 1){
             index = bt.length - 1; //防越界
         }
 
         //如果当前字节小于0，说明当前截取位置 有可能 将中文字符截断了
-        if (bt[index] < 0)
-        {
+        if (bt[index] < 0){
             int jsq = 0;
             int num = index;
-            while (num >= 0)
-            {
-                if (bt[num] < 0)
-                {
+            while (num >= 0){
+                if (bt[num] < 0){
                     jsq += 1; //计数
                 }
-                else
-                {
+                else{
                     break; //循环出口
                 }
                 num -= 1;
             }
 
             int m = 0;
-            if (charset == 2)
-            {
+            if (charset == 2){
                 //Unicode编码
                 m = jsq % 2;
                 index -= m;
@@ -94,46 +80,60 @@ public class StringUtils {
                 final String substrx = new String(bt, 0, index + 1); //当前被截断的中文字符整个不取
                 return substrx;
             }
-            else
-            {
+            else{
                 // utf-8 编码
                 m = jsq % 3;
                 index -= m;
                 //这里是重点,去掉半个汉字(有可能是半个), m为0表示无一半汉字,
                 String substrx = null;
-                try
-                {
+                try{
                     substrx = new String(bt, 0, index + 1, UTF8);
                 }
-                catch (final UnsupportedEncodingException e)
-                {
+                catch (final UnsupportedEncodingException e){
                     e.getMessage();
                 } //当前被截断的中文字符整个不取
                 return substrx;
             }
         }
-        else
-        {
+        else{
             String substrx = null;
-            if (charset == 2)
-            {
+            if (charset == 2){
                 //Unicode编码
                 substrx = new String(bt, 0, index + 1);
                 return substrx;
             }
-            else
-            {
+            else{
                 // utf-8 编码
-                try
-                {
+                try{
                     substrx = new String(bt, 0, index + 1, UTF8);
                 }
-                catch (final UnsupportedEncodingException e)
-                {
+                catch (final UnsupportedEncodingException e){
                     e.getMessage();
                 }
                 return substrx;
             }
         }
     }
+
+    //String特殊字符转换为html
+    public static String stringToHtml(String str) {
+        if (str == null) {
+            str = "";
+        }
+        else {
+            str = str.replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll(" ","&nbsp;").replaceAll("\r\n","<br>");
+        }
+        return str;
+    }
+    //String去掉空格回车空白符
+    public static String stringNoBlank(String str) {
+        if (str == null) {
+            str = "";
+        }
+        else {
+            str = str.trim().replaceAll("[\\s*|\t|\n|\r]","&nbsp;");
+        }
+        return str;
+    }
+
 }

@@ -23,7 +23,7 @@
     <td bgcolor="#FFFFFF">上传时间</td> 
     <td bgcolor="#FFFFFF">下载数量</td> 
     <td bgcolor="#FFFFFF">软件类型</td> 
-    <td width="20%" bgcolor="#FFFFFF">修改删除</td>
+    <td width="20%" bgcolor="#FFFFFF">下载/修改/删除</td>
       <s:set name="list" value="#session.fileList"/>
       <s:if test="#list==null">
           <tr align="center">

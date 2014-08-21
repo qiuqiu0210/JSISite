@@ -44,7 +44,7 @@ public class NewsServiceImpl implements NewsService {
         }
         try {
             FileUtils.copyFile(oldFile, newFile);
-            news.setNewsPhoto(newFile.getName());
+//            news.setNewsPhoto(newFile.getName());
             return this.newsDao.saveNews(news);
         } catch (IOException e) {
             e.printStackTrace();

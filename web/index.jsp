@@ -57,36 +57,53 @@
                 </s:else>
             </div>
         </div>
-        <nav id="mainmenu" class="mainmenu">
-            <ul>
-                <li class="active">
-                    <a href="index.action">首页</a>
-                </li>
-                <li>
-                    <a href="features.html">实验室简介</a>
-                </li>
-                <li>
-                    <a href="features.html">学术研究</a>
-                </li>
-                <li>
-                    <a href="features.html">资源共享</a>
-                </li>
-                <li>
-                    <a href="features.html">教学设施</a>
-                </li>
-                <li>
-                    <a href="features.html">招生就业</a>
-                </li>
-                <li>
-                    <a href="features.html">实验室生活</a>
-                </li>
-                <li>
-                    <a href="features.html">个人主页</a>
-                </li>
-                <li>
-                    <a href="features.html">BBS论坛</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-default nav-style">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="mynavbar-brand" href="index.html"><img src="img/JSI_logo.png" alt="Multipurpose Twitter Bootstrap Template"></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse mainmenu" id="bs-example-navbar-collapse-1">
+                    <ul>
+                        <li class="page-scroll">
+                            <a href="index.action">首页</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="features.html">实验室简介</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="features.html">学术研究</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="features.html">资源共享</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="features.html">教学设施</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="features.html">招生就业</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="features.html">实验室生活</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="features.html">个人主页</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="features.html">BBS论坛</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
         </nav>
     </div>
 </div>
@@ -98,31 +115,31 @@
             <!-- Slide 1 -->
             <li class="bg4">
                 <!-- Slide Title -->
-                <h2 class="title">Responsive</h2>
+                <h2 class="title">中德所成立典礼</h2>
                 <!-- Slide Text -->
-                <h3 class="subtitle">It looks great on desktops, laptops, tablets and smartphones</h3>
+                <h3 class="subtitle">中德所于2003年10月成立，从2004年10月起依托北京航空航天大学进行管理和建设。中德所的德方对等合作伙伴是德国弗劳恩霍夫协会下属的HHI研究所。</h3>
                 <!-- Slide Image -->
-                <img class="slide-img" src="img/homepage-slider/slide1.png" alt="Slide 1" />
+                <img class="slide-img" src="img/JSI_history.png" alt="Slide 1"/>
             </li>
             <!-- End Slide 1 -->
             <!-- Slide 2 -->
             <li class="bg3">
                 <!-- Slide Title -->
-                <h2 class="title">Color Schemes</h2>
+                <h2 class="title">瑞士洛桑联邦理工学院的Babak Falsafi教授来访</h2>
                 <!-- Slide Text -->
-                <h3 class="subtitle">Comes with 5 color schemes and it's easy to make your own!</h3>
+                <h3 class="subtitle">Babak Falsafi教授（瑞士洛桑联邦理工教授、卡耐基梅隆大学教授，IEEE Fellow）来访我所，并为大家开设题为“Future Server Processor & Memory Architecture”的系列讲座。</h3>
                 <!-- Slide Image -->
-                <img class="slide-img" src="img/homepage-slider/slide2.png" alt="Slide 2" />
+                <img class="slide-img" src="img/Babak-Falsafi.png" alt="Slide 2" />
             </li>
             <!-- End Slide 2 -->
             <!-- Slide 3 -->
             <li class="bg1">
                 <!-- Slide Title -->
-                <h2 class="title">Feature Rich</h2>
+                <h2 class="title">Intel并行编程大赛</h2>
                 <!-- Slide Text -->
-                <h3 class="subtitle">Huge amount of components and over 30 sample pages!</h3>
+                <h3 class="subtitle">“2014全国并行应用挑战赛”(Parallel Application Challenge 2014，PAC2014)自2013年开始举办，旨在寻找行业最佳并行应用，推进超算助力中国创造。</h3>
                 <!-- Slide Image -->
-                <img class="slide-img" src="img/homepage-slider/slide3.png" alt="Slide 3" />
+                <img class="slide-img" src="img/Parallel.png" alt="Slide 3" />
             </li>
             <!-- End Slide 3 -->
         </ul>
@@ -136,49 +153,26 @@
     </div>
 </div>
 <!-- End Homepage Slider -->
-
-<!-- Press Coverage -->
-<div class="section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-sm-6">
-                <div class="in-press press-wired">
-                    <a href="#">Morbi eleifend congue elit nec sagittis. Praesent aliquam lobortis tellus, nec consequat vitae</a>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="in-press press-mashable">
-                    <a href="#">Morbi eleifend congue elit nec sagittis. Praesent aliquam lobortis tellus, nec consequat vitae</a>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="in-press press-techcrunch">
-                    <a href="#">Morbi eleifend congue elit nec sagittis. Praesent aliquam lobortis tellus, nec consequat vitae</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Press Coverage -->
-<s:action name="news2" namespace="/" />
+<%--<s:action name="index" namespace="/" />--%>
 <%--<s:set name="NEWS" value="${newsList[0]}"/>--%>
 <%--<s:property value="#NEWS.newsTitle"/>--%>
 <!-- Services -->
 <div class="section">
     <div class="container">
+        <h2><a href="#">新闻News</a></h2>
         <div class="row">
             <s:iterator id="news" value="#session.newsList" status="st">
                 <s:set name="count" value="#st.count-1"/>
-                <s:if test="#count<3">
-                <div class="col-md-4 col-sm-6">
-                    <div class="service-wrapper">
-                        <%--<h1>${count}</h1>--%>
-                        <img src="${news.newsPhoto}" alt="Service 1">
-                        <h3>${news.newsTitle}</h3>
-                        <p>${news.newsContent}</p>
-                        <a href="#" class="btn">Read more</a>
+                <s:if test="#count>#session.newsList.size()-4">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-wrapper">
+                                <%--<h1>${count}</h1>--%>
+                            <img src="${news.newsPhoto}" alt="Service 1">
+                            <h3>${news.newsTitle}</h3>
+                            <p>${news.newsContent}</p>
+                            <a href="#" class="btn">Read more</a>
+                        </div>
                     </div>
-                </div>
                 </s:if>
             </s:iterator>
         </div>
@@ -186,24 +180,99 @@
 </div>
 <!-- End Services -->
 
-<!-- Call to Action Bar -->
-<div class="section section-white">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="calltoaction-wrapper">
-                    <h3>It's a free multipurpose Bootstrap 3 template!</h3> <a href="http://www.dragdropsite.com" class="btn btn-orange">Download here!</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Call to Action Bar -->
 
 <!-- Testimonials -->
 <div class="section">
     <div class="container">
-        <h2>Testimonials</h2>
+        <h2><a href="#">近期公告</a></h2>
+        <div class="row">
+            <!-- Pricing Plans Wrapper -->
+            <div class="col-md-12">
+                <!-- Pricing Plan -->
+                <div class="bulletin">
+                    <!-- Pricing Plan Ribbon -->
+                    <div class="ribbon-wrapper">
+                        <div class="notice-ribbon ribbon-red">特别关注</div>
+                    </div>
+                    <h2 class="notice-type">讲 座</h2>
+                    <%--<p class="pricing-plan-price">FREE</p>--%>
+                    <!-- Pricing Plan Features -->
+                    <div class="row">
+                        <div class="col-md-12 notice-content">
+                            <p>8月21日上午9点半，Intel MIC方面的专家来411与大家交流，相关的同学请按时参会
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 notice-time">
+                            <a><strong>2014/8/20 16:00</strong></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Pricing Plan -->
+                <div class="bulletin">
+                    <div class="ribbon-wrapper">
+                        <div class="notice-ribbon ribbon-green">最新发布</div>
+                    </div>
+                    <h2 class="notice-type">体育活动</h2>
+                    <%--<p class="pricing-plan-price">$49<span>/mo</span></p>--%>
+                    <div class="row">
+                        <div class="col-md-12 notice-content">
+                            <p>8月23日晚9点-10点，羽毛球，体育馆副馆20,21号场地，欢迎大家踊跃参加
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 notice-time">
+                            <a><strong>2014/8/21 20:00</strong></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Promoted Pricing Plan -->
+                <div class="bulletin">
+                    <h2 class="notice-type">实验室日常</h2>
+                    <%--<p class="pricing-plan-price">$49<span>/mo</span></p>--%>
+                    <div class="row">
+                        <div class="col-md-12 notice-content">
+                            <p>8月23日晚10点-10点半，新主楼G座断电，请大家提前做好准备
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 notice-time">
+                            <a><strong>2014/8/20 16:00</strong></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bulletin">
+                    <div class="ribbon-wrapper">
+                        <div class="notice-ribbon ribbon-blue">重要通知</div>
+                    </div>
+                    <h2 class="notice-type">其他</h2>
+                    <%--<p class="pricing-plan-price">$49<span>/mo</span></p>--%>
+                    <div class="row">
+                        <div class="col-md-12 notice-content">
+                            <p>“2014全国并行应用挑战赛”提交初赛资料的截止时间延长至：8月31日
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 notice-time">
+                            <a><strong>2014/8/20 16:00</strong></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Pricing Plans Wrapper -->
+        </div>
+    </div>
+</div>
+<!-- End Testimonials -->
+
+<!-- Pricing Table -->
+<div class="section">
+    <div class="container">
+        <h2 >个人主页</h2>
         <div class="row">
             <!-- Testimonial -->
             <div class="testimonial col-md-4 col-sm-6">
@@ -258,72 +327,6 @@
                     <div class="sprite arrow-speech-bubble"></div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-<!-- End Testimonials -->
-
-<!-- Pricing Table -->
-<div class="section">
-    <div class="container">
-        <h2>Pricing</h2>
-        <div class="row">
-            <!-- Pricing Plans Wrapper -->
-            <div class="pricing-wrapper col-md-12">
-                <!-- Pricing Plan -->
-                <div class="pricing-plan">
-                    <!-- Pricing Plan Ribbon -->
-                    <div class="ribbon-wrapper">
-                        <div class="price-ribbon ribbon-red">Popular</div>
-                    </div>
-                    <h2 class="pricing-plan-title">Starter</h2>
-                    <p class="pricing-plan-price">FREE</p>
-                    <!-- Pricing Plan Features -->
-                    <ul class="pricing-plan-features">
-                        <li><strong>1</strong> user</li>
-                        <li><strong>Unlimited</strong> projects</li>
-                        <li><strong>2GB</strong> storage</li>
-                    </ul>
-                    <a href="index.action" class="btn">Order Now</a>
-                </div>
-                <!-- End Pricing Plan -->
-                <div class="pricing-plan">
-                    <h2 class="pricing-plan-title">Advanced</h2>
-                    <p class="pricing-plan-price">$49<span>/mo</span></p>
-                    <ul class="pricing-plan-features">
-                        <li><strong>10</strong> users</li>
-                        <li><strong>Unlimited</strong> projects</li>
-                        <li><strong>20GB</strong> storage</li>
-                    </ul>
-                    <a href="index.action" class="btn">Order Now</a>
-                </div>
-                <!-- Promoted Pricing Plan -->
-                <div class="pricing-plan pricing-plan-promote">
-                    <h2 class="pricing-plan-title">Premium</h2>
-                    <p class="pricing-plan-price">$99<span>/mo</span></p>
-                    <ul class="pricing-plan-features">
-                        <li><strong>Unlimited</strong> users</li>
-                        <li><strong>Unlimited</strong> projects</li>
-                        <li><strong>100GB</strong> storage</li>
-                    </ul>
-                    <a href="index.action" class="btn">Order Now</a>
-                </div>
-                <div class="pricing-plan">
-                    <!-- Pricing Plan Ribbon -->
-                    <div class="ribbon-wrapper">
-                        <div class="price-ribbon ribbon-green">New</div>
-                    </div>
-                    <h2 class="pricing-plan-title">Mega</h2>
-                    <p class="pricing-plan-price">$199<span>/mo</span></p>
-                    <ul class="pricing-plan-features">
-                        <li><strong>Unlimited</strong> users</li>
-                        <li><strong>Unlimited</strong> projects</li>
-                        <li><strong>100GB</strong> storage</li>
-                    </ul>
-                    <a href="index.action" class="btn">Order Now</a>
-                </div>
-            </div>
-            <!-- End Pricing Plans Wrapper -->
         </div>
     </div>
 </div>

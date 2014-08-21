@@ -2,6 +2,7 @@ package cn.edu.buaa.jsi.web.action;
 
 import cn.edu.buaa.jsi.entities.UpFile;
 import cn.edu.buaa.jsi.service.FileService;
+import cn.edu.buaa.jsi.utils.StringUtils;
 import com.opensymphony.xwork2.ActionContext;
 import org.apache.struts2.ServletActionContext;
 
@@ -75,6 +76,9 @@ public class FileAction extends BaseAction {
     public String execute(){
         List<UpFile> upFiles = this.fileService.findAllFiles();
         if (!upFiles.isEmpty()) {
+            for (UpFile upFile1: upFiles){
+                upFile1.setFileInfo(StringUtils.stringToHtml(upFile1.getFileInfo()));
+            }
             ActionContext.getContext().getSession().put("fileList", upFiles);
             return SUCCESS;
         }
