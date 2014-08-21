@@ -21,7 +21,7 @@
         <td bgcolor="#FFFFFF">发布时间</td>
         <td bgcolor="#FFFFFF">发布人</td>
         <td bgcolor="#FFFFFF">摘自</td>
-        <td width="30%" bgcolor="#FFFFFF">删除</td>
+        <td width="30%" bgcolor="#FFFFFF">修改/删除</td>
     </tr>
     <s:set name="list" value="#session.newsList"/>
     <s:if test="#list==null">
@@ -33,11 +33,14 @@
         <s:iterator id="newses" value="#list" status="st">
             <%--<s:set name="count" value="<s:property value=\"#st.count\">-1"/>--%>
             <tr align="center">
-                <td height="27" bgcolor="#FFFFFF"><a target="_self" href="modifyNews.action?id=${newses.newsId}">${newses.newsTitle}</a></td>
+                <td height="27" bgcolor="#FFFFFF"><a target="_self" href="infoNews.action?id=${newses.newsId}">${newses.newsTitle}</a></td>
                 <td bgcolor="#FFFFFF">${newses.newsTime}</td>
                 <td bgcolor="#FFFFFF">${newses.newsAuthor}</td>
                 <td bgcolor="#FFFFFF"></td>
-                <td bgcolor="#FFFFFF"><a href="delNews.action?id=${newses.newsId}" onClick="javascript:return confirm('你确定删除该新闻吗？')"><img src="../images/del.gif" border="0"></a></td>
+                <td bgcolor="#FFFFFF">
+                    <a href="modifyNews.action?id=${newses.newsId}"><img src="../images/modify.gif" border="0"></a>
+                    <a href="delNews.action?id=${newses.newsId}" onClick="javascript:return confirm('你确定删除该新闻吗？')"><img src="../images/del.gif" border="0"></a>
+                </td>
             </tr>
         </s:iterator>
     </s:else>
@@ -45,5 +48,11 @@
     <%--<td height="27" colspan="5" bgcolor="#E9F2F6"><%=HtmlUtils.table(bf.getRow("new"),submit_page,"manage_new.jsp")%></td> --%>
     <%--</tr>   <%}%> --%>
 </table>
+<script type="text/javascript">
+    var msg="${requestScope.message}";
+    if(msg!=""){
+        alert(msg);
+    }
+</script>
 </body>
 </html>

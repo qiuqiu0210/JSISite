@@ -21,4 +21,7 @@
     <bean name="newsAction" class="cn.edu.buaa.jsi.web.action.NewsAction" scope="prototype">
         <property name="newsService" ref="newsService" />
     </bean>
+    <bean name="fileAction" class="cn.edu.buaa.jsi.web.action.FileAction" scope="prototype">
+        <property name="fileService" ref="fileService" />
+    </bean>
 </beans>

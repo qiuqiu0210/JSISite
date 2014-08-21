@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="cn.edu.buaa.jsi.entities.UpFile" table="tb_file" schema="" catalog="jsi_db">
+        <id name="fileId" column="file_id">
+            <generator class="native"/>
+        </id>
+        <property name="fileTitle" column="file_title"/>
+        <property name="fileName" column="file_name"/>
+        <property name="filePath" column="file_path"/>
+        <property name="fileSuffix" column="file_suffix"/>
+        <property name="fileTime" column="file_time"/>
+        <property name="fileKind" column="file_kind"/>
+        <property name="fileCount" column="file_count"/>
+        <property name="fileInfo" column="file_info"/>
+    </class>
+</hibernate-mapping>

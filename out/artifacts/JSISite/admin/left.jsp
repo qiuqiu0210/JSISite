@@ -84,7 +84,7 @@
             <%--<td height="7"></td>--%>
             <%--</tr>--%>
             <%--<tr>--%>
-            <td height="25" valign="middle" background="../images/admin_bg.gif">&nbsp;&nbsp;&nbsp;&nbsp;<span class="STYLE2"><a href="manage_resolvent.jsp" target="mainFrame" class="link_admin">解决方案管理</a></span></td>
+            <%--<td height="25" valign="middle" background="../images/admin_bg.gif">&nbsp;&nbsp;&nbsp;&nbsp;<span class="STYLE2"><a href="manage_resolvent.jsp" target="mainFrame" class="link_admin">解决方案管理</a></span></td>--%>
             <%--</tr>--%>
             <%--<tr>--%>
             <%--<td height="7"></td>--%>
@@ -101,9 +101,9 @@
             <%--<tr>--%>
             <%--<td height="7"></td>--%>
             <%--</tr>--%>
-            <%--<tr>--%>
-            <td height="25" valign="middle" background="../images/admin_bg.gif">&nbsp;&nbsp;&nbsp;&nbsp;<span class="STYLE2"><a href="manage_mend.jsp" target="mainFrame" class="link_admin">工具/补丁下载管理</a></span></td>
-            <%--</tr>--%>
+            <tr>
+            <td height="25" valign="middle" background="../images/admin_bg.gif">&nbsp;&nbsp;&nbsp;&nbsp;<span class="STYLE2"><a href="manage_mend.jsp" target="mainFrame" class="link_admin">工具上传/下载管理</a></span></td>
+            </tr>
             <%--<tr>--%>
             <%--<td height="10"></td>--%>
             <%--</tr>--%>

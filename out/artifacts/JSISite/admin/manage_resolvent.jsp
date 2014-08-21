@@ -37,9 +37,26 @@
           </tr>
         </s:iterator>
     </s:else>
-  <tr align="right"> 
+    <%--<s:actionmessage/>--%>
+    <%--<script type="text/javascript">--%>
+        <%--alert("<s:actionmessage/>");--%>
+    <%--</script>--%>
+    <%--<s:if test="hasActionMessages()">--%>
+        <%--<s:iterator value="actionMessages">--%>
+            <%--<script type="text/javascript">--%>
+                <%--alert("<s:property escape="false"/>");--%>
+            <%--</script>--%>
+        <%--</s:iterator>--%>
+    <%--</s:if>--%>
+    <tr align="right">
     <td height="27" colspan="3" bgcolor="#E9F2F6"></td>
   </tr>
 </table> 
 </body>
+<script type="text/javascript">
+    var msg="${requestScope.message}";
+    if(msg!=""){
+        alert(msg);
+    }
+</script>
 </html>

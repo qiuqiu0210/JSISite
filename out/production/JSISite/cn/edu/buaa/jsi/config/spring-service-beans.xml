@@ -16,4 +16,7 @@
     <bean name="newsService" class="cn.edu.buaa.jsi.service.impl.NewsServiceImpl">
         <property name="newsDao" ref="newsDao"/>
     </bean>
+    <bean name="fileService" class="cn.edu.buaa.jsi.service.impl.FileServiceImpl">
+        <property name="fileDao" ref="fileDao"/>
+    </bean>
 </beans>

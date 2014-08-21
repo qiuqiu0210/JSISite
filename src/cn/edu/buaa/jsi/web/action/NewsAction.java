@@ -15,10 +15,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by Home on 2014/8/19.
@@ -32,40 +29,38 @@ public class NewsAction extends BaseAction {
     private String uploadFileName;//类型为String的xxxFileName属性封装了该文件域对应的文件的文件名。
     private String uploadContentType;//类型为String的xxxContentType属性封装了该文件域对应的文件的文件名。
 
-    public String download() {
-        return null;
-    }
     public String addNews() throws Exception{
         if (news == null){
             return INPUT;
         }
-        String path = ServletActionContext.getServletContext().getRealPath("/WEB-INF/upload");
-        String[] fname = uploadFileName.split("\\.");
-        String suffix = fname[fname.length-1];
-        //news还未写入，故此处id只能为0
-        String filename = path + File.separator + "pic_" + news.getNewsId() + "." + suffix;//新文件名
+        Timestamp time = new Timestamp(System.currentTimeMillis());
+        news.setNewsTime(time);
         if (upload != null) {
+            String path = ServletActionContext.getServletContext().getRealPath("/upload");
+            String[] fname = uploadFileName.split("\\.");
+            String suffix = fname[fname.length-1];
+            String filename = path + File.separator + UUID.randomUUID().toString()+"."+suffix;
             File saveFile = new File(filename);
-            if (!saveFile.getParentFile().exists()) {
-                saveFile.getParentFile().mkdirs();
+            if (this.newsService.addNewsAndPhoto(news, upload, saveFile)){
+//                this.addActionMessage("添加成功!!");
+                ActionContext.getContext().put("message", "文章及配图添加成功！");
+                return SUCCESS;
             }
-            FileUtils.copyFile(upload, saveFile);
-            ActionContext.getContext().put("message", "文件上传成功");
         }
-        //有空写个TimeUtils
-//        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-//        String date = dateFormat.format(new Date());
-//        Timestamp time = Timestamp.valueOf(date);
-//        Timestamp time = new Timestamp(System.currentTimeMillis());
-//        news.setNewsTime(time);
-//        if (this.newsService.addNews(news)){
-//            return SUCCESS;
-//        }
+        else {
+            if (this.newsService.addNews(news)){
+//                this.addActionMessage("添加成功!!");
+                ActionContext.getContext().put("message", "文章添加成功！");
+                return SUCCESS;
+            }
+        }
         return INPUT;
     }
 
     public String delNews() {
         if (this.newsService.delNewsById(id)){
+            ActionContext.getContext().put("message", "删除成功！");
+//            this.addActionMessage("删除成功!!");
             return SUCCESS;
         }
         return INPUT;
@@ -76,11 +71,13 @@ public class NewsAction extends BaseAction {
             news = this.newsService.findNewsById(id);
             if (news != null){
                 ActionContext.getContext().getSession().put("news", news);
-                return SUCCESS;
+                return INPUT;
             }
         }
         else if (news != null){
             if (this.newsService.modifyNews(news)){
+//                this.addActionMessage("修改成功!!");
+                ActionContext.getContext().put("message", "修改成功！");
                 return SUCCESS;
             }
         }

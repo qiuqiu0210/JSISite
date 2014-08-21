@@ -3,7 +3,10 @@ package cn.edu.buaa.jsi.service.impl;
 import cn.edu.buaa.jsi.entities.News;
 import cn.edu.buaa.jsi.hibernate.dao.NewsDao;
 import cn.edu.buaa.jsi.service.NewsService;
+import org.apache.commons.io.FileUtils;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -24,6 +27,29 @@ public class NewsServiceImpl implements NewsService {
     @Override
     public boolean addNews(News news) {
         return this.newsDao.saveNews(news);
+    }
+
+    @Override
+    public boolean addNewsGetId(News news) {
+        if (this.newsDao.saveNews(news)){
+
+        }
+        return false;
+    }
+
+    @Override
+    public boolean addNewsAndPhoto(News news, File oldFile, File newFile) {
+        if (!newFile.getParentFile().exists()) {
+            newFile.getParentFile().mkdirs();
+        }
+        try {
+            FileUtils.copyFile(oldFile, newFile);
+            news.setNewsPhoto(newFile.getName());
+            return this.newsDao.saveNews(news);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
     }
 
     @Override

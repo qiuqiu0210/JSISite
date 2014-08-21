@@ -78,7 +78,11 @@
                 <param name="fileUpload.maximumSize">1024000</param>
             </interceptor-ref>
             <result name="success">/admin/manage_new.jsp</result>
-            <result name="input">/admin/add_resolvent.jsp</result>
+            <result name="input">/admin/add_new.jsp</result>
+        </action>
+        <action name="infoNews" class="newsAction" method="modifyNews">
+            <result name="success">/admin/info_new.jsp</result>
+            <result name="input">/admin/info_new.jsp</result>
         </action>
         <action name="delNews" class="newsAction" method="delNews">
             <result name="success">/admin/manage_new.jsp</result>
@@ -86,13 +90,34 @@
         </action>
         <action name="modifyNews" class="newsAction" method="modifyNews">
             <result name="success">/admin/modify_new.jsp</result>
-            <result name="input"></result>
+            <result name="input">/admin/modify_new.jsp</result>
         </action>
-        <action name="download" class="newsAction" method="download">
+    </package>
+    <package name="files" namespace="/" extends="struts-default">
+        <action name="file" class="fileAction"/>
+        <action name="addfile" class="fileAction" method="addFile">
+            <result name="success">/admin/manage_mend.jsp</result>
+            <result name="input">/admin/add_mend.jsp</result>
+        </action>
+        <action name="delfile" class="fileAction" method="delFile">
+            <result name="success">/admin/manage_mend.jsp</result>
+            <result name="input">/admin/add_mend.jsp</result>
+        </action>
+        <action name="infofile" class="fileAction" method="modifyFile">
+            <result name="success">/admin/info_mend.jsp</result>
+            <result name="input">/admin/info_mend.jsp</result>
+        </action>
+        <action name="modifyfile" class="fileAction" method="modifyFile">
+            <result name="success">/admin/modify_mend.jsp</result>
+            <result name="input">/admin/modify_mend.jsp</result>
+        </action>
+    </package>
+    <package name="down" namespace="/" extends="struts-default">
+        <action name="download" class="cn.edu.buaa.jsi.web.action.DownloadAction">
             <result name="success" type="stream">
                 <param name="contentType">application/octet-stream;charset=ISO8859-1</param>
-                <param name="inputName">inputStream</param>
-                <param name="contentDisposition">attachment;filename=%{filename}</param>
+                <param name="inputName">downloadFile</param>
+                <param name="contentDisposition">attachment;filename=%{fileName}</param>
                 <param name="bufferSize">8192</param>
             </result>
         </action>

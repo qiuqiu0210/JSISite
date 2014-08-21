@@ -1,41 +1,48 @@
-<%@ page contentType="text/html; charset=GBK" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
+<%@ page contentType="text/html; charset=UTF-8" %>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=GBK">
-<title>info_new</title>
+    <title>info_new</title>
 </head>
 <link href="../css/admin.css" rel="stylesheet" type="text/css">
-<body bgcolor="#ffffff"> 
-<table width="98%" border="0" align="center" cellpadding="0" cellspacing="1" class="tableNew"> 
-  <tr align="center"> 
-    <td colspan="2" class="TableTitle1" >пбнеоЙо╦пео╒</td> 
-  </tr>   <%BasetableFactory bf=BasetableFactory.getInstance();String nid=ParamUtils.getRequestString(request,"nid");
-			New n=bf.SearchNew("WHERE nid='"+nid+"'");if(n!=null&&n.getNid()>0){ %> 
-  <tr align="center"> 
-    <td width="20%" bgcolor="#FFFFFF">пбне╠ЙлБ</td> 
-    <td width="60%" align="left" bgcolor="#FFFFFF">&nbsp;<%=n.getTitle()%> </td> 
-  </tr> 
-  <tr align="center"> 
-    <td height="100" bgcolor="#FFFFFF">пбнедзхщ</td> 
-    <td align="left" valign="top" bgcolor="#FFFFFF">&nbsp;&nbsp;&nbsp;<%=n.getContent()%> </td> 
-  </tr> 
-  <tr align="center"> 
-    <td height="4" bgcolor="#FFFFFF">у╙вт</td> 
-    <td height="4" align="left" bgcolor="#FFFFFF">&nbsp;<%=n.getFromto()%></td> 
-  </tr> 
-  <tr align="center"> 
-    <td height="3" bgcolor="#FFFFFF">╥╒╡╪хк</td> 
-    <td height="3" align="left" bgcolor="#FFFFFF">&nbsp;<%=bf.SearchUser("WHERE uid='"+n.getUid()+"'").getName()%></td> 
-  </tr> 
-  <tr align="center"> 
-    <td height="7" bgcolor="#FFFFFF">╥╒╡╪й╠╪Д</td> 
-    <td height="7" align="left" bgcolor="#FFFFFF">&nbsp;<%=n.getNtime()%></td> 
-  </tr> 		<%}%> 
-</table> 
-<table width="80%"  border="0" cellspacing="0" cellpadding="0"> 
-  <tr> 
-    <td height="50" colspan="5" align="right"><a href="#" onClick="Jscript:history.back()">╥╣╩ь</a></td> 
-  </tr> 
-</table> 
+<body>
+<s:action name="news2" namespace="/"/>
+<table width="98%" border="0" align="center" cellpadding="0" cellspacing="1" bordercolorlight="#EFEFEF" bordercolordark="#000000" class="tableNew">
+    <tr align="center">
+        <td colspan="2" class="TableTitle1" >Ф÷╔Г°▀Ф√╟И≈╩Х╞╕Ф┐┘</td>
+    </tr>
+    <tr align="center">
+        <td width="40%" bgcolor="#FFFFFF">Ф√╟И≈╩Ф═┤И╒≤</td>
+        <td width="60%" align="left" bgcolor="#FFFFFF"> <input type="text" name="news.newsTitle" value="${news.newsTitle}" readonly> </td>
+    </tr>
+    <tr align="center">
+        <td height="14" bgcolor="#FFFFFF">Д╫°Х─┘</td>
+        <td height="14" align="left" bgcolor="#FFFFFF"><input type="text" name="news.newsAuthor" value="${news.newsAuthor}" readonly></td>
+    </tr>
+    <tr align="center">
+        <td height="27" bgcolor="#FFFFFF">Е▐▒Е╦┐Ф≈╤И≈╢</td>
+        <td align="left" bgcolor="#FFFFFF"><input type="text" name="news.newsTime" value="${news.newsTime}" readonly></td>
+    </tr>
+    <tr align="center">
+        <td height="27" colspan="2" bgcolor="#FFFFFF">Ф√╟И≈╩Е├┘Е╝╧</td>
+    </tr>
+    <tr align="left">
+        <td colspan="2" bgcolor="#FFFFFF">${news.newsContent}</td>
+    </tr>
+    <tr align="center">
+        <td height="2" colspan="2" bgcolor="#FFFFFF">
+            <img src="../upload/${news.newsPhoto}" width=460 height=300 >
+            <a href="download.action?fileName=${news.newsPhoto}" >Д╦▀Х╫╫</a>
+            <%--<%String path=bf.SearchHead("WHERE iid='"+r.getIid()+"'").getPath();if(path==null){out.print("Ф≈═Е⌡╬Г┴┤");}else{out.print("<img src=../"+path+" width=460 height=300 >");}%></td>--%>
+    </tr>
+    <tr align="center">
+        <td height="6" colspan="2" bgcolor="#FFFFFF">&nbsp;</td>
+    </tr>
+</table>
+<table width="80%"  border="0" cellspacing="0" cellpadding="0">
+    <tr>
+        <td height="50" colspan="5" align="right"><a href="manage_new.jsp">Х©■Е⌡·</a></td>
+    </tr>
+</table>
 </body>
 </html>

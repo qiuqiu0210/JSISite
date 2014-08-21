@@ -19,4 +19,7 @@
     <bean name="newsDao" class="cn.edu.buaa.jsi.hibernate.dao.impl.NewsDaoImpl">
         <property name="hibernateTemplate" ref="hibernateTemplate" />
     </bean>
+    <bean name="fileDao" class="cn.edu.buaa.jsi.hibernate.dao.impl.FileDaoImpl">
+        <property name="hibernateTemplate" ref="hibernateTemplate" />
+    </bean>
 </beans>
