@@ -1,14 +1,21 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: songliu
+  Date: 2014/8/21
+  Time: 13:22
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html; charset=UTF-8" language="java" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
-<%@ page contentType="text/html; charset=UTF-8" %>
+
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>info_mend</title>
+    <title>file_info</title>
 </head>
 <link href="../css/admin.css" rel="stylesheet" type="text/css">
 <%--<script src="../js/validate.js"></script>--%>
 <body>
-<s:action name="modifyfile" namespace="/"/>
 <table width="98%" border="0" align="center" cellpadding="0" cellspacing="1" class="tableNew">
     <tr align="center">
         <td colspan="2" class="TableTitle1" >工具软件信息</td>
@@ -45,7 +52,7 @@
 </table>
 <table width="80%"  border="0" cellspacing="0" cellpadding="0">
     <tr>
-        <td height="50" colspan="5" align="right"><a href="manage_mend.jsp">返回</a></td>
+        <td height="50" colspan="5" align="right"><a href="showfile.action">返回</a></td>
     </tr>
 </table>
 </body>

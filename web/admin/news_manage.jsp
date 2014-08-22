@@ -1,13 +1,19 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: songliu
+  Date: 2014/8/21
+  Time: 15:18
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html; charset=UTF-8" language="java" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
-<%@ page contentType="text/html; charset=UTF-8" %>
 
 <html>
 <head>
-    <title>manage_new</title>
+    <title>news_manage</title>
 </head>
 <link href="../css/admin.css" rel="stylesheet" type="text/css">
 <body>
-<s:action name="showNews" namespace="/admin"/>
 <table width="98%" border="0" align="center" cellpadding="0" cellspacing="1" class="tableNew">
     <tr align="center">
         <td colspan="5" class="TableTitle1" >新闻管理</td>
@@ -45,7 +51,7 @@
         </s:iterator>
     </s:else>
     <%--<tr align="right"> --%>
-    <%--<td height="27" colspan="5" bgcolor="#E9F2F6"><%=HtmlUtils.table(bf.getRow("new"),submit_page,"manage_new.jsp")%></td> --%>
+    <%--<td height="27" colspan="5" bgcolor="#E9F2F6"><%=HtmlUtils.table(bf.getRow("new"),submit_page,"news_manage.jsp")%></td> --%>
     <%--</tr>   <%}%> --%>
 </table>
 <script type="text/javascript">

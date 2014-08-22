@@ -92,49 +92,51 @@
         <!-- 新闻发布模块，需要权限，现在测试暂时不继承struts-login -->
         <!--<action name="news2" class="newsAction"/>-->
         <action name="showNews" class="newsAction">
-            <result name="success" type="freemarker">/admin/manage_new.ftl</result>
+            <result name="success">news_manage.jsp</result>
         </action>
         <action name="addNews" class="newsAction" method="addNews">
             <interceptor-ref name="defaultStack">
                 <param name="fileUpload.allowedTypes">image/png,image/gif,image/jpeg,image/jpg</param>
                 <param name="fileUpload.maximumSize">1024000</param>
             </interceptor-ref>
-            <result name="success">/admin/manage_new.jsp</result>
-            <result name="input">/admin/add_new.jsp</result>
+            <result name="success" type="chain">showNews</result>
+            <result name="input">news_add.jsp</result>
         </action>
         <action name="infoNews" class="newsAction" method="modifyNews">
-            <result name="success">/admin/info_new.jsp</result>
-            <result name="input">/admin/info_new.jsp</result>
+            <result name="success">news_info.jsp</result>
+            <result name="input">news_info.jsp</result>
         </action>
         <action name="delNews" class="newsAction" method="delNews">
-            <!--<result name="success">/admin/manage_new.jsp</result>-->
             <result name="success" type="chain">showNews</result>
             <result name="input"></result>
         </action>
         <action name="modifyNews" class="newsAction" method="modifyNews">
-            <result name="success">/admin/modify_new.jsp</result>
-            <result name="input">/admin/modify_new.jsp</result>
+            <result name="success" type="chain">showNews</result>
+            <result name="input">news_modify.jsp</result>
         </action>
     </package>
 
     <package name="filePack" namespace="/admin" extends="struts-default">
         <!-- 文件上传模块，需要权限，现在测试暂时不继承struts-login -->
-        <action name="file" class="fileAction"/>
+        <!--<action name="file" class="fileAction"/>-->
+        <action name="showfile" class="fileAction">
+            <result name="success">file_manage.jsp</result>
+        </action>
         <action name="addfile" class="fileAction" method="addFile">
-            <result name="success">/admin/manage_mend.jsp</result>
-            <result name="input">/admin/add_mend.jsp</result>
+            <result name="success" type="chain">showfile</result>
+            <result name="input">file_add.jsp</result>
         </action>
         <action name="delfile" class="fileAction" method="delFile">
-            <result name="success">/admin/manage_mend.jsp</result>
-            <result name="input">/admin/add_mend.jsp</result>
+            <result name="success" type="chain">showfile</result>
+            <result name="input"></result>
         </action>
         <action name="infofile" class="fileAction" method="modifyFile">
-            <result name="success">/admin/info_mend.jsp</result>
-            <result name="input">/admin/info_mend.jsp</result>
+            <result name="success">file_info.jsp</result>
+            <result name="input">file_info.jsp</result>
         </action>
         <action name="modifyfile" class="fileAction" method="modifyFile">
-            <result name="success">/admin/modify_mend.jsp</result>
-            <result name="input">/admin/modify_mend.jsp</result>
+            <result name="success" type="chain">showfile</result>
+            <result name="input">file_modify.jsp</result>
         </action>
     </package>
 
@@ -153,7 +155,7 @@
     <package name="adminPack" namespace="/admin" extends="struts-login">
         <!-- 管理员模块 -->
         <action name="admin" class="cn.edu.buaa.jsi.web.action.AdminAction">
-            <result name="success" type="freemarker">/admin/admin.ftl</result>
+            <result name="success">index.jsp</result>
         </action>
     </package>
 </struts>

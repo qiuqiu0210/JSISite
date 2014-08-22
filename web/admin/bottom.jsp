@@ -1,4 +1,12 @@
-<%@ page contentType="text/html; charset=UTF-8" %>
+<%--
+  Created by IntelliJ IDEA.
+  User: songliu
+  Date: 2014/8/20
+  Time: 20:41
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html; charset=UTF-8" language="java" %>
+
 <table width="100%" height="78"  border="0" align="center" cellpadding="-2" cellspacing="-2">
       <tr>
         <td height="13" colspan="5"><div align="center">

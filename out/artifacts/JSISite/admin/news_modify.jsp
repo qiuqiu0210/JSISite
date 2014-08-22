@@ -1,8 +1,15 @@
-<%@ page contentType="text/html; charset=UTF-8" %>
+<%--
+  Created by IntelliJ IDEA.
+  User: songliu
+  Date: 2014/8/21
+  Time: 15:17
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html; charset=UTF-8" language="java" %>
 
 <html>
 <head>
-    <title>modify_new</title>
+    <title>news_modify</title>
 </head>
 <link href="../css/admin.css" rel="stylesheet" type="text/css">
 <%--<script src="../js/validate.js"></script>--%>
@@ -50,17 +57,8 @@
 </table>
 <table width="80%"  border="0" cellspacing="0" cellpadding="0">
     <tr>
-        <td height="50" colspan="5" align="right"><a href="manage_new.jsp">返回</a></td>
+        <td height="50" colspan="5" align="right"><a href="showNews.action">返回</a></td>
     </tr>
 </table>
-<script type="javascript">
-
-</script>
-<script type="text/javascript">
-    var msg="${requestScope.message}";
-    if(msg!=""){
-        alert(msg);
-    }
-</script>
 </body>
 </html>

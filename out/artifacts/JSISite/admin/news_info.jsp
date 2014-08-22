@@ -1,12 +1,19 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: songliu
+  Date: 2014/8/21
+  Time: 15:18
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html; charset=UTF-8" language="java" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
-<%@ page contentType="text/html; charset=UTF-8" %>
+
 <html>
 <head>
-    <title>info_new</title>
+    <title>news_info</title>
 </head>
 <link href="../css/admin.css" rel="stylesheet" type="text/css">
 <body>
-<s:action name="news2" namespace="/"/>
 <table width="98%" border="0" align="center" cellpadding="0" cellspacing="1" bordercolorlight="#EFEFEF" bordercolordark="#000000" class="tableNew">
     <tr align="center">
         <td colspan="2" class="TableTitle1" >查看新闻详情</td>
@@ -41,7 +48,7 @@
 </table>
 <table width="80%"  border="0" cellspacing="0" cellpadding="0">
     <tr>
-        <td height="50" colspan="5" align="right"><a href="manage_new.jsp">返回</a></td>
+        <td height="50" colspan="5" align="right"><a href="showNews.action">返回</a></td>
     </tr>
 </table>
 </body>
