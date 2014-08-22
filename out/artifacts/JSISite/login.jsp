@@ -110,6 +110,7 @@
                         <div>
                             欢迎您：
                             <s:property value="#username"/>
+                            <a href="admin/admin.action">后台管理</a>
                             <ul>
                                 <a href="Logout.action">退出</a>
                             </ul>

@@ -6,15 +6,16 @@
 
 <struts>
 
-    <package name="struts2" namespace="/" extends="struts-default">
-        <action name="sum" class="cn.edu.buaa.jsi.web.action.FirstAction">
-            <result name="positive">/positive.jsp</result>
-            <result name="negative">/negative.jsp</result>
-        </action>
-    </package>
-    <package name="userLogin" namespace="/" extends="struts-default">
+    <!--<package name="struts2" namespace="/" extends="struts-default">-->
+        <!--<action name="sum" class="cn.edu.buaa.jsi.web.action.FirstAction">-->
+            <!--<result name="positive">/positive.jsp</result>-->
+            <!--<result name="negative">/negative.jsp</result>-->
+        <!--</action>-->
+    <!--</package>-->
+    <package name="struts-login" extends="struts-default">
         <interceptors>
-            <interceptor name="loginInterceptor" class="loginInterceptor"/>
+            <!--判断是否登录 和 是否有访问权限  -->
+            <interceptor name="loginInterceptor" class="loginInterceptor" />
             <interceptor-stack name="loginDefaultStack">
                 <interceptor-ref name="loginInterceptor"/>
                 <interceptor-ref name="defaultStack"/>
@@ -22,32 +23,49 @@
         </interceptors>
 
         <default-interceptor-ref name="loginDefaultStack"/>
-
+        <!--  全局结果 -->
         <global-results>
-            <result>Login.action</result>
+            <!-- 拦截没登录返回结果(需权限未登录) -->
+            <result name="noLogin" type="redirect">/login.jsp</result>
+            <!-- 拦截没有权限返回结果(已登录没权限) -->
+            <result name="noPower" type="redirect">/login.jsp</result>
         </global-results>
+    </package>
 
+    <package name="indexPack" namespace="/" extends="struts-login">
+        <!-- 主页，需要判断是否登录来显示用户信息 -->
+        <action name="index" class="indexAction">
+            <result name="success">/index.jsp</result>
+            <result name="login">/index.jsp</result>
+        </action>
+    </package>
 
-
+    <package name="loginPack" namespace="/" extends="struts-login">
+        <!-- 登录与登出，若已经登录应返回登录状态，若从其他页面登录，成功后返回登录前页面 -->
         <action name="Login" class="loginAction" method="login">
             <result name="login" type="redirect">${goingToURL}</result>
             <result name="input">/login.jsp</result>
-            <!--<interceptor-ref name="loginInterceptor"/>-->
         </action>
 
         <action name="Logout" class="loginAction" method="logout">
+            <!-- 登出不需要拦截 -->
             <result name="login">/login.jsp</result>
             <result name="input">/failure.jsp</result>
+            <interceptor-ref name="defaultStack"/>
         </action>
     </package>
-    <package name="userRegister" namespace="/" extends="struts-default">
+
+    <package name="registPack" namespace="/" extends="struts-default">
+        <!-- 注册模块，无需拦截，故继承struts-default -->
         <action name="register" class="registerAction">
             <result name="success">/register.jsp</result>
             <result type="chain" name="login">Login</result>
             <result name="input">/register.jsp</result>
         </action>
     </package>
+
     <package name="pictureUpload" namespace="/" extends="struts-default">
+        <!-- 图片上传测试模块 -->
         <action name="picture" class="pictureAction">
             <result name="success">/test2.jsp</result>
             <result name="input">/failure.jsp</result>
@@ -59,7 +77,9 @@
             </result>
         </action>
     </package>
-    <package name="showNews" namespace="/" extends="json-default">
+
+    <package name="jsonPack" namespace="/" extends="json-default">
+        <!-- json测试模块 -->
         <action name="news" class="newsAction">
             <result name="success" type="json"/>
         </action>
@@ -67,7 +87,9 @@
             <result name="success" type="json"/>
         </action>
     </package>
-    <package name="showNews2" namespace="/" extends="struts-default">
+
+    <package name="newsPack" namespace="/" extends="struts-default">
+        <!-- 新闻发布模块，需要权限，现在测试暂时不继承struts-login -->
         <action name="news2" class="newsAction"/>
         <action name="addNews" class="newsAction" method="addNews">
             <interceptor-ref name="defaultStack">
@@ -90,7 +112,9 @@
             <result name="input">/admin/modify_new.jsp</result>
         </action>
     </package>
-    <package name="files" namespace="/" extends="struts-default">
+
+    <package name="filePack" namespace="/" extends="struts-default">
+        <!-- 文件上传模块，需要权限，现在测试暂时不继承struts-login -->
         <action name="file" class="fileAction"/>
         <action name="addfile" class="fileAction" method="addFile">
             <result name="success">/admin/manage_mend.jsp</result>
@@ -109,7 +133,9 @@
             <result name="input">/admin/modify_mend.jsp</result>
         </action>
     </package>
-    <package name="down" namespace="/" extends="struts-default">
+
+    <package name="downPack" namespace="/" extends="struts-default">
+        <!-- 通用下载模块 -->
         <action name="download" class="cn.edu.buaa.jsi.web.action.DownloadAction">
             <result name="success" type="stream">
                 <param name="contentType">application/octet-stream;charset=ISO8859-1</param>
@@ -118,9 +144,12 @@
                 <param name="bufferSize">8192</param>
             </result>
         </action>
-        <action name="index" class="indexAction">
-            <result name="success">/index.jsp</result>
-            <result name="login">/index.jsp</result>
+    </package>
+
+    <package name="adminPack" namespace="/" extends="struts-login">
+        <!-- 管理员模块 -->
+        <action name="admin" class="cn.edu.buaa.jsi.web.action.AdminAction">
+            <result name="success">/admin/index.jsp</result>
         </action>
     </package>
 </struts>

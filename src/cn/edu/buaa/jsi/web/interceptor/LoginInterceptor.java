@@ -32,9 +32,6 @@ public class LoginInterceptor extends AbstractInterceptor{
         HttpServletRequest request = (HttpServletRequest) actionContext.get(StrutsStatics.HTTP_REQUEST);
 
         String actionName = invocation.getProxy().getActionName();
-//        if ("Main".equals(actionName)){
-//            return "login";
-//        }
         Map session = actionContext.getSession();
         if (session != null && session.get(CommonConstants.SESSION_KEY_USER_NAME) != null) {
             return invocation.invoke();
@@ -51,10 +48,14 @@ public class LoginInterceptor extends AbstractInterceptor{
             }
         }
         setGoingToURL(session, invocation);
-        if ("Login".equals(actionName)){
-            return invocation.invoke();
-        }
-        return "login";
+//        if ("Login".equals(actionName)){
+//            return invocation.invoke();
+//        }
+        // 需要将有权限限制的action放入一个表中，然后每次判断登录用户是否拥有权限访问
+        // 登录用户没有权限访问，返回无权限提示界面 return noAuth
+        // 没有登录但访问页面需要权限，则返回Login界面 return noLogin
+        // 没有登录访问没有权限限制的页面，直接执行action
+        return invocation.invoke();
     }
     public void setGoingToURL(Map session, ActionInvocation invocation) {
         String url = "";
