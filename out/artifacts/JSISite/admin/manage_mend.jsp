@@ -8,7 +8,7 @@
 <title>manage_mend</title>
 </head>
 <body bgcolor="#ffffff">
-<s:action name="file" namespace="/"/>
+<s:action name="file" namespace="/admin"/>
 <table width="98%" border="0" align="center" cellpadding="0" cellspacing="1" class="tableNew"> 
   <tr align="center"> 
     <td colspan="6" class="TableTitle1" >工具/补丁下载管理</td> 

@@ -88,9 +88,12 @@
         </action>
     </package>
 
-    <package name="newsPack" namespace="/" extends="struts-default">
+    <package name="newsPack" namespace="/admin" extends="struts-default">
         <!-- 新闻发布模块，需要权限，现在测试暂时不继承struts-login -->
-        <action name="news2" class="newsAction"/>
+        <!--<action name="news2" class="newsAction"/>-->
+        <action name="showNews" class="newsAction">
+            <result name="success" type="freemarker">/admin/manage_new.ftl</result>
+        </action>
         <action name="addNews" class="newsAction" method="addNews">
             <interceptor-ref name="defaultStack">
                 <param name="fileUpload.allowedTypes">image/png,image/gif,image/jpeg,image/jpg</param>
@@ -104,7 +107,8 @@
             <result name="input">/admin/info_new.jsp</result>
         </action>
         <action name="delNews" class="newsAction" method="delNews">
-            <result name="success">/admin/manage_new.jsp</result>
+            <!--<result name="success">/admin/manage_new.jsp</result>-->
+            <result name="success" type="chain">showNews</result>
             <result name="input"></result>
         </action>
         <action name="modifyNews" class="newsAction" method="modifyNews">
@@ -113,7 +117,7 @@
         </action>
     </package>
 
-    <package name="filePack" namespace="/" extends="struts-default">
+    <package name="filePack" namespace="/admin" extends="struts-default">
         <!-- 文件上传模块，需要权限，现在测试暂时不继承struts-login -->
         <action name="file" class="fileAction"/>
         <action name="addfile" class="fileAction" method="addFile">
@@ -146,10 +150,10 @@
         </action>
     </package>
 
-    <package name="adminPack" namespace="/" extends="struts-login">
+    <package name="adminPack" namespace="/admin" extends="struts-login">
         <!-- 管理员模块 -->
         <action name="admin" class="cn.edu.buaa.jsi.web.action.AdminAction">
-            <result name="success">/admin/index.jsp</result>
+            <result name="success" type="freemarker">/admin/admin.ftl</result>
         </action>
     </package>
 </struts>

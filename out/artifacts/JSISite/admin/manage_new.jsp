@@ -7,7 +7,7 @@
 </head>
 <link href="../css/admin.css" rel="stylesheet" type="text/css">
 <body>
-<s:action name="news2" namespace="/"/>
+<s:action name="showNews" namespace="/admin"/>
 <table width="98%" border="0" align="center" cellpadding="0" cellspacing="1" class="tableNew">
     <tr align="center">
         <td colspan="5" class="TableTitle1" >新闻管理</td>

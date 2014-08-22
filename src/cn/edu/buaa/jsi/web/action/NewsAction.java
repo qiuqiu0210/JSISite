@@ -25,6 +25,7 @@ public class NewsAction extends BaseAction {
     private NewsService newsService;
     private int id;
     private String jsonList;
+    private List<News> newsList;
     private News news;
     private File upload;//类型为File的xxx属性封装了该文件域对应的文件内容。（文中的 File upload属性中的upload就是下面两个string的属性的前缀）
     private String uploadFileName;//类型为String的xxxFileName属性封装了该文件域对应的文件的文件名。
@@ -90,7 +91,7 @@ public class NewsAction extends BaseAction {
 
     @Override
     public String execute() {
-        List<News> newsList = this.newsService.findAllNews();
+        newsList = this.newsService.findAllNews();
         news = newsList.get(0);
         jsonList = JsonUtils.listToJson(newsList);
         System.out.println(jsonList);
@@ -160,5 +161,13 @@ public class NewsAction extends BaseAction {
 
     public void setUpload(File upload) {
         this.upload = upload;
+    }
+
+    public List<News> getNewsList() {
+        return newsList;
+    }
+
+    public void setNewsList(List<News> newsList) {
+        this.newsList = newsList;
     }
 }
