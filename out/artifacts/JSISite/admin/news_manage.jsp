@@ -36,16 +36,16 @@
         </tr>
     </s:if>
     <s:else>
-        <s:iterator id="newses" value="#list" status="st">
+        <s:iterator id="news1" value="#list" status="st">
             <%--<s:set name="count" value="<s:property value=\"#st.count\">-1"/>--%>
             <tr align="center">
-                <td height="27" bgcolor="#FFFFFF"><a target="_self" href="infoNews.action?id=${newses.newsId}">${newses.newsTitle}</a></td>
-                <td bgcolor="#FFFFFF">${newses.newsTime}</td>
-                <td bgcolor="#FFFFFF">${newses.newsAuthor}</td>
+                <td height="27" bgcolor="#FFFFFF"><a target="_self" href="infoNews.action?id=${news1.newsId}">${news1.newsTitle}</a></td>
+                <td bgcolor="#FFFFFF">${news1.newsTime}</td>
+                <td bgcolor="#FFFFFF">${news1.newsAuthor}</td>
                 <td bgcolor="#FFFFFF"></td>
                 <td bgcolor="#FFFFFF">
-                    <a href="modifyNews.action?id=${newses.newsId}"><img src="../images/modify.gif" border="0"></a>
-                    <a href="delNews.action?id=${newses.newsId}" onClick="javascript:return confirm('你确定删除该新闻吗？')"><img src="../images/del.gif" border="0"></a>
+                    <a href="modifyNews.action?id=${news1.newsId}"><img src="../images/modify.gif" border="0"></a>
+                    <a href="delNews.action?id=${news1.newsId}" onClick="javascript:return confirm('你确定删除该新闻吗？')"><img src="../images/del.gif" border="0"></a>
                 </td>
             </tr>
         </s:iterator>

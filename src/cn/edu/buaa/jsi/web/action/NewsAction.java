@@ -110,9 +110,9 @@ public class NewsAction extends BaseAction {
     @Override
     public String execute() {
         newsList = this.newsService.findAllNews();
-        news = newsList.get(0);
-        jsonList = JsonUtils.listToJson(newsList);
-        System.out.println(jsonList);
+//        news = newsList.get(0);
+//        jsonList = JsonUtils.listToJson(newsList);
+//        System.out.println(jsonList);
         //test2
 //        newsList = newsList.subList(0,3);//主页只显示三条新闻
         if (!newsList.isEmpty()) {
@@ -120,7 +120,6 @@ public class NewsAction extends BaseAction {
                 news1.setNewsContent(StringUtils.stringToHtml(news1.getNewsContent()));//对字符串中的空格与回车进行替换
             }
             Map session = ActionContext.getContext().getSession();
-            session.remove("newsList");
             session.put("newsList", newsList);
             return SUCCESS;
         }

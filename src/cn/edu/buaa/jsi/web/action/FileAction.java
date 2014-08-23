@@ -102,7 +102,7 @@ public class FileAction extends BaseAction {
             ActionContext.getContext().getSession().put("fileList", fileList);
             return SUCCESS;
         }
-        return null;
+        return SUCCESS;
     }
 
     public FileService getFileService() {
