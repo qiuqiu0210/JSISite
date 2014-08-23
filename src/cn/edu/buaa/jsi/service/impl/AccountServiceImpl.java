@@ -11,24 +11,22 @@ import org.apache.log4j.Logger;
 import java.util.List;
 
 /**
- * Created by Home on 2014/8/17.
+ * 账号业务实现类
+ * @author songliu
+ * @since 2014/08/17
  */
 public class AccountServiceImpl implements AccountService {
-
-    private static Logger log = LogManager.getLogger(UserServiceImpl.class.getName());
+    private static Logger log = LogManager.getLogger(AccountServiceImpl.class.getName());
 
     private AccountDao accountDao;
 
-    public AccountDao getAccountDao() {
-        return accountDao;
-    }
-
-    public void setAccountDao(AccountDao accountDao) {
-        this.accountDao = accountDao;
+    @Override
+    public List<Account> findAllAccounts() {
+        return this.accountDao.findAllAccounts();
     }
 
     @Override
-    public boolean addAccount(Account account) {
+    public boolean saveAccount(Account account) {
         return this.accountDao.saveAccount(account);
     }
 
@@ -38,7 +36,7 @@ public class AccountServiceImpl implements AccountService {
     }
 
     @Override
-    public boolean removeAccount(Account account) {
+    public boolean deleteAccount(Account account) {
         return false;
     }
 
@@ -62,5 +60,9 @@ public class AccountServiceImpl implements AccountService {
     @Override
     public boolean hasAccount(String username) {
         return this.accountDao.isExist(username);
+    }
+
+    public void setAccountDao(AccountDao accountDao) {
+        this.accountDao = accountDao;
     }
 }

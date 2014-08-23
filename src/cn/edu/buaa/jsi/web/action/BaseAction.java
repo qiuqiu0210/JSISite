@@ -13,7 +13,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.Map;
 
 /**
- * Created by Home on 2014/8/17.
+ * Action通用方法
+ * @author songliu
+ * @since 2014/08/17
  */
 public class BaseAction extends ActionSupport implements ServletRequestAware, ServletResponseAware, SessionAware {
     private HttpServletRequest request;
@@ -30,21 +32,6 @@ public class BaseAction extends ActionSupport implements ServletRequestAware, Se
     //Ajax.login返回值类型
     public static final String AIAX_LOGIN = "ajax.login";
 
-    @Override
-    public void setSession(Map<String, Object> session) {
-        this.session = session;
-    }
-
-    @Override
-    public void setServletRequest(HttpServletRequest request) {
-        this.request = request;
-    }
-
-    @Override
-    public void setServletResponse(HttpServletResponse response) {
-        this.response = response;
-    }
-
     /**
      * 获取当前登录用户
      */
@@ -55,6 +42,10 @@ public class BaseAction extends ActionSupport implements ServletRequestAware, Se
         }
         return account;
     }
+
+    /**
+     * 讲当前登录用户存储到Session中
+     */
     public void setLoginAccount(Account account) {
         if (account == null) {
             session.remove(LOGIN_USER);
@@ -63,6 +54,7 @@ public class BaseAction extends ActionSupport implements ServletRequestAware, Se
             session.put(LOGIN_USER, account);
         }
     }
+
     /**
      * 获取当前登录组
      */
@@ -73,6 +65,10 @@ public class BaseAction extends ActionSupport implements ServletRequestAware, Se
         }
         return group;
     }
+
+    /**
+     * 讲当前登录组存储到Session中
+     */
     public void setLoginGroup(Group group) {
         if (group == null) {
             session.remove(LOGIN_GROUP);
@@ -82,6 +78,10 @@ public class BaseAction extends ActionSupport implements ServletRequestAware, Se
         }
     }
 
+    /**
+     * 判断用户是否已经登录
+     * @return
+     */
     public boolean isLogin() {
         return session.containsKey(LOGIN_USER) && session.get(LOGIN_USER) != null;
     }
@@ -96,6 +96,7 @@ public class BaseAction extends ActionSupport implements ServletRequestAware, Se
     public void setToday(String today) {
         session.put(USER_SET_TODAY, today);
     }
+
     public String getToday() {
         String today = (String)session.get(USER_SET_TODAY);
         if (today == null){
@@ -107,5 +108,20 @@ public class BaseAction extends ActionSupport implements ServletRequestAware, Se
 
     public  void cleanSession() {
         session.clear();
+    }
+
+    @Override
+    public void setSession(Map<String, Object> session) {
+        this.session = session;
+    }
+
+    @Override
+    public void setServletRequest(HttpServletRequest request) {
+        this.request = request;
+    }
+
+    @Override
+    public void setServletResponse(HttpServletResponse response) {
+        this.response = response;
     }
 }

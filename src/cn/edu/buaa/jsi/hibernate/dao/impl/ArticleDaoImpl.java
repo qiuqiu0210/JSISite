@@ -7,11 +7,13 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * Created by Home on 2014/8/17.
+ * 文章dao接口实现类
+ * @author songliu
+ * @since 2014/08/17
  */
 public class ArticleDaoImpl extends BaseDaoImpl implements ArticleDao {
     @Override
-    public List<Article> findAllArticle() {
+    public List<Article> findAllArticles() {
         return null;
     }
 
@@ -41,12 +43,12 @@ public class ArticleDaoImpl extends BaseDaoImpl implements ArticleDao {
     }
 
     @Override
-    public boolean removeArticle(Article article) {
+    public boolean deleteArticle(Article article) {
         return false;
     }
 
     @Override
-    public boolean removeArticleByProperty(String propertyNames, Object value) {
+    public boolean deleteArticleByProperty(String propertyNames, Object value) {
         return false;
     }
 

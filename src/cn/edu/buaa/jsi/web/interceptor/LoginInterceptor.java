@@ -15,6 +15,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Map;
 
+/**
+ * 登录及权限拦截器
+ * @author songliu
+ * @since 2014/08/19
+ */
 public class LoginInterceptor extends AbstractInterceptor{
     private AccountService accountService;
 
@@ -26,6 +31,12 @@ public class LoginInterceptor extends AbstractInterceptor{
         this.accountService = accountService;
     }
 
+    /**
+     * 判断用户是否登录，以及是否存在登录Cookie
+     * @param invocation
+     * @return
+     * @throws Exception
+     */
     @Override
     public String intercept(ActionInvocation invocation) throws Exception {
         ActionContext actionContext = invocation.getInvocationContext();
@@ -57,6 +68,12 @@ public class LoginInterceptor extends AbstractInterceptor{
         // 没有登录访问没有权限限制的页面，直接执行action
         return invocation.invoke();
     }
+
+    /**
+     * 保存跳转前路径，便于登录后返回
+     * @param session
+     * @param invocation
+     */
     public void setGoingToURL(Map session, ActionInvocation invocation) {
         String url = "";
         String namespace = invocation.getProxy().getNamespace();

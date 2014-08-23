@@ -47,10 +47,10 @@
                 <td bgcolor="#FFFFFF">${file.fileKind}</td>
                     <%--<td bgcolor="#FFFFFF"><%=a.getState()==FinalConstants.STATE_MEND?"补丁":"工具"%></td>--%>
                 <td bgcolor="#FFFFFF">
-                    <a href="download.action?&fileName=${file.fileName}">
+                    <a href="../download.action?type=file&fileName=${file.fileName}">
                         <img src="../images/download.gif" border="0"></a>
                     &nbsp;&nbsp;
-                    <a href="modifyfile.action?&id=${file.fileId}">
+                    <a href="modifyfile.action?id=${file.fileId}">
                         <img src="../images/modify.gif" border="0"></a>
                     &nbsp;&nbsp;
                     <a href="delfile.action?id=${file.fileId}" onClick="javascript:return confirm('你确定删除该工具软件吗？')">

@@ -4,16 +4,24 @@ import cn.edu.buaa.jsi.entities.News;
 import cn.edu.buaa.jsi.hibernate.dao.NewsDao;
 import cn.edu.buaa.jsi.service.NewsService;
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+import org.apache.struts2.ServletActionContext;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
 /**
- * Created by Home on 2014/8/19.
+ * 新闻业务实现类
+ * @author songliu
+ * @since 2014/08/19
  */
 public class NewsServiceImpl implements NewsService {
+    private static Logger log = LogManager.getLogger(NewsServiceImpl.class.getName());
+
     private NewsDao newsDao;
+
     @Override
     public List<News> findAllNews() {
         return this.newsDao.findAllNews();
@@ -25,41 +33,41 @@ public class NewsServiceImpl implements NewsService {
     }
 
     @Override
-    public boolean addNews(News news) {
+    public boolean saveNews(News news) {
         return this.newsDao.saveNews(news);
     }
 
     @Override
-    public boolean addNewsGetId(News news) {
-        if (this.newsDao.saveNews(news)){
-
-        }
-        return false;
-    }
-
-    @Override
-    public boolean addNewsAndPhoto(News news, File oldFile, File newFile) {
+    public boolean saveNewsAndPhoto(News news, File oldFile, File newFile) {
         if (!newFile.getParentFile().exists()) {
+            log.debug("文件路径不存在，创建路径");
             newFile.getParentFile().mkdirs();
         }
         try {
             FileUtils.copyFile(oldFile, newFile);
-//            news.setNewsPhoto(newFile.getName());
             return this.newsDao.saveNews(news);
         } catch (IOException e) {
-            e.printStackTrace();
+            log.error("get failed " + e);
             return false;
         }
     }
 
     @Override
-    public boolean delNewsById(int id) {
-        return this.newsDao.delNewsById(id);
+    public boolean updateNews(News news) {
+        return this.newsDao.updateNews(news);
     }
 
     @Override
-    public boolean modifyNews(News news) {
-        return this.newsDao.updateNews(news);
+    public boolean deleteNewsById(int id) {
+        News news = this.newsDao.findNewsById(id);
+        String filePath = ServletActionContext.getServletContext().getRealPath("/")
+                + File.separator +  news.getNewsPhoto();
+        File file=new File(filePath);
+        if(file.exists()){
+            file.delete();
+            log.debug("picture deleted success");
+        }
+        return this.newsDao.deleteNewsById(id);
     }
 
     public void setNewsDao(NewsDao newsDao) {

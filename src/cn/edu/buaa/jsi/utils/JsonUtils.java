@@ -1,7 +1,9 @@
 package cn.edu.buaa.jsi.utils;
 
 /**
- * Created by Home on 2014/8/20.
+ * Json相关工具
+ * @author songliu
+ * @since 2014/08/20
  */
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;

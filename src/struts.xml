@@ -140,22 +140,23 @@
         </action>
     </package>
 
+    <package name="adminPack" namespace="/admin" extends="struts-login">
+        <!-- 管理员模块 -->
+        <action name="admin" class="cn.edu.buaa.jsi.web.action.AdminAction">
+            <result name="success">index.jsp</result>
+        </action>
+    </package>
+
     <package name="downPack" namespace="/" extends="struts-default">
         <!-- 通用下载模块 -->
         <action name="download" class="cn.edu.buaa.jsi.web.action.DownloadAction">
+            <result name="fileNotFound">/admin/not_found.jsp</result>
             <result name="success" type="stream">
                 <param name="contentType">application/octet-stream;charset=ISO8859-1</param>
                 <param name="inputName">downloadFile</param>
                 <param name="contentDisposition">attachment;filename=%{fileName}</param>
                 <param name="bufferSize">8192</param>
             </result>
-        </action>
-    </package>
-
-    <package name="adminPack" namespace="/admin" extends="struts-login">
-        <!-- 管理员模块 -->
-        <action name="admin" class="cn.edu.buaa.jsi.web.action.AdminAction">
-            <result name="success">index.jsp</result>
         </action>
     </package>
 </struts>

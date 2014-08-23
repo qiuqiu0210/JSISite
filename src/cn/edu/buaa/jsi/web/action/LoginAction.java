@@ -10,11 +10,9 @@ import javax.servlet.http.*;
 import java.util.Map;
 
 /**
- * @ClassName: LoginAction
- * @Description: 登录Action
+ * 登录Action
  * @author songliu
- * @date 2014-08-13
- *
+ * @since 2014/08/13
  */
 public class LoginAction extends BaseAction {
     private String username;
@@ -28,10 +26,7 @@ public class LoginAction extends BaseAction {
     private Map session;
 
     /**
-     * @Title: login
-     * @Description: 用户登录
-     * @param
-     * @return
+     * 处理登录请求
      */
     public String login(){
         //只要有一个参数为null就跳转
@@ -61,6 +56,9 @@ public class LoginAction extends BaseAction {
         }
     }
 
+    /**
+     * 处理登出请求
+     */
     public String logout(){
         if (session != null){
             session.remove("SESSION_KEY_USER_NAME");
@@ -69,6 +67,9 @@ public class LoginAction extends BaseAction {
         return LOGIN;
     }
 
+    /**
+     * 判断用户是否登录成功
+     */
     public boolean loginSuccess(){
         if(username != null && password != null && !"".equals(username) && !"".equals(password)) {
             account = accountService.validateAccount(username, password);
@@ -82,6 +83,9 @@ public class LoginAction extends BaseAction {
         }
     }
 
+    /**
+     * 页面表单提交时，自动调用validate方法进行初步验证
+     */
     @Override
     public void validate() {
         if ("".equals(username)) {

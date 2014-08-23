@@ -3,7 +3,9 @@ package cn.edu.buaa.jsi.entities;
 import java.sql.Timestamp;
 
 /**
- * Created by Home on 2014/8/17.
+ *
+ * @author songliu
+ * @since 2014/08/17
  */
 public class Article {
     private int artId;

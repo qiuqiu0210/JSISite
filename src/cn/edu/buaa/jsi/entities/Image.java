@@ -3,7 +3,9 @@ package cn.edu.buaa.jsi.entities;
 import java.sql.Blob;
 
 /**
- * Created by Administrator on 14-8-19.
+ *
+ * @author songliu
+ * @since 2014/08/17
  */
 public class Image {
     private int imageId;

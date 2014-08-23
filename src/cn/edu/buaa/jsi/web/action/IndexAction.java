@@ -9,11 +9,17 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by Home on 2014/8/18.
+ * index页面对应Action
+ * @author songliu
+ * @since 2014/08/19
  */
 public class IndexAction extends BaseAction {
     private NewsService newsService;
 
+    /**
+     * 准备首页显示所需的新闻等信息
+     */
+    @Override
     public String execute() throws Exception {
         List<News> newsList = this.newsService.findAllNews();
 

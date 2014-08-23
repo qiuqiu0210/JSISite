@@ -2,35 +2,65 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ecf19df-7722-4732-86fa-c13c19c51d62" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/admin/file_add.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/admin/file_info.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/admin/file_manage.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/admin/file_modify.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/admin/news_add.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/admin/news_info.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/admin/news_manage.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/admin/news_modify.jsp" />
-      <change type="DELETED" beforePath="E:\IdeaProjects\JSISite\web\admin\add_mend.jsp" afterPath="" />
-      <change type="DELETED" beforePath="E:\IdeaProjects\JSISite\web\admin\add_new.jsp" afterPath="" />
-      <change type="DELETED" beforePath="E:\IdeaProjects\JSISite\web\admin\info_mend.jsp" afterPath="" />
-      <change type="DELETED" beforePath="E:\IdeaProjects\JSISite\web\admin\manage_mend.jsp" afterPath="" />
-      <change type="DELETED" beforePath="E:\IdeaProjects\JSISite\web\admin\manage_new.jsp" afterPath="" />
-      <change type="DELETED" beforePath="E:\IdeaProjects\JSISite\web\admin\modify_mend.jsp" afterPath="" />
-      <change type="DELETED" beforePath="E:\IdeaProjects\JSISite\web\ftl\admin.ftl" afterPath="" />
-      <change type="DELETED" beforePath="E:\IdeaProjects\JSISite\web\ftl\info_news.ftl" afterPath="" />
-      <change type="DELETED" beforePath="E:\IdeaProjects\JSISite\web\ftl\left.ftl" afterPath="" />
-      <change type="DELETED" beforePath="E:\IdeaProjects\JSISite\web\ftl\manage_news.ftl" afterPath="" />
-      <change type="DELETED" beforePath="E:\IdeaProjects\JSISite\web\ftl\modify_news.ftl" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JSISite.iml" afterPath="$PROJECT_DIR$/JSISite.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JSISite.ipr" afterPath="$PROJECT_DIR$/JSISite.ipr" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/filepath.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/admin/not_found.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Account.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Account.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/AccountDao.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/AccountDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/AccountDaoImpl.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/AccountDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/AccountService.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/AccountService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/impl/AccountServiceImpl.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/impl/AccountServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/AdminAction.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/AdminAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Article.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Article.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/ArticleDao.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/ArticleDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/ArticleDaoImpl.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/ArticleDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/BaseAction.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/BaseAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/BaseDao.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/BaseDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/BaseDaoImpl.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/BaseDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Catalog.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Catalog.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/CipherUtil.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/CipherUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/CommonUtils.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/CommonUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/CookieUtils.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/CookieUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/DownloadAction.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/DownloadAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/FileAction.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/FileAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/FileDao.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/FileDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/FileDaoImpl.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/FileDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/FileService.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/FileService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/impl/FileServiceImpl.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/impl/FileServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Group.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Group.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/GroupDao.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/GroupDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/GroupDaoImpl.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/GroupDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/HibernateUtils.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/HibernateUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Image.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Image.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/ImageDao.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/ImageDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/ImageDaoImpl.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/ImageDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/ImageService.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/ImageService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/IndexAction.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/IndexAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/InitialDatebase.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/InitialDatebase.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JSISite.iws" afterPath="$PROJECT_DIR$/JSISite.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/blank.jsp" afterPath="$PROJECT_DIR$/web/admin/blank.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/bottom.jsp" afterPath="$PROJECT_DIR$/web/admin/bottom.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/index.jsp" afterPath="$PROJECT_DIR$/web/admin/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/left.jsp" afterPath="$PROJECT_DIR$/web/admin/left.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/main.jsp" afterPath="$PROJECT_DIR$/web/admin/main.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/JsonUtils.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/JsonUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/LoginAction.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/LoginAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/interceptor/LoginInterceptor.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/interceptor/LoginInterceptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/News.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/News.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/NewsAction.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/NewsAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/NewsDao.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/NewsDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/NewsDaoImpl.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/NewsDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/NewsService.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/NewsService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/impl/NewsServiceImpl.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/impl/NewsServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/RegisterAction.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/RegisterAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/StringUtils.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/StringUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/User.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/UserDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/UserDaoImpl.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/UserDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/UserService.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/impl/UserServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/file_add.jsp" afterPath="$PROJECT_DIR$/web/admin/file_add.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/file_info.jsp" afterPath="$PROJECT_DIR$/web/admin/file_info.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/file_manage.jsp" afterPath="$PROJECT_DIR$/web/admin/file_manage.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/file_modify.jsp" afterPath="$PROJECT_DIR$/web/admin/file_modify.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/news_info.jsp" afterPath="$PROJECT_DIR$/web/admin/news_info.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/struts.xml" afterPath="$PROJECT_DIR$/src/struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/top.jsp" afterPath="$PROJECT_DIR$/web/admin/top.jsp" />
+      <change type="MOVED" beforePath="E:\IdeaProjects\JSISite\src\cn\edu\buaa\jsi\entities\UpFile.java" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/FileEntity.java" />
+      <change type="MOVED" beforePath="E:\IdeaProjects\JSISite\src\cn\edu\buaa\jsi\hibernate\hbm\UpFile.hbm.xml" afterPath="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/hbm/FileEntity.hbm.xml" />
     </list>
     <ignored path="JSISite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -162,45 +192,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="NewsAction.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/NewsAction.java">
+      <file leaf-file-name="FileEntity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/FileEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.094623655" vertical-offset="1012" max-vertical-offset="2926">
-              <caret line="64" column="29" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2046">
+              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewsService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/NewsService.java">
+      <file leaf-file-name="Group.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Group.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="6" max-vertical-offset="484">
-              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="990">
+              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewsServiceImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/impl/NewsServiceImpl.java">
+      <file leaf-file-name="Image.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Image.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="623" max-vertical-offset="1298">
-              <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
-              <folding>
-                <element signature="e#1432#1433#0" expanded="true" />
-                <element signature="e#1490#1491#0" expanded="true" />
-                <element signature="e#1542#1543#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1034">
+              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileServiceImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/impl/FileServiceImpl.java">
+      <file leaf-file-name="News.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/News.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="699" max-vertical-offset="1298">
-              <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="88" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1650">
+              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2530">
+              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-92.96774" vertical-offset="0" max-vertical-offset="9328">
+              <caret line="131" column="44" selection-start-line="131" selection-start-column="44" selection-end-line="131" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -209,18 +255,28 @@
       <file leaf-file-name="FileAction.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/FileAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1056" max-vertical-offset="2398">
-              <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="616" max-vertical-offset="2794">
+              <caret line="36" column="24" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/FileService.java">
+      <file leaf-file-name="file_add.jsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/admin/file_add.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="462">
-              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.8417266" vertical-offset="1409" max-vertical-offset="1958">
+              <caret line="80" column="9" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="file_manage.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/admin/file_manage.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.935484" vertical-offset="1286" max-vertical-offset="1716">
+              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="69" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -240,57 +296,57 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/UpFile.java" />
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/hbm/UpFile.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/DownloadAction.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/AccountDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/ArticleDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/FileDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/GroupDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/ArticleDao.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/impl/AccountServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/impl/FileServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/struts.properties" />
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/config/spring-action-beans.xml" />
-        <option value="$PROJECT_DIR$/web/main.html" />
-        <option value="$PROJECT_DIR$/web/css/main.css" />
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/StringUtils.java" />
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/IndexAction.java" />
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/interceptor/LoginInterceptor.java" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/left.ftl" />
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/FileAction.java" />
-        <option value="$PROJECT_DIR$/web/admin/manage_new.ftl" />
-        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/AdminAction.java" />
-        <option value="$PROJECT_DIR$/web/admin/top.ftl" />
-        <option value="$PROJECT_DIR$/web/admin/admin.ftl" />
-        <option value="$PROJECT_DIR$/web/admin/main.ftl" />
-        <option value="$PROJECT_DIR$/web/admin/info_news.ftl" />
-        <option value="$PROJECT_DIR$/web/admin/add_news.ftl" />
-        <option value="$PROJECT_DIR$/web/admin/modify_news.ftl" />
-        <option value="$PROJECT_DIR$/web/admin/manage_new.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/modify_new.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/info_new.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/add_new.jsp" />
-        <option value="$PROJECT_DIR$/web/login.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/add_mend.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/index.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/info_mend.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/modify_mend.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/add_file.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/modify_file.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/info_file.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/manage_mend.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/top.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/news_modify.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/news_info.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/news_add.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/main.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/file_modify.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/file_info.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/file_add.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/bottom.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/blank.jsp" />
-        <option value="$PROJECT_DIR$/src/struts.xml" />
-        <option value="$PROJECT_DIR$/web/admin/left.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/news_manage.jsp" />
-        <option value="$PROJECT_DIR$/web/admin/file_manage.jsp" />
         <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/impl/NewsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/CommonUtils.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/CookieUtils.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/CipherUtil.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/HibernateUtils.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/InitialDatebase.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/JsonUtils.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/StringUtils.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/BaseAction.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/LoginAction.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/FileAction.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/RegisterAction.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/IndexAction.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/DownloadAction.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/AdminAction.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/BaseDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/GroupDao.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/FileDao.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/AccountDao.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/BaseDao.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/NewsDao.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/NewsDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/ImageService.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/ImageDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/ImageDao.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/FileService.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/NewsService.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/AccountService.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/NewsAction.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/interceptor/LoginInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Account.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Article.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Catalog.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/FileEntity.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Group.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Image.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/News.java" />
+        <option value="$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/User.java" />
+        <option value="$PROJECT_DIR$/web/admin/file_add.jsp" />
+        <option value="$PROJECT_DIR$/src/filepath.properties" />
       </list>
     </option>
   </component>
@@ -403,6 +459,24 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSISite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSISite" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -438,6 +512,184 @@
               <option name="myItemId" value="jsi" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interceptor" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSISite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSISite" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsi" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="action" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSISite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSISite" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsi" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSISite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSISite" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsi" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSISite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSISite" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsi" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSISite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSISite" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsi" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hibernate" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSISite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSISite" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsi" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hibernate" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSISite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSISite" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsi" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hibernate" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -465,7 +717,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/json-lib-2.4-jdk15.jar!/" />
     <property name="dynamic.classpath" value="false" />
     <property name="JPA.DatabaseSchemaImportDialog" value="0f2a1bb0-aaab-4408-8a80-6c6f75927697" />
-    <property name="options.lastSelected" value="preferences.fileTypes" />
+    <property name="options.lastSelected" value="fileTemplates" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -480,11 +732,11 @@
       <recent name="E:\home\Administrator\Documents\IdeaProjects\JSISite\web" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\JSISite\src" />
       <recent name="E:\IdeaProjects\JSISite\web\ftl" />
       <recent name="D:\Projects\JSISite\src\cn\edu\buaa\jsi\hibernate\hbm" />
       <recent name="E:\IdeaProjects\JSISite\src\cn\edu\buaa\jsi\hibernate\hbm" />
       <recent name="D:\Projects\JSISite\src\cn\edu\buaa\jsi\hibernate" />
-      <recent name="E:\IdeaProjects\JSISite\web" />
     </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="cn.edu.buaa.jsi.entities" />
@@ -897,37 +1149,37 @@
       <workItem from="1408619260758" duration="12412000" />
       <workItem from="1408670944623" duration="17988000" />
       <workItem from="1408694377041" duration="81000" />
-      <workItem from="1408694469094" duration="13122000" />
+      <workItem from="1408694469094" duration="41597000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="295997000" />
+    <option name="totallyTimeSpent" value="324472000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23413897" sideWeight="0.2556962" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23319027" sideWeight="0.25544554" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31359354" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289689" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23319027" sideWeight="0.7425743" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32032302" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23319027" sideWeight="0.7425743" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32032302" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39703903" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31462142" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31359354" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32166892" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23319027" sideWeight="0.25544554" order="5" side_tool="true" content_ui="tabs" />
@@ -966,26 +1218,8 @@
           <properties class="org.springframework.orm.hibernate4.support.OpenSessionInViewFilter" method="&lt;init&gt;" />
           <option name="timeStamp" value="95" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/InitialDatebase.java</url>
-          <line>30</line>
-          <properties />
-          <option name="timeStamp" value="96" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/GroupDaoImpl.java</url>
-          <line>22</line>
-          <properties />
-          <option name="timeStamp" value="97" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/pictureAction.java</url>
-          <line>17</line>
-          <properties />
-          <option name="timeStamp" value="98" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="99" />
+      <option name="time" value="108" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -993,352 +1227,431 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/images/admin_bg.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/images/admin_ico.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/images/arrow.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/images/ashline_head.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/images/bg_ad.GIF">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/images/bg.GIF">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/images/banner_bg.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/images/ashline_foot.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/images/announce.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/images/affiche.JPG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/struts.properties">
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/CookieUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1474">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="10" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/main.html">
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/HibernateUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/config/spring-action-beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2046">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/main.css">
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/InitialDatebase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="858">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/JsonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4488">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/SecurityUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="352">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/utils/StringUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23117338" vertical-offset="66" max-vertical-offset="3190">
-          <caret line="9" column="40" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19692308" vertical-offset="3522" max-vertical-offset="9328">
-          <caret line="163" column="59" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="10912">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.264045" vertical-offset="1518" max-vertical-offset="43054">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/interceptor/LoginInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="618" max-vertical-offset="1320">
-          <caret line="54" column="45" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/xwork-core.jar!/com/opensymphony/xwork2/ActionSupport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.86404836" vertical-offset="660" max-vertical-offset="2442">
-          <caret line="18" column="16" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/IndexAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1380754" vertical-offset="94" max-vertical-offset="770">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/LoginAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="132" max-vertical-offset="2618">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/AdminAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23012552" vertical-offset="0" max-vertical-offset="478">
-          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/BaseAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36820084" vertical-offset="0" max-vertical-offset="2090">
-          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4193548" vertical-offset="0" max-vertical-offset="4950">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/top.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.967742" vertical-offset="0" max-vertical-offset="1012">
-          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/news_modify.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.967742" vertical-offset="0" max-vertical-offset="1540">
-          <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/news_info.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.8387096" vertical-offset="66" max-vertical-offset="1342">
-          <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/news_add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.967742" vertical-offset="0" max-vertical-offset="1386">
-          <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/file_modify.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.967742" vertical-offset="0" max-vertical-offset="2244">
-          <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/file_info.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.967742" vertical-offset="0" max-vertical-offset="1430">
-          <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/file_add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.967742" vertical-offset="0" max-vertical-offset="1826">
-          <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/bottom.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.967742" vertical-offset="0" max-vertical-offset="858">
-          <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.612903" vertical-offset="182" max-vertical-offset="792">
-          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/file_manage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52820516" vertical-offset="322" max-vertical-offset="1716">
-          <caret line="24" column="53" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/news_manage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.3925729" vertical-offset="264" max-vertical-offset="1540">
-          <caret line="53" column="114" selection-start-line="53" selection-start-column="114" selection-end-line="53" selection-end-column="114" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/left.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7002652" vertical-offset="528" max-vertical-offset="1144">
-          <caret line="36" column="142" selection-start-line="36" selection-start-column="142" selection-end-line="36" selection-end-column="142" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/images/blank_bg.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63982105" vertical-offset="0" max-vertical-offset="484">
-          <caret line="13" column="56" selection-start-line="13" selection-start-column="56" selection-end-line="13" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/blank.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34451902" vertical-offset="0" max-vertical-offset="506">
-          <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/struts.xml">
-      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1017699" vertical-offset="2918" max-vertical-offset="3652">
-          <caret line="110" column="42" selection-start-line="110" selection-start-column="42" selection-end-line="110" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3234">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/FirstAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18410042" vertical-offset="66" max-vertical-offset="924">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="924">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/FileAction.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/ArticleDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1056" max-vertical-offset="2398">
-          <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1012">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/FileDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="682">
+          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+          <folding>
+            <element signature="method#findFileById#0;class#FileDaoImpl#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/GroupDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="1144">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/AccountDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2090">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/ArticleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="44" max-vertical-offset="660">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/BaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2892" max-vertical-offset="3586">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/FileDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1100">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/GroupDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="814">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="406" max-vertical-offset="1100">
+          <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/BaseDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8976">
+          <caret line="112" column="11" selection-start-line="112" selection-start-column="11" selection-end-line="112" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="560" max-vertical-offset="1254">
+          <caret line="55" column="7" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/NewsDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="682">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/ImageDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="770">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/ImageDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/NewsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1100">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="10" selection-end-column="3" />
+          <folding>
+            <element signature="docComment;method#findAllNews#0;class#NewsDao#0" expanded="false" />
+            <element signature="docComment;method#findNewsById#0;class#NewsDao#0" expanded="false" />
+            <element signature="docComment;method#saveNews#0;class#NewsDao#0" expanded="false" />
+            <element signature="docComment;method#updateNews#0;class#NewsDao#0" expanded="false" />
+            <element signature="docComment;method#deleteNewsById#0;class#NewsDao#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/impl/AccountServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="1056">
+          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#validateAccount#0;class#AccountServiceImpl#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/FileService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="52" max-vertical-offset="814">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;method#findFileById#0;class#FileService#0" expanded="false" />
+            <element signature="docComment;method#saveFile#0;class#FileService#0" expanded="false" />
+            <element signature="docComment;method#saveFileAndUpload#0;class#FileService#0" expanded="false" />
+            <element signature="docComment;method#updateFile#0;class#FileService#0" expanded="false" />
+            <element signature="docComment;method#deleteFileById#0;class#FileService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/ImageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="220">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/NewsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6" max-vertical-offset="484">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="604" max-vertical-offset="1298">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/FileService.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="462">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/impl/FileServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/BaseAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="699" max-vertical-offset="1298">
-          <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="88" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2574">
+          <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/impl/NewsServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/DownloadAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="623" max-vertical-offset="1298">
-          <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
-          <folding>
-            <element signature="e#1432#1433#0" expanded="true" />
-            <element signature="e#1490#1491#0" expanded="true" />
-            <element signature="e#1542#1543#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1848">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/NewsAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.094623655" vertical-offset="1012" max-vertical-offset="2926">
-          <caret line="64" column="29" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2113" max-vertical-offset="3300">
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/LoginAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.409222" vertical-offset="66" max-vertical-offset="2706">
+          <caret line="86" column="11" selection-start-line="86" selection-start-column="11" selection-end-line="86" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/AdminAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/IndexAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4755043" vertical-offset="0" max-vertical-offset="902">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/service/AccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="516" max-vertical-offset="1320">
+          <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/RegisterAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1804">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="11" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/interceptor/LoginInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1000" max-vertical-offset="1694">
+          <caret line="72" column="22" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/hibernate/dao/impl/AccountDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1606">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="14" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1276">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Article.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3014">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Catalog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="990">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/FileEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2046">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Group.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="990">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/Image.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1034">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/News.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1650">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/entities/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2530">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-92.96774" vertical-offset="0" max-vertical-offset="9328">
+          <caret line="131" column="44" selection-start-line="131" selection-start-column="44" selection-end-line="131" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/edu/buaa/jsi/web/action/FileAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="616" max-vertical-offset="2794">
+          <caret line="36" column="24" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/file_manage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.935484" vertical-offset="1286" max-vertical-offset="1716">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="69" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/filepath.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09544469" vertical-offset="0" max-vertical-offset="461">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/file_add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8417266" vertical-offset="1409" max-vertical-offset="1958">
+          <caret line="80" column="9" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
           <folding />
         </state>
       </provider>

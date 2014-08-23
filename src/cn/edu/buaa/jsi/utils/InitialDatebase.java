@@ -15,7 +15,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Home on 2014-08-15.
+ * 初始化数据库
+ * @author songliu
+ * @since 2014/08/15
  */
 public class InitialDatebase {
     public static void main (String []args) {
@@ -28,7 +30,7 @@ public class InitialDatebase {
         group.setGroupDisc("GUEST");
         groupList.add(group);
         GroupDao groupDao = context.getBean(GroupDao.class);
-        if (groupDao.saveAllGroup(groupList)){
+        if (groupDao.saveAllGroups(groupList)){
             Account account = new Account();
             account.setAccountName("admin");
             account.setAccountPassword(CipherUtil.generatePassword("123"));

@@ -4,23 +4,28 @@ import java.security.MessageDigest;
 
 /**
  * 对密码进行加密和验证的类
+ * @author songliu
+ * @since 2014/08/15
  */
 public class CipherUtil{
-
     //十六进制下数字到字符的映射数组
     private final static String[] hexDigits = {"0", "1", "2", "3", "4",
             "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"};
 
-    /** * 把inputString加密     */
+    /**
+     * 把inputString加密
+     * @param inputString 输入的字符串
+     * @return 加密后字符串
+     */
     public static String generatePassword(String inputString){
         return encodeByMD5(inputString);
     }
 
     /**
      * 验证输入的密码是否正确
-     * @param password    加密后的密码
-     * @param inputString    输入的字符串
-     * @return    验证结果，TRUE:正确 FALSE:错误
+     * @param password 加密后的密码
+     * @param inputString 输入的字符串
+     * @return 验证结果，TRUE:正确 FALSE:错误
      */
     public static boolean validatePassword(String password, String inputString){
         if(password.equals(encodeByMD5(inputString))){
@@ -29,7 +34,12 @@ public class CipherUtil{
             return false;
         }
     }
-    /**  对字符串进行MD5加密     */
+
+    /**
+     * 对字符串进行MD5加密
+     * @param originString 加密前字符串
+     * @return 加密后字符串
+     */
     private static String encodeByMD5(String originString){
         if (originString != null){
             try{
@@ -49,8 +59,8 @@ public class CipherUtil{
 
     /**
      * 转换字节数组为十六进制字符串
-     * @param     b 字节数组
-     * @return    十六进制字符串
+     * @param b 字节数组
+     * @return 十六进制字符串
      */
     private static String byteArrayToHexString(byte[] b){
         StringBuffer resultSb = new StringBuffer();
@@ -60,7 +70,11 @@ public class CipherUtil{
         return resultSb.toString();
     }
 
-    /** 将一个字节转化成十六进制形式的字符串     */
+    /**
+     * 将一个字节转化成十六进制形式的字符串
+     * @param b 字节
+     * @return 十六进制字符串
+     */
     private static String byteToHexString(byte b){
         int n = b;
         if (n < 0)

@@ -3,9 +3,11 @@ package cn.edu.buaa.jsi.entities;
 import java.sql.Timestamp;
 
 /**
- * Created by Administrator on 14-8-21.
+ *
+ * @author songliu
+ * @since 2014/08/21
  */
-public class UpFile {
+public class FileEntity {
     private int fileId;
     private String fileTitle;
     private String fileName;
@@ -85,15 +87,15 @@ public class UpFile {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        UpFile upFile = (UpFile) o;
+        FileEntity fileEntity = (FileEntity) o;
 
-        if (fileId != upFile.fileId) return false;
-        if (fileCount != null ? !fileCount.equals(upFile.fileCount) : upFile.fileCount != null) return false;
-        if (fileKind != null ? !fileKind.equals(upFile.fileKind) : upFile.fileKind != null) return false;
-        if (fileName != null ? !fileName.equals(upFile.fileName) : upFile.fileName != null) return false;
-        if (filePath != null ? !filePath.equals(upFile.filePath) : upFile.filePath != null) return false;
-        if (fileSuffix != null ? !fileSuffix.equals(upFile.fileSuffix) : upFile.fileSuffix != null) return false;
-        if (fileTime != null ? !fileTime.equals(upFile.fileTime) : upFile.fileTime != null) return false;
+        if (fileId != fileEntity.fileId) return false;
+        if (fileCount != null ? !fileCount.equals(fileEntity.fileCount) : fileEntity.fileCount != null) return false;
+        if (fileKind != null ? !fileKind.equals(fileEntity.fileKind) : fileEntity.fileKind != null) return false;
+        if (fileName != null ? !fileName.equals(fileEntity.fileName) : fileEntity.fileName != null) return false;
+        if (filePath != null ? !filePath.equals(fileEntity.filePath) : fileEntity.filePath != null) return false;
+        if (fileSuffix != null ? !fileSuffix.equals(fileEntity.fileSuffix) : fileEntity.fileSuffix != null) return false;
+        if (fileTime != null ? !fileTime.equals(fileEntity.fileTime) : fileEntity.fileTime != null) return false;
 
         return true;
     }

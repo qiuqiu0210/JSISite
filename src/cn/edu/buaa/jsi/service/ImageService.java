@@ -6,7 +6,9 @@ import java.io.File;
 import java.io.Serializable;
 
 /**
- * Created by Administrator on 14-8-19.
+ * 图像业务接口
+ * @author songliu
+ * @since 2014/08/19
  */
 public interface ImageService {
     public boolean addImage(File image);

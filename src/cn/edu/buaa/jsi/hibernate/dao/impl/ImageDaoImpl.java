@@ -12,7 +12,9 @@ import java.io.Serializable;
 import java.sql.Blob;
 
 /**
- * Created by Administrator on 14-8-19.
+ * 图像dao接口实现类（Blob格式存储测试）
+ * @author songliu
+ * @since 2014/08/19
  */
 public class ImageDaoImpl extends BaseDaoImpl implements ImageDao {
     @Override

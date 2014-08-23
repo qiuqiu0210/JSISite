@@ -6,7 +6,9 @@ import cn.edu.buaa.jsi.utils.CipherUtil;
 import cn.edu.buaa.jsi.utils.CommonUtils;
 
 /**
- * Created by Administrator on 14-8-19.
+ * 注册Action
+ * @author songliu
+ * @since 2014/08/19
  */
 public class RegisterAction extends BaseAction {
     private String username;
@@ -15,13 +17,17 @@ public class RegisterAction extends BaseAction {
     private AccountService accountService;
     private Account account = new Account();
 
+    /**
+     * 处理注册请求
+     */
+    @Override
     public String execute() throws Exception {
         if (username == null || password == null || repassword == null){
             return SUCCESS;
         }
         account.setAccountName(username);
         account.setAccountPassword(CipherUtil.generatePassword(password));
-        if (accountService.addAccount(account)) {
+        if (accountService.saveAccount(account)) {
             return "login";
         }
         else {
@@ -30,6 +36,9 @@ public class RegisterAction extends BaseAction {
         }
     }
 
+    /**
+     * 页面表单提交时，自动调用validate方法进行初步验证
+     */
     @Override
     public void validate() {
         if (username == null || password == null || repassword == null){
@@ -50,10 +59,6 @@ public class RegisterAction extends BaseAction {
         if (accountService.hasAccount(username)){
             this.addFieldError("error", "username is already exist");
         }
-    }
-
-    public boolean registerAccount() {
-        return false;
     }
 
     public String getUsername() {

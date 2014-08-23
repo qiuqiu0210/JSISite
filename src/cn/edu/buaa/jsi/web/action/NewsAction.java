@@ -2,6 +2,7 @@ package cn.edu.buaa.jsi.web.action;
 
 import cn.edu.buaa.jsi.entities.News;
 import cn.edu.buaa.jsi.service.NewsService;
+import cn.edu.buaa.jsi.utils.CommonUtils;
 import cn.edu.buaa.jsi.utils.JsonUtils;
 import cn.edu.buaa.jsi.utils.StringUtils;
 import com.opensymphony.xwork2.Action;
@@ -19,7 +20,9 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
- * Created by Home on 2014/8/19.
+ * 新闻Action
+ * @author songliu
+ * @since 2014/08/19
  */
 public class NewsAction extends BaseAction {
     private NewsService newsService;
@@ -31,6 +34,9 @@ public class NewsAction extends BaseAction {
     private String uploadFileName;//类型为String的xxxFileName属性封装了该文件域对应的文件的文件名。
     private String uploadContentType;//类型为String的xxxContentType属性封装了该文件域对应的文件的文件名。
 
+    /**
+     * 处理添加新闻请求
+     */
     public String addNews() throws Exception{
         if (news == null){
             return INPUT;
@@ -38,22 +44,25 @@ public class NewsAction extends BaseAction {
         Timestamp time = new Timestamp(System.currentTimeMillis());
         news.setNewsTime(time);
         if (upload != null) {
-            String path = ServletActionContext.getServletContext().getRealPath("/upload");
-            String[] fname = uploadFileName.split("\\.");
-            String suffix = fname[fname.length-1];
+            //filepath.properties文件中指定：图片上传到web路径下的upload文件夹
+            Properties properties = CommonUtils.getProperties("filepath.properties");
+            //读取相对路径
+            String relative = properties.getProperty("upload.picture.relative");
+            String path = ServletActionContext.getServletContext().getRealPath(relative);
+            String suffix = uploadFileName.substring(uploadFileName.lastIndexOf(".")).toLowerCase();
             String filename = UUID.randomUUID().toString()+"."+suffix;
             String pathname = path + File.separator + filename;
-            news.setNewsPhoto("upload/" + filename);
+            news.setNewsPhoto(relative + File.separator + filename);
             File saveFile = new File(pathname);
 
-            if (this.newsService.addNewsAndPhoto(news, upload, saveFile)){
+            if (this.newsService.saveNewsAndPhoto(news, upload, saveFile)){
 //                this.addActionMessage("添加成功!!");
                 ActionContext.getContext().put("message", "文章及配图添加成功！");
                 return SUCCESS;
             }
         }
         else {
-            if (this.newsService.addNews(news)){
+            if (this.newsService.saveNews(news)){
 //                this.addActionMessage("添加成功!!");
                 ActionContext.getContext().put("message", "文章添加成功！");
                 return SUCCESS;
@@ -62,15 +71,9 @@ public class NewsAction extends BaseAction {
         return INPUT;
     }
 
-    public String delNews() {
-        if (this.newsService.delNewsById(id)){
-            ActionContext.getContext().put("message", "删除成功！");
-//            this.addActionMessage("删除成功!!");
-            return SUCCESS;
-        }
-        return INPUT;
-    }
-
+    /**
+     * 处理修改新闻请求
+     */
     public String modifyNews() {
         if (id != 0 && news == null){
             news = this.newsService.findNewsById(id);
@@ -80,7 +83,7 @@ public class NewsAction extends BaseAction {
             }
         }
         else if (news != null){
-            if (this.newsService.modifyNews(news)){
+            if (this.newsService.updateNews(news)){
 //                this.addActionMessage("修改成功!!");
                 ActionContext.getContext().put("message", "修改成功！");
                 return SUCCESS;
@@ -89,6 +92,21 @@ public class NewsAction extends BaseAction {
         return INPUT;
     }
 
+    /**
+     * 处理删除新闻请求
+     */
+    public String delNews() {
+        if (this.newsService.deleteNewsById(id)){
+            ActionContext.getContext().put("message", "删除成功！");
+//            this.addActionMessage("删除成功!!");
+            return SUCCESS;
+        }
+        return INPUT;
+    }
+
+    /**
+     * 显示新闻内容
+     */
     @Override
     public String execute() {
         newsList = this.newsService.findAllNews();

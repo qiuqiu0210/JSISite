@@ -22,32 +22,32 @@
     </tr>
     <tr align="center">
         <td width="23%" bgcolor="#FFFFFF">软件名称</td>
-        <td align="left" bgcolor="#FFFFFF"><input name="upFile.fileTitle" type="text" value="${upFile.fileTitle}" size="40" readonly></td>
+        <td align="left" bgcolor="#FFFFFF"><input name="file.fileTitle" type="text" value="${file.fileTitle}" size="40" readonly></td>
     </tr>
     <tr align="center">
         <td width="23%" bgcolor="#FFFFFF">上传时间</td>
-        <td align="left" bgcolor="#FFFFFF"><input name="upFile.fileTime" type="text" value="${upFile.fileTime}" size="40" readonly></td>
+        <td align="left" bgcolor="#FFFFFF"><input name="file.fileTime" type="text" value="${file.fileTime}" size="40" readonly></td>
     </tr>
     <tr align="center">
         <td bgcolor="#FFFFFF">软件类型</td>
         <td align="left" bgcolor="#FFFFFF">
-            <input name="upFile.fileKind" type="radio" class="noborder" value="0" readonly>
+            <input name="file.fileKind" type="radio" class="noborder" value="0" readonly>
             工具
-            <input name="upFile.fileKind" type="radio" class="noborder" value="1" readonly>
+            <input name="file.fileKind" type="radio" class="noborder" value="1" readonly>
             补丁</td>
         <script type="text/javascript">
-            document.getElementsByName("upFile.fileKind")[${upFile.fileKind}].checked=true;
+            document.getElementsByName("file.fileKind")[${file.fileKind}].checked=true;
         </script>
     </tr>
     <tr align="center">
         <td bgcolor="#FFFFFF">文件名称</td>
-        <td align="left" bgcolor="#FFFFFF"><input type="text" name="upFile.fileName" value="${upFile.fileName}" readonly></td>
+        <td align="left" bgcolor="#FFFFFF"><input type="text" name="file.fileName" value="${file.fileName}" readonly></td>
     </tr>
     <tr align="center">
         <td height="27" colspan="2" bgcolor="#FFFFFF">其他说明</td>
     </tr>
     <tr align="left">
-        <td colspan="2" bgcolor="#FFFFFF">${upFile.fileInfo}</td>
+        <td colspan="2" bgcolor="#FFFFFF">${file.fileInfo}</td>
     </tr>
 </table>
 <table width="80%"  border="0" cellspacing="0" cellpadding="0">

@@ -8,7 +8,9 @@ import org.hibernate.cfg.AnnotationConfiguration;
 import java.io.Serializable;
 
 /**
- * Created by Administrator on 14-8-18.
+ * Hibernate相关工具
+ * @author songliu
+ * @since 2014/08/18
  */
 public class HibernateUtils {
     private static SessionFactory sessionFactory;

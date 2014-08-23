@@ -16,19 +16,15 @@ import org.springframework.orm.hibernate4.HibernateCallback;
 import org.springframework.orm.hibernate4.support.HibernateDaoSupport;
 
 /**
- * @ClassName: BaseDaoImpl
- * @Description: dao层通用接口实现类
+ * dao层通用接口实现类
  * @author songliu
- * @date 2014-08-14
- *
+ * @since 2014/08/14
  */
 public class BaseDaoImpl extends HibernateDaoSupport implements BaseDao {
-
     private static Logger log = LogManager.getLogger(BaseDaoImpl.class.getName());
 
     /**
-     * @Title: findById
-     * @Description: 根据Id查询数据
+     * 根据Id查询数据
      * @param clazz
      * @param id
      * @return object
@@ -46,8 +42,7 @@ public class BaseDaoImpl extends HibernateDaoSupport implements BaseDao {
     }
 
     /**
-     * @Title: findByProperty
-     * @Description: 根据条件属性查询
+     * 根据条件属性查询
      * @param propertyName
      * @param value
      * @param clazz
@@ -65,8 +60,7 @@ public class BaseDaoImpl extends HibernateDaoSupport implements BaseDao {
     }
 
     /**
-     * @Title: findByProperties
-     * @Description: 根据多个条件属性查询
+     * 根据多个条件属性查询
      * @param propertyNames
      * @param values
      * @param clazz
@@ -92,8 +86,7 @@ public class BaseDaoImpl extends HibernateDaoSupport implements BaseDao {
     }
 
     /**
-     * @Title: findAll
-     * @Description: 根据具体的类查询数据
+     * 根据具体的类查询数据
      * @param clazz
      * @return List
      */
@@ -111,8 +104,7 @@ public class BaseDaoImpl extends HibernateDaoSupport implements BaseDao {
     }
 
     /**
-     * @Title: findByExample
-     * @Description: 根据对象查询
+     * 根据对象查询
      * @param instance
      * @return List
      */
@@ -123,8 +115,7 @@ public class BaseDaoImpl extends HibernateDaoSupport implements BaseDao {
     }
 
     /**
-     * @Title: saveBatch
-     * @Description: 批量保存
+     * 批量保存
      * @param instances
      * @return boolean
      */
@@ -151,8 +142,7 @@ public class BaseDaoImpl extends HibernateDaoSupport implements BaseDao {
     }
 
     /**
-     * @Title: updateBatch
-     * @Description: 批量更新
+     * 批量更新
      * @param instances
      * @return boolean
      */
@@ -179,8 +169,7 @@ public class BaseDaoImpl extends HibernateDaoSupport implements BaseDao {
     }
 
     /**
-     * @Title: deleteBatch
-     * @Description: 批量删除
+     * 批量删除
      * @param instances
      * @return boolean
      */
@@ -207,8 +196,7 @@ public class BaseDaoImpl extends HibernateDaoSupport implements BaseDao {
     }
 
     /**
-     * @Title: delete
-     * @Description: 删除数据
+     * 删除数据
      * @param instance
      * @return boolean
      */
@@ -227,8 +215,7 @@ public class BaseDaoImpl extends HibernateDaoSupport implements BaseDao {
     }
 
     /**
-     * @Title: save
-     * @Description: 保存数据
+     * 保存数据
      * @param instance
      */
     @Override
@@ -246,8 +233,7 @@ public class BaseDaoImpl extends HibernateDaoSupport implements BaseDao {
     }
 
     /**
-     * @Title: update
-     * @Description: 更新数据
+     * 更新数据
      * @param instance
      */
     @Override
@@ -264,8 +250,7 @@ public class BaseDaoImpl extends HibernateDaoSupport implements BaseDao {
         return true;
     }
     /**
-     * @Title: saveOrUpdate
-     * @Description: 更新数据
+     * 保存或更新数据
      * @param instance
      */
     @Override
@@ -283,8 +268,7 @@ public class BaseDaoImpl extends HibernateDaoSupport implements BaseDao {
     }
 
     /**
-     * @Title: getCountByCriteria
-     * @Description: 统计条数
+     * 统计条数
      * @param detachedCriteria
      * @return int
      */
@@ -300,8 +284,7 @@ public class BaseDaoImpl extends HibernateDaoSupport implements BaseDao {
     }
 
     /**
-     * @Title: findByCriteria
-     * @Description: 分页查询
+     * 分页查询
      * @param detachedCriteria
      * @param firstResult
      * @param maxResults
@@ -323,8 +306,7 @@ public class BaseDaoImpl extends HibernateDaoSupport implements BaseDao {
     }
 
     /**
-     * @Title: getCountByHql
-     * @Description: 根据HQL 查询记录数
+     * 根据HQL 查询记录数
      * @param hql
      * @return int
      */
@@ -335,8 +317,7 @@ public class BaseDaoImpl extends HibernateDaoSupport implements BaseDao {
     }
 
     /**
-     * @Title: findByHql
-     * @Description: 根据HQL 分页
+     * 根据HQL 分页
      * @param hql
      * @param firstResult
      * @param maxResults
@@ -360,8 +341,7 @@ public class BaseDaoImpl extends HibernateDaoSupport implements BaseDao {
     }
 
     /**
-     * @Title: deleteByProperty
-     * @Description: 根据属性删除
+     * 根据属性删除
      * @param propertyName
      * @param value
      * @param clazz
@@ -387,8 +367,7 @@ public class BaseDaoImpl extends HibernateDaoSupport implements BaseDao {
     }
 
     /**
-     * @Title: deleteByHql
-     * @Description: 根据HQL 删除对应数据
+     * 根据HQL 删除对应数据
      * @param hql
      * @param clazz
      * @return boolean
@@ -412,8 +391,7 @@ public class BaseDaoImpl extends HibernateDaoSupport implements BaseDao {
     }
 
     /**
-     * @Title: deleteByPropertys
-     * @Description: 根据多个条件属性删除数据
+     * 根据多个条件属性删除数据
      * @param propertyNames
      * @param values
      * @param clazz

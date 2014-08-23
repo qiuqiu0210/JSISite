@@ -4,7 +4,7 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="cn.edu.buaa.jsi.entities.UpFile" table="tb_file" schema="" catalog="jsi_db">
+    <class name="cn.edu.buaa.jsi.entities.FileEntity" table="tb_file" schema="" catalog="jsi_db">
         <id name="fileId" column="file_id">
             <generator class="native"/>
         </id>

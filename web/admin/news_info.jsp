@@ -39,7 +39,7 @@
     <tr align="center">
         <td height="2" colspan="2" bgcolor="#FFFFFF">
             <img src="../${news.newsPhoto}" width=460 height=300 >
-            <a href="download.action?fileName=${news.newsPhoto}" >下载</a>
+            <a href="../download.action?fileName=${news.newsPhoto}" >下载</a>
             <%--<%String path=bf.SearchHead("WHERE iid='"+r.getIid()+"'").getPath();if(path==null){out.print("无图片");}else{out.print("<img src=../"+path+" width=460 height=300 >");}%></td>--%>
     </tr>
     <tr align="center">

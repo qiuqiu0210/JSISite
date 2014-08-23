@@ -2,16 +2,22 @@ package cn.edu.buaa.jsi.hibernate.dao.impl;
 
 import cn.edu.buaa.jsi.hibernate.dao.AccountDao;
 import cn.edu.buaa.jsi.entities.Account;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
 import java.io.Serializable;
 import java.util.List;
 
 /**
- * Created by Home on 2014/8/17.
+ * 账号dao接口实现类
+ * @author songliu
+ * @since 2014/08/17
  */
 public class AccountDaoImpl extends BaseDaoImpl implements AccountDao {
+    private static Logger log = LogManager.getLogger(AccountDaoImpl.class.getName());
+
     @Override
-    public List<Account> findAllAccount() {
+    public List<Account> findAllAccounts() {
         return this.findAll(Account.class);
     }
 
@@ -38,7 +44,7 @@ public class AccountDaoImpl extends BaseDaoImpl implements AccountDao {
     @Override
     public boolean saveAccount(Account account) {
         if (isExist(account.getAccountName())){
-            System.out.println("Account is already exist");
+            log.debug("Account is already exist");
             return false;
         }
         return this.save(account);
@@ -50,12 +56,12 @@ public class AccountDaoImpl extends BaseDaoImpl implements AccountDao {
     }
 
     @Override
-    public boolean removeAccount(Account account) {
+    public boolean deleteAccount(Account account) {
         return this.delete(account);
     }
 
     @Override
-    public boolean removeAccountByProperty(String propertyNames, Object value) {
+    public boolean deleteAccountByProperty(String propertyNames, Object value) {
         return this.deleteByProperty(propertyNames, value, Account.class);
     }
 

@@ -22,7 +22,7 @@
     <form action="addfile" method="post" enctype="multipart/form-data" >
         <tr align="center">
             <td width="23%" bgcolor="#FFFFFF">软件名称</td>
-            <td align="left" bgcolor="#FFFFFF"><input name="upFile.fileTitle" type="text" size="40"></td>
+            <td align="left" bgcolor="#FFFFFF"><input name="file.fileTitle" type="text" size="40"></td>
         </tr>
         <%--<tr align="center">--%>
         <%--<td bgcolor="#FFFFFF">软件类别</td>--%>
@@ -32,9 +32,9 @@
         <%--</tr>--%>
         <tr align="center">
             <td bgcolor="#FFFFFF">软件类型</td>
-            <td align="left" bgcolor="#FFFFFF"><input name="upFile.fileKind" type="radio" class="noborder" value="0" >
+            <td align="left" bgcolor="#FFFFFF"><input name="file.fileKind" type="radio" class="noborder" value="0" >
                 工具
-                <input name="upFile.fileKind" type="radio" class="noborder" value="1" checked>
+                <input name="file.fileKind" type="radio" class="noborder" value="1" checked>
                 补丁</td>
         </tr>
         <tr align="center">
@@ -58,7 +58,7 @@
         </tr>
         <tr align="center">
             <td bgcolor="#FFFFFF">其他说明</td>
-            <td align="left" bgcolor="#FFFFFF"><textarea name="upFile.fileInfo" cols="50" rows="5" class="textarea"></textarea></td>
+            <td align="left" bgcolor="#FFFFFF"><textarea name="file.fileInfo" cols="50" rows="5" class="textarea"></textarea></td>
         </tr>
         <tr align="center">
             <td height="27" colspan="2" bgcolor="#FFFFFF">
@@ -73,5 +73,11 @@
         <td height="50" colspan="5" align="right"><a href="showfile.action">返回</a></td>
     </tr>
 </table>
+<script type="text/javascript">
+    var msg="${requestScope.message}";
+    if(msg!=""){
+        alert(msg);
+    }
+</script>
 </body>
 </html>

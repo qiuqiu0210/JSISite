@@ -21,14 +21,14 @@
         <td colspan="2" class="TableTitle1" >修改工具软件</td>
     </tr>
     <form name="fileform" action="modifyfile" method="post">
-        <input type="hidden" name="upFile.fileId" value="${upFile.fileId}">
-        <input type="hidden" name="upFile.filePath" value="${upFile.filePath}">
-        <input type="hidden" name="upFile.fileSuffix" value="${upFile.fileSuffix}">
-        <input type="hidden" name="upFile.fileCount" value="${upFile.fileCount}">
-        <input type="hidden" name="upFile.fileTime" value="${upFile.fileTime}">
+        <input type="hidden" name="file.fileId" value="${file.fileId}">
+        <input type="hidden" name="file.filePath" value="${file.filePath}">
+        <input type="hidden" name="file.fileSuffix" value="${file.fileSuffix}">
+        <input type="hidden" name="file.fileCount" value="${file.fileCount}">
+        <input type="hidden" name="file.fileTime" value="${file.fileTime}">
         <tr align="center">
             <td width="23%" bgcolor="#FFFFFF">软件名称</td>
-            <td align="left" bgcolor="#FFFFFF"><input name="upFile.fileTitle" type="text" value="${upFile.fileTitle}" size="40"></td>
+            <td align="left" bgcolor="#FFFFFF"><input name="file.fileTitle" type="text" value="${file.fileTitle}" size="40"></td>
         </tr>
         <%--<tr align="center">--%>
         <%--<td bgcolor="#FFFFFF">软件类别</td>--%>
@@ -38,7 +38,7 @@
         <%--</tr>--%>
         <%--<tr align="center">--%>
         <%--<td bgcolor="#FFFFFF">软件类型</td>--%>
-        <%--<td align="left" bgcolor="#FFFFFF"><input name="upFile.fileKind" type="radio" class="noborder" value="0" >--%>
+        <%--<td align="left" bgcolor="#FFFFFF"><input name="file.fileKind" type="radio" class="noborder" value="0" >--%>
         <%--工具--%>
         <%--<input name="state" type="radio" class="noborder" value="1" checked>--%>
         <%--补丁</td>--%>
@@ -61,23 +61,23 @@
         <tr align="center">
             <td bgcolor="#FFFFFF">软件类型</td>
             <td align="left" bgcolor="#FFFFFF">
-                <input name="upFile.fileKind" type="radio" class="noborder" value="0" >
+                <input name="file.fileKind" type="radio" class="noborder" value="0" >
                 工具
-                <input name="upFile.fileKind" type="radio" class="noborder" value="1">
+                <input name="file.fileKind" type="radio" class="noborder" value="1">
                 补丁</td>
             <script type="text/javascript">
                 //                window.onload=function{
-                document.getElementsByName("upFile.fileKind")[${upFile.fileKind}].checked=true;
+                document.getElementsByName("file.fileKind")[${file.fileKind}].checked=true;
                 //                }
             </script>
         </tr>
         <tr align="center">
             <td bgcolor="#FFFFFF">文件名称</td>
-            <td align="left" bgcolor="#FFFFFF"><input type="text" name="upFile.fileName" value="${upFile.fileName}" readOnly></td>
+            <td align="left" bgcolor="#FFFFFF"><input type="text" name="file.fileName" value="${file.fileName}" readOnly></td>
         </tr>
         <tr align="center">
             <td bgcolor="#FFFFFF">其他说明</td>
-            <td align="left" bgcolor="#FFFFFF"><textarea name="upFile.fileInfo" cols="50" rows="5" class="textarea">${upFile.fileInfo}</textarea></td>
+            <td align="left" bgcolor="#FFFFFF"><textarea name="file.fileInfo" cols="50" rows="5" class="textarea">${file.fileInfo}</textarea></td>
         </tr>
         <tr align="center">
             <td height="27" colspan="2" bgcolor="#FFFFFF">

@@ -3,7 +3,9 @@ package cn.edu.buaa.jsi.utils;
 import java.io.UnsupportedEncodingException;
 
 /**
- * Created by Home on 2014/8/20.
+ * 字符串相关工具
+ * @author songliu
+ * @since 2014/08/20
  */
 public class StringUtils {
     private static String UNICODE = "Unicode";

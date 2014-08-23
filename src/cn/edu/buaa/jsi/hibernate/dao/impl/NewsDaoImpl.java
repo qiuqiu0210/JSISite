@@ -7,9 +7,20 @@ import cn.edu.buaa.jsi.hibernate.dao.NewsDao;
 import java.util.List;
 
 /**
- * Created by Home on 2014/8/19.
+ * 新闻dao接口实现类
+ * @author songliu
+ * @since 2014/08/19
  */
 public class NewsDaoImpl extends BaseDaoImpl implements NewsDao {
+    @Override
+    public List<News> findAllNews() {
+        return this.findAll(News.class);
+    }
+
+    @Override
+    public News findNewsById(int id) {
+        return (News)this.findByProperty("newsId", id, News.class).get(0);
+    }
 
     @Override
     public boolean saveNews(News news) {
@@ -22,17 +33,7 @@ public class NewsDaoImpl extends BaseDaoImpl implements NewsDao {
     }
 
     @Override
-    public News findNewsById(int id) {
-        return (News)this.findByProperty("newsId", id, News.class).get(0);
-    }
-
-    @Override
-    public List<News> findAllNews() {
-        return this.findAll(News.class);
-    }
-
-    @Override
-    public boolean delNewsById(int id) {
+    public boolean deleteNewsById(int id) {
         return this.deleteByProperty("newsId", id, News.class);
     }
 }
