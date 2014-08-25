@@ -10,6 +10,7 @@ import java.util.Map;
 
 /**
  * index页面对应Action
+ * <p>准备index页面显示内容<br>
  * @author songliu
  * @since 2014/08/19
  */
@@ -17,7 +18,9 @@ public class IndexAction extends BaseAction {
     private NewsService newsService;
 
     /**
-     * 准备首页显示所需的新闻等信息
+     * 重写ActionSupport中的execute()方法，接受前端请求的默认方法
+     * <p>准备首页显示所需的新闻等信息<br>
+     * @return SUCCESS
      */
     @Override
     public String execute() throws Exception {

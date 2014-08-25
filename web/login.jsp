@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="css/main.css">
 
     <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
 </head>
 <body>
 <!--[if lt IE 7]>
@@ -132,9 +134,10 @@
                                     <input name="remember" type="checkbox"> Remember me
                                 </label>
                                 <a href="page-password-reset.html" class="forgot-password">Forgot password?</a>
-                                <button type="submit" class="btn pull-right">Login</button>
+                                <button id="btn_login" type="submit" class="btn pull-right">Login</button>
                                 <div class="clearfix"></div>
                             </div>
+                            <div id="message"><label style="color:red;"></label></div>
                             <s:fielderror key="error" cssStyle="color: red"/>
                         </form>
                     </s:else>

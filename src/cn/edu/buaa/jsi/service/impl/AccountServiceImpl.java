@@ -3,7 +3,6 @@ package cn.edu.buaa.jsi.service.impl;
 import cn.edu.buaa.jsi.hibernate.dao.AccountDao;
 import cn.edu.buaa.jsi.entities.Account;
 import cn.edu.buaa.jsi.service.AccountService;
-import cn.edu.buaa.jsi.utils.CipherUtil;
 import cn.edu.buaa.jsi.utils.CommonUtils;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
@@ -46,7 +45,6 @@ public class AccountServiceImpl implements AccountService {
             return null;
         }
         String[] propertyNames = {"accountName", "accountPassword"};
-        password = CipherUtil.generatePassword(password);
         String[] values = {username, password};
         List<Account> accountList = this.accountDao.findAccountByProperties(propertyNames, values);
         if (accountList.size() == 1) {

@@ -2,7 +2,7 @@ package cn.edu.buaa.jsi.web.interceptor;
 
 import cn.edu.buaa.jsi.entities.Account;
 import cn.edu.buaa.jsi.service.AccountService;
-import cn.edu.buaa.jsi.utils.CommonConstants;
+import cn.edu.buaa.jsi.utils.Constants;
 import cn.edu.buaa.jsi.utils.CommonUtils;
 import cn.edu.buaa.jsi.utils.CookieUtils;
 import com.opensymphony.xwork2.ActionContext;
@@ -10,9 +10,7 @@ import com.opensymphony.xwork2.ActionInvocation;
 import com.opensymphony.xwork2.interceptor.AbstractInterceptor;
 import org.apache.struts2.StrutsStatics;
 
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.util.Map;
 
 /**
@@ -44,7 +42,7 @@ public class LoginInterceptor extends AbstractInterceptor{
 
         String actionName = invocation.getProxy().getActionName();
         Map session = actionContext.getSession();
-        if (session != null && session.get(CommonConstants.SESSION_KEY_USER_NAME) != null) {
+        if (session != null && session.get(Constants.SESSION_KEY_USER_NAME) != null) {
             return invocation.invoke();
         }
         String value = CookieUtils.getLoginCookie(request);
@@ -54,7 +52,7 @@ public class LoginInterceptor extends AbstractInterceptor{
             String password = split[1];
             Account account = accountService.validateAccount(username,password);
             if (account != null){
-                session.put(CommonConstants.SESSION_KEY_USER_NAME,username);
+                session.put(Constants.SESSION_KEY_USER_NAME,username);
                 return invocation.invoke();
             }
         }
@@ -84,6 +82,6 @@ public class LoginInterceptor extends AbstractInterceptor{
         if (!CommonUtils.isBlank(actionName)) {
             url = url + "/" + actionName + ".action";
         }
-        session.put(CommonConstants.GOING_TO_URL_KEY, url);
+        session.put(Constants.GOING_TO_URL_KEY, url);
     }
 }

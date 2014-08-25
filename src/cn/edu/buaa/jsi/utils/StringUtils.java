@@ -133,7 +133,8 @@ public class StringUtils {
             str = "";
         }
         else {
-            str = str.trim().replaceAll("[\\s*|\t|\n|\r]","&nbsp;");
+            str = str.trim().replaceAll("[\\t|\\n|\\r]", "").replaceAll("\\s{1,}", "&nbsp;");
+            //<br\\s*/?>|<p\\s*/?>|[\\s\\n]
         }
         return str;
     }

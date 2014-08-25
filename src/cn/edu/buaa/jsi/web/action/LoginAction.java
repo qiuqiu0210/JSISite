@@ -2,7 +2,8 @@ package cn.edu.buaa.jsi.web.action;
 
 import cn.edu.buaa.jsi.entities.Account;
 import cn.edu.buaa.jsi.service.AccountService;
-import cn.edu.buaa.jsi.utils.CommonConstants;
+import cn.edu.buaa.jsi.utils.CipherUtil;
+import cn.edu.buaa.jsi.utils.Constants;
 import cn.edu.buaa.jsi.utils.CommonUtils;
 import cn.edu.buaa.jsi.utils.CookieUtils;
 
@@ -10,7 +11,8 @@ import javax.servlet.http.*;
 import java.util.Map;
 
 /**
- * 登录Action
+ * 登录Actionon
+ * <p>用户身份校验<br>
  * @author songliu
  * @since 2014/08/13
  */
@@ -39,11 +41,11 @@ public class LoginAction extends BaseAction {
                 int maxAge = 60 * 60 * 24 * 14;
                 CookieUtils.setLoginCookie(response, maxAge, str);
             }
-            session.put(CommonConstants.SESSION_KEY_USER_NAME, username);
-            String url = (String) session.get(CommonConstants.GOING_TO_URL_KEY);
+            session.put(Constants.SESSION_KEY_USER_NAME, username);
+            String url = (String) session.get(Constants.GOING_TO_URL_KEY);
             if (!CommonUtils.isBlank(url)){
                 setGoingToURL(url);
-                session.remove(CommonConstants.GOING_TO_URL_KEY);
+                session.remove(Constants.GOING_TO_URL_KEY);
             }
             else {
                 setGoingToURL("login.jsp");
@@ -72,6 +74,8 @@ public class LoginAction extends BaseAction {
      */
     public boolean loginSuccess(){
         if(username != null && password != null && !"".equals(username) && !"".equals(password)) {
+            //对密码进行MD5加密
+            password = CipherUtil.generatePassword(password);
             account = accountService.validateAccount(username, password);
             if(account != null) {
                 return true;
